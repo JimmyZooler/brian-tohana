@@ -19,8 +19,8 @@ Template Name: Home Page
     <div class="social-buttons">
         
     </div>
-    <div class="next-triangle"><img src="<?php echo get_template_directory_uri(); ?>/images/triangle-icon2.png" /></div>
-    <div class="prev-triangle"><img src="<?php echo get_template_directory_uri(); ?>/images/triangle-icon2.png" /></div>
+    <div class="next-triangle"><img src="<?php echo get_template_directory_uri(); ?>/images/triangle-icon2_larger.png" /></div>
+    <div class="prev-triangle"><img src="<?php echo get_template_directory_uri(); ?>/images/triangle-icon2_larger.png" /></div>
 </div>
 
 <?php get_footer(); ?>
