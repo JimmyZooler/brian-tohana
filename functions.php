@@ -103,6 +103,8 @@ add_action( 'widgets_init', 'brian_tohana_widgets_init' );
  */
 function brian_tohana_scripts() {
 	wp_enqueue_style( 'brian_tohana-style', get_stylesheet_uri() );
+        
+        wp_enqueue_script( 'dope-scripts', get_template_directory_uri() . '/js/dope-scripts.js', array( 'jquery' ), '1.0.0', true );
 
 	wp_enqueue_script( 'brian_tohana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

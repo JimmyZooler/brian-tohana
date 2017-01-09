@@ -31,17 +31,17 @@ gulp.task('styles', function() {
 });
 
 // Scripts
-//gulp.task('scripts', function() {
-//  return gulp.src('js/**/*.js')
-//    .pipe(jshint('.jshintrc'))
-//    .pipe(jshint.reporter('default'))
-//    .pipe(concat('main.js'))
-//    .pipe(gulp.dest('dist/js'))
-//    .pipe(rename({suffix: '.min'}))
-//    .pipe(uglify())
-//    .pipe(gulp.dest('dist/js'))
-//    .pipe(notify({ message: 'Scripts task complete' }));
-//});
+gulp.task('scripts', function() {
+  return gulp.src('js/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+    .pipe(notify({ message: 'Scripts task complete' }));
+});
 
 //Compress Images
 gulp.task('images', function() {
@@ -68,7 +68,7 @@ gulp.task('watch', function() {
   gulp.watch('sass/**/*.scss', ['styles']);
 
   // Watch .js files
-  //gulp.watch('js/**/*.js', ['scripts']);
+  gulp.watch('js/**/*.js', ['scripts']);
 
   // Watch image files
   gulp.watch('images/**/*', ['images']);
