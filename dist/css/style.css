@@ -761,13 +761,15 @@ header {
   z-index: 500;
   width: 50px;
   height: 50px;
-  background: rgba(64, 57, 69, 0.7);
+  background: rgba(57, 34, 71, 0.7);
   cursor: pointer;
   border-radius: 10px;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  opacity: 0.9; }
 
 #mute:hover {
-  background: #403945; }
+  background: #392247;
+  opacity: 1; }
 
 #mute #audio-icon {
   width: 100%;
@@ -775,13 +777,10 @@ header {
   background-position: center center; }
 
 #mute .mute-on {
-  background-position-x: -10px;
-  background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/audio_icon.png"); }
+  background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/images/volume_down.png"); }
 
 #mute .mute-off {
-  background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/volume-up.png");
-  background-size: 30px;
-  background-repeat: no-repeat; }
+  background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up.png"); }
 
 .next-triangle, .prev-triangle {
   position: absolute;
