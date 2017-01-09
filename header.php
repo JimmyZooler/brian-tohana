@@ -32,22 +32,5 @@
         <audio id="background_audio" loop="loop" preload="none" volume="1">
             <source src="<?php echo get_template_directory_uri(); ?>/wanaooou.mp3" />
         </audio> 
-        <div id="mute"><div id="audio-icon"></div></div>
-        <script>
-            var audio = document.getElementById('background_audio');
-            
-
-            document.getElementById('mute').addEventListener('click', function (e)
-            {
-                if ( audio.paused == true) {
-                    audio.play();
-                } else {
-                    if (audio.muted == false) {
-                        audio.muted = true;
-                    } else {
-                        audio.muted = false;
-                    }
-                }
-            }, false);
-        </script>
+        <div id="mute"><div id="audio-icon" class="mute-on"></div></div>
 	<div id="content" class="site-content">
