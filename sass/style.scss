@@ -110,17 +110,78 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Custom Styles
 --------------------------------------------------------------*/
 
-#main, .main-intro-page, .main-view, .pattern-overlay {
+#main, .main-intro, .main-view, .pattern-overlay {
     position: absolute;
     overflow: hidden;
     width: 100%;
     height: 100%; }
 
+.main-intro {
+    display: block;
+    z-index: 350;
+    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg') no-repeat center;
+    background-size: cover;
+    .intro-content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        .title-box {
+            position: absolute;
+            height: 400px;
+            width: 620px;
+            top: -45px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 1px solid white;
+            background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-content.png') no-repeat top center;
+            background-position: center;
+            z-index: 400;
+            a {
+                display: block;
+                text-decoration: none;
+                width: 125px;
+                position: absolute;
+                background: #392247;
+                letter-spacing: 1px;
+                padding: 15px 20px;
+                border-radius: 5px; 
+                color: #fff;
+                cursor: pointer;
+                left:40%;
+                bottom: 40px;
+                text-transform: uppercase;
+                transition: background 200ms cubic-bezier(0.23, 1, 0.32, 1);
+                .arrow {
+                    position: absolute;
+                    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png') no-repeat top center;
+                    background-position: center;
+                    background-size: contain;
+                    height: 20px;
+                    width: 20px;
+                    margin-left: 10px;
+                    transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+            }
+        }
+    }
+    .dark-overlay {
+        z-index: 360;
+    }
+}
+.main-intro .intro-content .title-box a:hover {
+    background: $light-purple !important;
+}
+.main-intro .intro-content .title-box a:hover .arrow {
+    transform: translateX(5px);
+}
+
 .pattern-overlay {
     top: 0px;
     left: 0px;
     z-index: 3;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .main-view {
@@ -129,6 +190,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     background-position: top;
     background-repeat:  no-repeat;
     height: calc(100vh); 
+    .dark-overlay {
+        z-index: 210;
+    }
 }
 
 header {
@@ -137,7 +201,7 @@ header {
     height: 60px;
     top: 60;
     left: 0;
-    z-index: 400;
+    z-index: 300;
     font-family: "Dense", Lato, Arial, sans-serif;
     text-transform: uppercase;
     nav {
@@ -168,7 +232,6 @@ header {
     height: 100%;
     background-color: #000;
     opacity: 0.20;
-    z-index: 350;
 }
 // Audio button
 #mute {
@@ -179,15 +242,13 @@ header {
     z-index: 500;
     width: 50px;
     height: 50px;
-    background: rgba( 57, 34, 71, 0.7);
+    background: #333;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.2s;
-    opacity: 0.9;
 }
 #mute:hover {
-    background: rgba( 57, 34, 71, 1);
-    opacity: 1;
+    background: #555;
 }
 #mute #audio-icon {
     width: 100%;
@@ -200,12 +261,46 @@ header {
 #mute .mute-off {
     background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up.png');
 }
+#social-buttons {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 500;
+    ul {
+        display: inline-block;
+        list-style: none;
+        li {
+            display: inline; 
+            float: left;
+            text-align: center;
+            margin: 0 0.5rem;
+            a {
+                display: block;
+                i {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                     transition: all 0.3s;
+                     font-size: 22 / 16 + rem;
+                     border-radius: 200px;
+                     color: #fff;
+                     background: #333;
+                }
+            }
+        }
+    }
+}
+#social-buttons ul li a i:hover {
+    background: #555;
+}
+
 .next-triangle, .prev-triangle {
     position: absolute;
     width: 80px;
     height: 80px; 
     top: 40%;
-    z-index: 500;
+    z-index: 300;
+    cursor: pointer;
     img {
         opacity: 0.8;
         transition: opacity 0.2s;

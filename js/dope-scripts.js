@@ -29,3 +29,16 @@ document.getElementById('mute').addEventListener('click', function (e)
     });
 	
 })( jQuery );
+
+// Script for Next and Prev Arrows
+//
+//(function($) {
+//    $('.next-triangle').on('click', function() {
+//        history.pushState(null, null, '/briantohana/next-one-jimmy/');
+//    });
+//    
+//    $('.prev-triangle').on('click', function() {
+//        history.pushState(null, null, '/briantohana/prev-one-jimmy/');
+//    });
+//	
+//})( jQuery );
