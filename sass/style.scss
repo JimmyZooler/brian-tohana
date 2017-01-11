@@ -176,7 +176,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .main-intro .intro-content .title-box a:hover .arrow {
     transform: translateX(5px);
 }
-
+.hide {
+    display: none;
+}
 .pattern-overlay {
     top: 0px;
     left: 0px;
@@ -292,6 +294,49 @@ header {
 }
 #social-buttons ul li a i:hover {
     background: #555;
+}
+.row {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 501;
+    width: 100%;
+    .subscription-bar {
+        overflow: auto;
+        background: #fff;
+        .subscription-heading {
+            display: inline-block;
+            float: left;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .subscription-form {
+            display: inline-block;
+        }
+    }
+    .site-info {
+        font-size: 10px;
+        background: $light-blue;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        clear: both;
+        p {
+            display: inline-block;
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            
+        }
+    }
 }
 
 .next-triangle, .prev-triangle {

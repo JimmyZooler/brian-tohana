@@ -764,6 +764,9 @@ object {
 .main-intro .intro-content .title-box a:hover .arrow {
   transform: translateX(5px); }
 
+.hide {
+  display: none; }
+
 .pattern-overlay {
   top: 0px;
   left: 0px;
@@ -863,6 +866,42 @@ header {
 
 #social-buttons ul li a i:hover {
   background: #555; }
+
+.row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%; }
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 501;
+  width: 100%; }
+  .site-footer .subscription-bar {
+    overflow: auto;
+    background: #fff; }
+    .site-footer .subscription-bar .subscription-heading {
+      display: inline-block;
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .site-footer .subscription-bar .subscription-form {
+      display: inline-block; }
+  .site-footer .site-info {
+    font-size: 10px;
+    background: #578fae;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    clear: both; }
+    .site-footer .site-info p {
+      display: inline-block;
+      margin: 10px 0; }
+    .site-footer .site-info a {
+      text-decoration: none;
+      color: #fff; }
 
 .next-triangle, .prev-triangle {
   position: absolute;

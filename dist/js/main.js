@@ -74,14 +74,26 @@ document.getElementById('mute').addEventListener('click', function (e)
 })( jQuery );
 
 // Script for Next and Prev Arrows
+//
+//(function($) {
+//    $('.next-triangle').on('click', function() {
+//        history.pushState(null, null, '/briantohana/next-one-jimmy/');
+//    });
+//    
+//    $('.prev-triangle').on('click', function() {
+//        history.pushState(null, null, '/briantohana/prev-one-jimmy/');
+//    });
+//	
+//})( jQuery );
 
+// Script for main-intro
 (function($) {
-    $('.next-triangle').on('click', function() {
-        history.pushState(null, null, '/briantohana/next-one-jimmy/');
+    $('.enter').on('click', function() {
+       $('.main-intro').addClass('hide');
     });
     
     $('.prev-triangle').on('click', function() {
-        history.pushState(null, null, '/briantohana/prev-one-jimmy/');
+        $('.main-intro').removeClass('hide');
     });
 	
 })( jQuery );

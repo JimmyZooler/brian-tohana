@@ -42,3 +42,15 @@ document.getElementById('mute').addEventListener('click', function (e)
 //    });
 //	
 //})( jQuery );
+
+// Script for main-intro
+(function($) {
+    $('.enter').on('click', function() {
+       $('.main-intro').addClass('hide');
+    });
+    
+    $('.prev-triangle').on('click', function() {
+        $('.main-intro').removeClass('hide');
+    });
+	
+})( jQuery );
