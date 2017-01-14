@@ -45,11 +45,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 body {
+  font-family: "Source Sans Pro", sans-serif !important;
   margin: 0; }
 
 article,
@@ -703,6 +703,9 @@ object {
 /*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p {
+  letter-spacing: 1px; }
+
 #main, .main-intro, .main-view, .pattern-overlay {
   position: absolute;
   overflow: hidden;
@@ -877,18 +880,135 @@ header {
   bottom: 0;
   left: 0;
   z-index: 501;
-  width: 100%; }
-  .site-footer .subscription-bar {
+  width: 100%;
+  background: #fff;
+  padding-top: .1px; }
+  .site-footer .footer-contact {
+    background: #392247;
+    color: #fff;
     overflow: auto;
+    padding: 40px 0 30px; }
+    .site-footer .footer-contact #contact-heading {
+      width: 50%;
+      display: inline-block;
+      padding: 10px;
+      float: left; }
+      .site-footer .footer-contact #contact-heading h2 {
+        text-transform: uppercase; }
+      .site-footer .footer-contact #contact-heading p {
+        font-size: 18px; }
+    .site-footer .footer-contact #contact-form {
+      width: 50%;
+      display: inline-block;
+      padding: 10px; }
+      .site-footer .footer-contact #contact-form textarea {
+        height: 150px;
+        border: 3px solid #fff !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        padding: 5px; }
+      .site-footer .footer-contact #contact-form .your-name, .site-footer .footer-contact #contact-form .your-email {
+        width: 100%; }
+        .site-footer .footer-contact #contact-form .your-name input, .site-footer .footer-contact #contact-form .your-email input {
+          border: 3px solid #fff !important;
+          border-radius: 0 !important;
+          background: transparent !important;
+          width: 100%;
+          padding: 5px; }
+      .site-footer .footer-contact #contact-form .wpcf7-submit {
+        color: #392247 !important;
+        font-weight: bold !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 0px !important;
+        font-size: 18px;
+        padding: 10px 22px; }
+      .site-footer .footer-contact #contact-form ::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px; }
+      .site-footer .footer-contact #contact-form :-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px; }
+      .site-footer .footer-contact #contact-form ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px; }
+      .site-footer .footer-contact #contact-form :-ms-input-placeholder {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px; }
+  .site-footer .subscription-bar {
     background: #fff; }
     .site-footer .subscription-bar .subscription-heading {
       display: inline-block;
       float: left;
       font-size: 16px;
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 38%;
+      padding: 10px;
+      text-align: center;
+      color: #392247;
+      letter-spacing: 1px; }
+      .site-footer .subscription-bar .subscription-heading p {
+        margin-top: 1.3em; }
     .site-footer .subscription-bar .subscription-form {
-      display: inline-block; }
+      display: inline-block;
+      width: 62%;
+      padding: 10px; }
+      .site-footer .subscription-bar .subscription-form #mc_embed_signup form {
+        padding-bottom: 0; }
+      .site-footer .subscription-bar .subscription-form .subscribe-name {
+        width: 26% !important;
+        padding-bottom: 0 !important;
+        display: inline-block;
+        padding-right: 5px;
+        min-height: 0 !important;
+        vertical-align: top; }
+        .site-footer .subscription-bar .subscription-form .subscribe-name input {
+          border: 3px solid #392247 !important;
+          border-radius: 0 !important;
+          background: transparent !important; }
+      .site-footer .subscription-bar .subscription-form .subscribe-email {
+        width: 36% !important;
+        padding-bottom: 0 !important;
+        display: inline-block;
+        padding-right: 5px;
+        min-height: 0 !important; }
+        .site-footer .subscription-bar .subscription-form .subscribe-email input {
+          border: 3px solid #392247 !important;
+          border-radius: 0 !important;
+          background: transparent !important; }
+        .site-footer .subscription-bar .subscription-form .subscribe-email .mce_inline_error {
+          margin: 0 !important; }
+      .site-footer .subscription-bar .subscription-form .subscribe-button {
+        display: inline-block;
+        vertical-align: top; }
+        .site-footer .subscription-bar .subscription-form .subscribe-button input {
+          font-weight: bold !important;
+          background: #392247 !important;
+          height: 46px !important;
+          box-shadow: none !important;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-radius: 0px !important;
+          text-shadow: none !important; }
+      .site-footer .subscription-bar .subscription-form ::-webkit-input-placeholder {
+        color: #392247; }
+      .site-footer .subscription-bar .subscription-form :-moz-placeholder {
+        /* Firefox 18- */
+        color: #392247; }
+      .site-footer .subscription-bar .subscription-form ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #392247; }
+      .site-footer .subscription-bar .subscription-form :-ms-input-placeholder {
+        color: #392247; }
   .site-footer .site-info {
     font-size: 10px;
     background: #578fae;
@@ -902,6 +1022,26 @@ header {
     .site-footer .site-info a {
       text-decoration: none;
       color: #fff; }
+
+#mc_embed_signup .button:hover {
+  background: #493257 !important; }
+
+.site-footer .footer-contact #contact-form .wpcf7-submit:hover {
+  background: #d2d2d2 !important; }
+
+::-webkit-input-placeholder {
+  color: #392247; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #392247; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #392247; }
+
+:-ms-input-placeholder {
+  color: #392247; }
 
 .next-triangle, .prev-triangle {
   position: absolute;

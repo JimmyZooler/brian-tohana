@@ -14,6 +14,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+            <div class="footer-contact">
+                <div class="row">
+                    <div id="contact-heading">
+                        <h2>Let's Connect</h2>
+                        <p>Send me a message. I would love to hear from you.</p>
+                    </div>
+                    <div id="contact-form">
+                        <?php get_sidebar(); ?>
+                    </div>
+                </div>
+            </div>
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">
@@ -30,18 +41,19 @@
                         <div id="mc_embed_signup">
                         <form action="//geometricwebdesign.us14.list-manage.com/subscribe/post?u=647fb5b2a53b7804687e6b819&amp;id=b8ae23cbfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
-                        <div class="mc-field-group">
+                        <div class="mc-field-group subscribe-name">
                             <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
                         </div>
-                        <div class="mc-field-group">
+                        <div class="mc-field-group subscribe-email">
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email *">
                         </div>
+                        <div class="subscribe-button"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                 <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_647fb5b2a53b7804687e6b819_b8ae23cbfe" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            
                             </div>
                         </form>
                         </div>

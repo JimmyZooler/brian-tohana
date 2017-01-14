@@ -109,6 +109,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
+h1,h2, h3, h4, h5, h6 , p {
+    letter-spacing: 1px;
+    } 
 
 #main, .main-intro, .main-view, .pattern-overlay {
     position: absolute;
@@ -306,8 +309,83 @@ header {
     left: 0;
     z-index: 501;
     width: 100%;
-    .subscription-bar {
+    background: #fff;
+    padding-top: .1px;
+    .footer-contact {
+        background: $purple;
+        color: #fff;
         overflow: auto;
+        padding: 40px 0 30px;
+        #contact-heading {
+            width: 50%;
+            display: inline-block;
+            padding: 10px;
+            float: left;
+            h2 {
+                text-transform: uppercase;
+            }            
+            p {
+                font-size: 18px;
+            }
+        }
+        #contact-form {
+            width: 50%;
+            display: inline-block;
+            padding: 10px;
+            textarea {
+                height: 150px;
+                border: 3px solid #fff!important;
+                border-radius: 0!important;
+                background: transparent !important;
+                padding: 5px;
+            }
+            .your-name, .your-email {
+                width: 100%;
+                input {
+                    border: 3px solid #fff!important;
+                    border-radius: 0!important;
+                    background: transparent !important;
+                    width: 100%;
+                    padding: 5px;
+                }
+            }
+            .wpcf7-submit {
+                color: $purple!important;
+                font-weight: bold!important;
+                background: #fff!important;
+                box-shadow: none!important;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                border-radius: 0px!important;
+                font-size: 18px;
+                padding: 10px 22px;
+            }
+            ::-webkit-input-placeholder {
+                color: #fff;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+               color: #fff;  
+               font-size: 16px;
+               letter-spacing: 1px;
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+               color: #fff;  
+               font-size: 16px;
+               letter-spacing: 1px;
+            }
+
+            :-ms-input-placeholder {  
+               color: #fff;  
+               font-size: 16px;
+               letter-spacing: 1px;
+            }
+        }
+    }
+    .subscription-bar {
         background: #fff;
         .subscription-heading {
             display: inline-block;
@@ -315,9 +393,79 @@ header {
             font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
+            width: 38%;
+            padding: 10px;
+            text-align: center;
+            color: $purple;
+            letter-spacing: 1px;
+            p {
+                margin-top: 1.3em;
+            }
         }
         .subscription-form {
             display: inline-block;
+            width: 62%;
+            padding: 10px;
+            #mc_embed_signup form {
+                padding-bottom: 0;
+            }
+            .subscribe-name {
+                width: 26%!important;
+                padding-bottom: 0!important;
+                display: inline-block;
+                padding-right: 5px;
+                min-height: 0!important;
+                vertical-align: top;
+                input {
+                border: 3px solid $purple!important;
+                border-radius: 0!important;
+                background: transparent !important;
+                }
+            }
+            .subscribe-email {
+                width: 36%!important;
+                padding-bottom: 0!important;
+                display: inline-block;
+                padding-right: 5px;
+                min-height: 0!important;
+                input {
+                border: 3px solid $purple!important;
+                border-radius: 0!important;
+               background: transparent !important;
+                }
+                .mce_inline_error {
+                    margin: 0 !important;
+                }
+            }
+            .subscribe-button {
+                display: inline-block;
+                vertical-align: top;
+                input {
+                    font-weight: bold!important;
+                    background: $purple!important;
+                    height: 46px!important;
+                    box-shadow: none!important;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    border-radius: 0px!important;
+                    text-shadow: none!important;
+                }
+            }
+            ::-webkit-input-placeholder {
+                color: $purple;
+             }
+
+             :-moz-placeholder { /* Firefox 18- */
+                color: $purple;  
+             }
+
+             ::-moz-placeholder {  /* Firefox 19+ */
+                color: $purple;  
+             }
+
+             :-ms-input-placeholder {  
+                color: $purple;  
+             }
         }
     }
     .site-info {
@@ -338,7 +486,28 @@ header {
         }
     }
 }
+#mc_embed_signup .button:hover {
+    background: $light-purple!important;
+}
+.site-footer .footer-contact #contact-form .wpcf7-submit:hover {
+    background: #d2d2d2!important;
+}
 
+::-webkit-input-placeholder {
+   color: $purple;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $purple;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $purple;  
+}
+
+:-ms-input-placeholder {  
+   color: $purple;  
+}
 .next-triangle, .prev-triangle {
     position: absolute;
     width: 80px;
