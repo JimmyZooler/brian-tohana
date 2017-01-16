@@ -54,3 +54,26 @@ document.getElementById('mute').addEventListener('click', function (e)
     });
 	
 })( jQuery );
+
+// Script for Footer 
+
+(function($) {
+    var $footerHeight = $('.site-footer').css("height");
+    var $siteFooter = $('.site-footer');
+    $('.open-footer').on('click', function() {
+       $siteFooter.removeClass('hide');
+       $siteFooter.addClass('slide-up');
+       $('.open-footer').addClass('hide');
+       $('.footer-overlay').removeClass('hide');
+       $('.close-footer').removeClass('hide');
+    });
+    
+    $('.close-footer').on('click', function() {
+        $siteFooter.removeClass('slide-up');
+        $('.close-footer').addClass('hide');
+        $('.footer-overlay').addClass('hide');
+       $('.open-footer').removeClass('hide');
+       $siteFooter.addClass('hide');
+    });
+	
+})( jQuery );

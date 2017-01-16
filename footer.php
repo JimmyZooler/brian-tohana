@@ -12,8 +12,9 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
+        <div class='footer-overlay hide'></div>
+	<footer id="colophon" class="site-footer hide" role="contentinfo">
+            <div class='close-footer hide'><span class='arrow'></span><span>Close</span></div>
             <div class="footer-contact">
                 <div class="row">
                     <div id="contact-heading">

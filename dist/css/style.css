@@ -714,7 +714,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-intro {
   display: block;
-  z-index: 350;
+  z-index: 264;
   background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg") no-repeat center;
   background-size: cover; }
   .main-intro .intro-content {
@@ -733,7 +733,7 @@ h1, h2, h3, h4, h5, h6, p {
       border: 1px solid white;
       background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-content.png") no-repeat top center;
       background-position: center;
-      z-index: 400; }
+      z-index: 266; }
       .main-intro .intro-content .title-box a {
         display: block;
         text-decoration: none;
@@ -750,16 +750,18 @@ h1, h2, h3, h4, h5, h6, p {
         text-transform: uppercase;
         transition: background 200ms cubic-bezier(0.23, 1, 0.32, 1); }
         .main-intro .intro-content .title-box a .arrow {
-          position: absolute;
-          background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png") no-repeat top center;
-          background-position: center;
-          background-size: contain;
-          height: 20px;
-          width: 20px;
-          margin-left: 10px;
-          transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+          margin-left: 10px; }
   .main-intro .dark-overlay {
-    z-index: 360; }
+    z-index: 265; }
+
+.arrow {
+  position: absolute;
+  background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png") no-repeat top center;
+  background-position: center;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .main-intro .intro-content .title-box a:hover {
   background: #493257 !important; }
@@ -768,12 +770,12 @@ h1, h2, h3, h4, h5, h6, p {
   transform: translateX(5px); }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .pattern-overlay {
   top: 0px;
   left: 0px;
-  z-index: 3;
+  z-index: 250;
   opacity: 0.2; }
 
 .main-view {
@@ -791,7 +793,7 @@ header {
   height: 60px;
   top: 60;
   left: 0;
-  z-index: 300;
+  z-index: 260;
   font-family: "Dense", Lato, Arial, sans-serif;
   text-transform: uppercase; }
   header nav #primary-menu {
@@ -820,7 +822,7 @@ header {
   left: 10px;
   top: 10px;
   color: #fff;
-  z-index: 500;
+  z-index: 270;
   width: 50px;
   height: 50px;
   background: #333;
@@ -846,7 +848,7 @@ header {
   position: absolute;
   right: 10px;
   top: 10px;
-  z-index: 500; }
+  z-index: 270; }
   #social-buttons ul {
     display: inline-block;
     list-style: none; }
@@ -877,12 +879,13 @@ header {
 
 .site-footer {
   position: absolute;
-  bottom: 0;
   left: 0;
-  z-index: 501;
+  bottom: 0;
+  z-index: 300;
   width: 100%;
   background: #fff;
-  padding-top: .1px; }
+  transform: translateY(602px);
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1); }
   .site-footer .footer-contact {
     background: #392247;
     color: #fff;
@@ -906,7 +909,8 @@ header {
         border: 3px solid #fff !important;
         border-radius: 0 !important;
         background: transparent !important;
-        padding: 5px; }
+        padding: 5px;
+        color: #fff; }
       .site-footer .footer-contact #contact-form .your-name, .site-footer .footer-contact #contact-form .your-email {
         width: 100%; }
         .site-footer .footer-contact #contact-form .your-name input, .site-footer .footer-contact #contact-form .your-email input {
@@ -914,7 +918,8 @@ header {
           border-radius: 0 !important;
           background: transparent !important;
           width: 100%;
-          padding: 5px; }
+          padding: 5px;
+          color: #fff; }
       .site-footer .footer-contact #contact-form .wpcf7-submit {
         color: #392247 !important;
         font-weight: bold !important;
@@ -961,7 +966,8 @@ header {
     .site-footer .subscription-bar .subscription-form {
       display: inline-block;
       width: 62%;
-      padding: 10px; }
+      padding: 10px;
+      color: #fff; }
       .site-footer .subscription-bar .subscription-form #mc_embed_signup form {
         padding-bottom: 0; }
       .site-footer .subscription-bar .subscription-form .subscribe-name {
@@ -1022,6 +1028,57 @@ header {
     .site-footer .site-info a {
       text-decoration: none;
       color: #fff; }
+  .site-footer .close-footer {
+    position: absolute;
+    top: -30px;
+    display: inline-block;
+    left: 48%;
+    cursor: pointer; }
+    .site-footer .close-footer span {
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .site-footer .close-footer .arrow {
+      transform: rotate(90deg);
+      top: -15px;
+      left: 38%;
+      transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.close-footer:hover > .arrow {
+  top: -12px !important; }
+
+.open-footer {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  left: 48%;
+  cursor: pointer;
+  z-index: 260;
+  padding: 10px; }
+  .open-footer .arrow {
+    transform: rotate(-90deg);
+    top: -5px;
+    left: 38%;
+    transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .open-footer span {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px; }
+
+.open-footer:hover > .arrow {
+  top: -10px !important; }
+
+.footer-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.60;
+  z-index: 299; }
+
+.site-footer.slide-up {
+  transform: translateY(0px); }
 
 #mc_embed_signup .button:hover {
   background: #493257 !important; }
