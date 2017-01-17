@@ -13,19 +13,8 @@
 
 	</div><!-- #content -->
         <div class='footer-overlay hide'></div>
-	<footer id="colophon" class="site-footer hide" role="contentinfo">
+	<footer id="colophon" class="site-footer invisible" role="contentinfo">
             <div class='close-footer hide'><span class='arrow'></span><span>Close</span></div>
-            <div class="footer-contact">
-                <div class="row">
-                    <div id="contact-heading">
-                        <h2>Let's Connect</h2>
-                        <p>Send me a message. I would love to hear from you.</p>
-                    </div>
-                    <div id="contact-form">
-                        <?php get_sidebar(); ?>
-                    </div>
-                </div>
-            </div>
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">

@@ -46,7 +46,7 @@ document.getElementById('mute').addEventListener('click', function (e)
 // Script for main-intro
 (function($) {
     $('.enter').on('click', function() {
-       $('.main-intro').addClass('hide');
+       $('.main-intro').addClass('hide'); 
     });
     
     $('.prev-triangle').on('click', function() {
@@ -61,7 +61,7 @@ document.getElementById('mute').addEventListener('click', function (e)
     var $footerHeight = $('.site-footer').css("height");
     var $siteFooter = $('.site-footer');
     $('.open-footer').on('click', function() {
-       $siteFooter.removeClass('hide');
+       $siteFooter.removeClass('invisible');
        $siteFooter.addClass('slide-up');
        $('.open-footer').addClass('hide');
        $('.footer-overlay').removeClass('hide');
@@ -73,7 +73,7 @@ document.getElementById('mute').addEventListener('click', function (e)
         $('.close-footer').addClass('hide');
         $('.footer-overlay').addClass('hide');
        $('.open-footer').removeClass('hide');
-       $siteFooter.addClass('hide');
+       $siteFooter.addClass('invisible');
     });
 	
 })( jQuery );

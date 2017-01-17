@@ -706,7 +706,7 @@ object {
 h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 1px; }
 
-#main, .main-intro, .main-view, .pattern-overlay {
+#main, .main-intro, .main-view, .pattern-overlay, .site {
   position: absolute;
   overflow: hidden;
   width: 100%;
@@ -772,22 +772,24 @@ h1, h2, h3, h4, h5, h6, p {
 .hide {
   display: none !important; }
 
-.pattern-overlay {
-  top: 0px;
-  left: 0px;
-  z-index: 250;
-  opacity: 0.2; }
+.invisible {
+  opacity: 0; }
 
 .main-view {
-  z-index: 200;
+  z-index: 1;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   height: calc(100vh); }
+  .main-view .pattern-overlay {
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    opacity: 0.2; }
   .main-view .dark-overlay {
-    z-index: 210; }
+    z-index: 3; }
 
-header {
+.site-header {
   position: absolute;
   width: 100%;
   height: 60px;
@@ -796,19 +798,19 @@ header {
   z-index: 260;
   font-family: "Dense", Lato, Arial, sans-serif;
   text-transform: uppercase; }
-  header nav #primary-menu {
+  .site-header nav div {
     text-align: center; }
-    header nav #primary-menu ul {
+    .site-header nav div #primary-menu {
       display: inline-block; }
-      header nav #primary-menu ul li {
-        padding: 0 10px; }
-        header nav #primary-menu ul li a {
+      .site-header nav div #primary-menu li {
+        padding: 10px; }
+        .site-header nav div #primary-menu li a {
           color: #fff;
           font-size: 32px;
           transition: all 0.2s; }
 
-#primary-menu ul li a:hover {
-  color: #d2d2d2; }
+#primary-menu li a:hover {
+  color: #d2d2d2 !important; }
 
 .dark-overlay {
   position: absolute;
@@ -886,83 +888,23 @@ header {
   background: #fff;
   transform: translateY(602px);
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1); }
-  .site-footer .footer-contact {
-    background: #392247;
-    color: #fff;
-    overflow: auto;
-    padding: 40px 0 30px; }
-    .site-footer .footer-contact #contact-heading {
-      width: 50%;
-      display: inline-block;
-      padding: 10px;
-      float: left; }
-      .site-footer .footer-contact #contact-heading h2 {
-        text-transform: uppercase; }
-      .site-footer .footer-contact #contact-heading p {
-        font-size: 18px; }
-    .site-footer .footer-contact #contact-form {
-      width: 50%;
-      display: inline-block;
-      padding: 10px; }
-      .site-footer .footer-contact #contact-form textarea {
-        height: 150px;
-        border: 3px solid #fff !important;
-        border-radius: 0 !important;
-        background: transparent !important;
-        padding: 5px;
-        color: #fff; }
-      .site-footer .footer-contact #contact-form .your-name, .site-footer .footer-contact #contact-form .your-email {
-        width: 100%; }
-        .site-footer .footer-contact #contact-form .your-name input, .site-footer .footer-contact #contact-form .your-email input {
-          border: 3px solid #fff !important;
-          border-radius: 0 !important;
-          background: transparent !important;
-          width: 100%;
-          padding: 5px;
-          color: #fff; }
-      .site-footer .footer-contact #contact-form .wpcf7-submit {
-        color: #392247 !important;
-        font-weight: bold !important;
-        background: #fff !important;
-        box-shadow: none !important;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 0px !important;
-        font-size: 18px;
-        padding: 10px 22px; }
-      .site-footer .footer-contact #contact-form ::-webkit-input-placeholder {
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px; }
-      .site-footer .footer-contact #contact-form :-moz-placeholder {
-        /* Firefox 18- */
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px; }
-      .site-footer .footer-contact #contact-form ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px; }
-      .site-footer .footer-contact #contact-form :-ms-input-placeholder {
-        color: #fff;
-        font-size: 16px;
-        letter-spacing: 1px; }
   .site-footer .subscription-bar {
-    background: #fff; }
+    background: #fff;
+    padding: 20px 0; }
     .site-footer .subscription-bar .subscription-heading {
       display: inline-block;
       float: left;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: bold;
       text-transform: uppercase;
       width: 38%;
       padding: 10px;
       text-align: center;
       color: #392247;
-      letter-spacing: 1px; }
-      .site-footer .subscription-bar .subscription-heading p {
-        margin-top: 1.3em; }
+      letter-spacing: 1px;
+      /*            p {
+                margin-top: 1.3em;
+            }*/ }
     .site-footer .subscription-bar .subscription-form {
       display: inline-block;
       width: 62%;
@@ -1032,7 +974,7 @@ header {
     position: absolute;
     top: -30px;
     display: inline-block;
-    left: 48%;
+    left: 46%;
     cursor: pointer; }
     .site-footer .close-footer span {
       color: #fff;
@@ -1052,7 +994,7 @@ header {
   position: absolute;
   bottom: 0;
   display: inline-block;
-  left: 48%;
+  left: 45.5%;
   cursor: pointer;
   z-index: 260;
   padding: 10px; }
@@ -1083,7 +1025,12 @@ header {
 #mc_embed_signup .button:hover {
   background: #493257 !important; }
 
-.site-footer .footer-contact #contact-form .wpcf7-submit:hover {
+.contact #contact-form .your-name input:focus,
+.contact #contact-form .your-email input:focus,
+.contact #contact-form .your-message textarea:focus {
+  background: rgba(255, 255, 255, 0.2) !important; }
+
+.contact #contact-form .wpcf7-submit:hover {
   background: #d2d2d2 !important; }
 
 ::-webkit-input-placeholder {
@@ -1120,3 +1067,68 @@ header {
 
 .prev-triangle {
   left: 50px; }
+
+.page-template-template-contact {
+  background: #392247; }
+
+.contact {
+  color: #fff;
+  overflow: auto;
+  padding: 50px 0; }
+  .contact #contact-heading {
+    width: 35%;
+    display: inline-block;
+    padding: 10px 20px;
+    float: left; }
+    .contact #contact-heading h2 {
+      text-transform: uppercase; }
+    .contact #contact-heading p {
+      font-size: 18px; }
+  .contact #contact-form {
+    width: 65%;
+    display: inline-block;
+    padding: 10px 20px; }
+    .contact #contact-form textarea {
+      height: 150px;
+      border: 3px solid #fff !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      padding: 5px;
+      color: #fff; }
+    .contact #contact-form .your-name, .contact #contact-form .your-email {
+      width: 100%; }
+      .contact #contact-form .your-name input, .contact #contact-form .your-email input {
+        border: 3px solid #fff !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        width: 100%;
+        padding: 5px;
+        color: #fff; }
+    .contact #contact-form .wpcf7-submit {
+      color: #392247 !important;
+      font-weight: bold !important;
+      background: #fff !important;
+      box-shadow: none !important;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 0px !important;
+      font-size: 18px;
+      padding: 10px 22px; }
+    .contact #contact-form ::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px; }
+    .contact #contact-form :-moz-placeholder {
+      /* Firefox 18- */
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px; }
+    .contact #contact-form ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px; }
+    .contact #contact-form :-ms-input-placeholder {
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px; }
