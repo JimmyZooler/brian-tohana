@@ -716,7 +716,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
   z-index: 264;
   background: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #000; }
   .main-intro .intro-content {
     width: 100%;
     height: 100%;
@@ -736,8 +737,9 @@ h1, h2, h3, h4, h5, h6, p {
       z-index: 266; }
       .main-intro .intro-content .title-box a {
         display: block;
+        font-size: 18px;
         text-decoration: none;
-        width: 125px;
+        width: 143px;
         position: absolute;
         background: #392247;
         letter-spacing: 1px;
@@ -746,11 +748,11 @@ h1, h2, h3, h4, h5, h6, p {
         color: #fff;
         cursor: pointer;
         left: 40%;
-        bottom: 40px;
+        bottom: 30px;
         text-transform: uppercase;
         transition: background 200ms cubic-bezier(0.23, 1, 0.32, 1); }
         .main-intro .intro-content .title-box a .arrow {
-          margin-left: 10px; }
+          margin-left: 8px; }
   .main-intro .dark-overlay {
     z-index: 265; }
 
@@ -761,6 +763,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-size: contain;
   height: 20px;
   width: 20px;
+  margin-top: 2px;
   transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .main-intro .intro-content .title-box a:hover {
@@ -829,7 +832,7 @@ h1, h2, h3, h4, h5, h6, p {
   height: 50px;
   background: #333;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 100px;
   transition: all 0.2s; }
 
 #mute:hover {
@@ -869,10 +872,10 @@ h1, h2, h3, h4, h5, h6, p {
           font-size: 1.375rem;
           border-radius: 200px;
           color: #fff;
-          background: #333; }
+          background: #392247; }
 
 #social-buttons ul li a i:hover {
-  background: #555; }
+  background: #493257; }
 
 .row {
   margin: 0 auto;
@@ -972,10 +975,12 @@ h1, h2, h3, h4, h5, h6, p {
       color: #fff; }
   .site-footer .close-footer {
     position: absolute;
-    top: -30px;
+    top: -45px;
     display: inline-block;
-    left: 46%;
-    cursor: pointer; }
+    left: 50%;
+    cursor: pointer;
+    padding: 10px;
+    transform: translateX(-50%); }
     .site-footer .close-footer span {
       color: #fff;
       font-size: 18px;
@@ -983,21 +988,22 @@ h1, h2, h3, h4, h5, h6, p {
       text-transform: uppercase; }
     .site-footer .close-footer .arrow {
       transform: rotate(90deg);
-      top: -15px;
-      left: 38%;
+      top: -10px;
+      left: 36%;
       transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .close-footer:hover > .arrow {
-  top: -12px !important; }
+  top: -5px !important; }
 
 .open-footer {
   position: absolute;
   bottom: 0;
   display: inline-block;
-  left: 45.5%;
+  left: 50%;
   cursor: pointer;
   z-index: 260;
-  padding: 10px; }
+  padding: 10px;
+  transform: translateX(-50%); }
   .open-footer .arrow {
     transform: rotate(-90deg);
     top: -5px;
@@ -1132,3 +1138,6 @@ h1, h2, h3, h4, h5, h6, p {
       color: #fff;
       font-size: 16px;
       letter-spacing: 1px; }
+
+.reveal .controls {
+  width: 100%; }
