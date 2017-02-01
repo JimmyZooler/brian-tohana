@@ -64,16 +64,46 @@ document.getElementById('mute').addEventListener('click', function (e)
        $siteFooter.removeClass('invisible');
        $siteFooter.addClass('slide-up');
        $('.open-footer').addClass('hide');
-       $('.footer-overlay').removeClass('hide');
-       $('.close-footer').removeClass('hide');
+       $('.footer-overlay').removeClass('zero-width');
+//       $('.close-footer').removeClass('hide');
     });
     
-    $('.close-footer').on('click', function() {
+    $('.footer-overlay').on('click', function() {
         $siteFooter.removeClass('slide-up');
-        $('.close-footer').addClass('hide');
-        $('.footer-overlay').addClass('hide');
+//        $('.close-footer').addClass('hide');
+        $('.footer-overlay').addClass('zero-width');
        $('.open-footer').removeClass('hide');
        $siteFooter.addClass('invisible');
     });
 	
+})( jQuery );
+
+/// Landscape only message
+
+(function($) {
+    
+    var showAlert = function () {
+        $('#alert-to-landscape').removeClass('hide');
+    };
+    var removeAlert = function () {
+        $('#alert-to-landscape').addClass('hide');
+    };
+    if(window.innerHeight > window.innerWidth){
+            showAlert(); 
+    };
+    $(window).on("orientationchange",function(){
+        if(window.innerHeight > window.innerWidth){
+            showAlert();
+        } else {
+            removeAlert();
+        }
+    });
+    $(window).resize( function(){
+        if(window.innerHeight > window.innerWidth){
+            showAlert();
+        } else {
+            removeAlert();
+        }
+    });
+
 })( jQuery );

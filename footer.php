@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-        <div class='footer-overlay hide'></div>
+        <div class='footer-overlay zero-width'></div>
 	<footer id="colophon" class="site-footer invisible" role="contentinfo">
             <div class='close-footer hide'><span class='arrow'></span><span>Close</span></div>
             <div class="subscription-bar">

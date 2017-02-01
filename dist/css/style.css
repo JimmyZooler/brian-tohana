@@ -772,12 +772,6 @@ h1, h2, h3, h4, h5, h6, p {
 .main-intro .intro-content .title-box a:hover .arrow {
   transform: translateX(5px); }
 
-.hide {
-  display: none !important; }
-
-.invisible {
-  opacity: 0; }
-
 .main-view {
   z-index: 1;
   background-size: cover;
@@ -853,10 +847,13 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   right: 10px;
   top: 10px;
-  z-index: 270; }
+  z-index: 270;
+  display: inline-block; }
   #social-buttons ul {
     display: inline-block;
-    list-style: none; }
+    list-style: none;
+    margin: 0;
+    padding: 0; }
     #social-buttons ul li {
       display: inline;
       float: left;
@@ -1025,6 +1022,9 @@ h1, h2, h3, h4, h5, h6, p {
   opacity: 0.60;
   z-index: 299; }
 
+.footer-overlay:hover {
+  cursor: url("http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/closecursor.png") 15 15, default; }
+
 .site-footer.slide-up {
   transform: translateY(0px); }
 
@@ -1138,3 +1138,68 @@ h1, h2, h3, h4, h5, h6, p {
       color: #fff;
       font-size: 16px;
       letter-spacing: 1px; }
+
+#alert-to-landscape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  z-index: 500;
+  padding: 1.5rem; }
+  #alert-to-landscape .helper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    #alert-to-landscape .helper h2 {
+      color: #fff; }
+
+.hide {
+  display: none !important; }
+
+.invisible {
+  opacity: 0; }
+
+.zero-width {
+  width: 0% !important; }
+
+@media screen and (max-width: 800px) {
+  .site-header nav div #primary-menu li a {
+    font-size: 22px; }
+  #social-buttons ul li a i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem; }
+  #mute {
+    width: 40px;
+    height: 40px; }
+  .open-footer span {
+    font-size: 14px; }
+  .site-footer .subscription-bar .subscription-heading {
+    width: 100%; }
+    .site-footer .subscription-bar .subscription-heading p {
+      margin: 0; }
+  .site-footer .subscription-bar .subscription-form {
+    width: 100%; }
+    .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll {
+      text-align: center; }
+  .contact #contact-heading p {
+    font-size: 14px; }
+  .contact #contact-form textarea {
+    height: 120px; }
+  .contact #contact-form p {
+    margin-bottom: 0; }
+  .contact #contact-form .wpcf7-submit {
+    font-size: 14px;
+    padding: 10px 22px; }
+  .contact #contact-form ::-webkit-input-placeholder {
+    font-size: 14px; }
+  .contact #contact-form :-moz-placeholder {
+    font-size: 14px; }
+  .contact #contact-form ::-moz-placeholder {
+    font-size: 14px; }
+  .contact #contact-form :-ms-input-placeholder {
+    font-size: 14px; } }

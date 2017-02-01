@@ -25,7 +25,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'brian_tohana' ); ?></button>
+			<button class="menu-toggle hide" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'brian_tohana' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
@@ -39,5 +39,10 @@
                 <li class="social-icon"><a href="https://www.instagram.com/youngprosmvmt/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <li class="social-icon"><a href="https://www.youtube.com/channel/UChwRZLioUjxODgHFOyP-7uA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
+        </div>
+        <div id="alert-to-landscape" class="hide">
+            <div class="helper">
+                <h2>Please rotate. This is best viewed in landscape mode.</h2>
+            </div>
         </div>
 	<div id="content" class="site-content">
