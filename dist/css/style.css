@@ -1203,3 +1203,13 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px; }
   .contact #contact-form :-ms-input-placeholder {
     font-size: 14px; } }
+
+@media (min-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%; } }
+
+@media (max-aspect-ratio: 16 / 9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%; } }

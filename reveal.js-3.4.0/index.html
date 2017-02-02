@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+                    <div class="slides">
+                        <section data-transition="fade-in" data-background-size="cover" data-background-video-loop data-background-video-muted >
+                            <h1 class="fragment" data-autoslide="5000">True Inner Work</h1>
+                            <!--data-background-video="http://localhost/briantohana/wp-content/themes/brian_tohana/dist/videos/Side_to_Side_Hi_Res.mp4"-->
+                            <img class="fragment" src="http://localhost/briantohana/wp-content/themes/brian_tohana/images/guiding_you.png"/>
+                        </section>
+                        <section data-transition="fade-in" data-background-size="cover" data-background="http://localhost/briantohana/wp-content/themes/brian_tohana/images/Zoominoutpic2.jpg">
+                            <h2 class="fragment">Love</h2>
+                            <ul>
+                                <li class="fragment">willing to put yourself first</li>
+                                <li class="fragment">willing to be worn open</li>
+                                <li class="fragment">willing to be in awe</li>
+                            </ul>
+                        </section>
+                    </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
