@@ -918,7 +918,9 @@ h1, h2, h3, h4, h5, h6, p {
         .site-footer .subscription-bar .subscription-form .subscribe-name input {
           border: 3px solid #392247 !important;
           border-radius: 0 !important;
-          background: transparent !important; }
+          background: transparent !important;
+          padding-left: 3px;
+          padding-right: 3px; }
       .site-footer .subscription-bar .subscription-form .subscribe-email {
         width: 36% !important;
         padding-bottom: 0 !important;
@@ -1090,6 +1092,9 @@ h1, h2, h3, h4, h5, h6, p {
   .contact #contact-heading {
     padding: 10px 20px;
     text-align: center; }
+    .contact #contact-heading hr {
+      width: 50px;
+      margin: 0 auto; }
     .contact #contact-heading h2 {
       text-transform: uppercase;
       font-size: 36px; }
@@ -1180,10 +1185,19 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1000px;
     margin: 0 auto;
     color: #fff; }
+    #main-pages .main-view-pages h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5rem; }
+    #main-pages .main-view-pages hr {
+      width: 50px;
+      margin: 0 auto; }
     #main-pages .main-view-pages .about-section {
       margin: 4rem;
       padding: 2rem;
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.7); }
+      #main-pages .main-view-pages .about-section p {
+        font-size: 20px; }
 
 .page-template-template-about {
   background-image: url("http://localhost/briantohana/wp-content/themes/brian_tohana/images/brian_center.jpg");
@@ -1193,7 +1207,9 @@ h1, h2, h3, h4, h5, h6, p {
   overflow-y: scroll;
   background-attachment: fixed; }
 
-.page-template-template-about #page .site-footer, .page-template-template-contact #page .site-footer {
+.page-template-template-about #page .site-footer,
+.page-template-template-contact #page .site-footer,
+.page-template-template-services #page .site-footer {
   opacity: 1 !important;
   transform: none;
   position: relative; }

@@ -227,7 +227,6 @@ h1,h2, h3, h4, h5, h6 , p {
         }
     }
 }
-
 #primary-menu li a:hover {
     color: #d2d2d2!important;
 }
@@ -346,9 +345,11 @@ h1,h2, h3, h4, h5, h6 , p {
                 min-height: 0!important;
                 vertical-align: top;
                 input {
-                border: 3px solid $purple!important;
-                border-radius: 0!important;
-                background: transparent !important;
+                    border: 3px solid $purple!important;
+                    border-radius: 0!important;
+                    background: transparent !important;
+                    padding-left: 3px;
+                    padding-right: 3px;
                 }
             }
             .subscribe-email {
@@ -546,6 +547,10 @@ h1,h2, h3, h4, h5, h6 , p {
         #contact-heading {
             padding: 10px 20px;
             text-align: center;
+            hr {
+                width: 50px;
+                margin:0 auto;
+            }
             h2 {
                 text-transform: uppercase;
                 font-size: 36px;
@@ -653,10 +658,22 @@ h1,h2, h3, h4, h5, h6 , p {
         max-width: 1000px;
         margin: 0 auto;
         color: #fff;
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+        }
+        hr {
+            width: 50px;
+            margin:0 auto;
+        }
         .about-section {
             margin: 4rem;
             padding: 2rem;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.7);
+            p {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -670,7 +687,9 @@ h1,h2, h3, h4, h5, h6 , p {
     background-attachment: fixed;
 }
 
-.page-template-template-about #page .site-footer, .page-template-template-contact #page .site-footer  {
+.page-template-template-about #page .site-footer, 
+.page-template-template-contact #page .site-footer, 
+.page-template-template-services #page .site-footer  {
     opacity: 1!important;
     transform: none;
     position: relative;
