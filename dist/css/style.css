@@ -816,8 +816,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #000;
   opacity: 0.20;
   top: 0;
-  left: 0;
-  z-index: -1; }
+  left: 0; }
 
 #mute {
   position: absolute;
@@ -1178,6 +1177,34 @@ h1, h2, h3, h4, h5, h6, p {
 .italic {
   font-style: italic; }
 
+.page-header {
+  display: table;
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+  background-attachment: fixed; }
+  .page-header .dark-overlay {
+    opacity: 0.4; }
+  .page-header .helper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 1; }
+    .page-header .helper h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3.5rem;
+      color: #eee; }
+    .page-header .helper h3 {
+      font-style: italic;
+      font-weight: normal;
+      max-width: 800px;
+      margin: 10px auto 0;
+      color: #eee; }
+
 #main-pages {
   padding: 5rem 2rem;
   background-color: rgba(0, 0, 0, 0.2); }
@@ -1185,19 +1212,32 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 1000px;
     margin: 0 auto;
     color: #fff; }
-    #main-pages .main-view-pages h1 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 2.5rem; }
-    #main-pages .main-view-pages hr {
-      width: 50px;
-      margin: 0 auto; }
     #main-pages .main-view-pages .about-section {
       margin: 4rem;
       padding: 2rem;
       background: rgba(0, 0, 0, 0.7); }
       #main-pages .main-view-pages .about-section p {
         font-size: 20px; }
+
+.coaching {
+  color: #373737; }
+
+.facilitation {
+  background-color: #392247;
+  color: #fff; }
+
+.page-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+  text-align: center; }
+  .page-section h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem; }
+  .page-section .services {
+    margin: 2rem 0; }
+    .page-section .services p {
+      margin: 10px 0; }
 
 .page-template-template-about {
   background-image: url("http://localhost/briantohana/wp-content/themes/brian_tohana/images/brian_center.jpg");
