@@ -15,7 +15,7 @@ Template Name: Services Page
 <div class="coaching">
     <div class="page-section">
         <h2>Coaching</h2>
-        <h3>My philosophy:</h3>
+        <h3>My Philosophy:</h3>
         <p>You don’t need fixing because there’s nothing wrong with you.</p>
             <p>You don’t need to be told what to do because the answers are inside of you.</p>
         <div class="services">

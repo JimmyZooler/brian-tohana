@@ -1179,7 +1179,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .page-header {
   display: table;
-  height: calc(100vh - 100px);
+  height: calc(90vh);
   width: 100%;
   background-size: cover;
   background-position: center bottom;
@@ -1206,20 +1206,18 @@ h1, h2, h3, h4, h5, h6, p {
       color: #eee; }
 
 #main-pages {
-  padding: 5rem 2rem;
-  background-color: rgba(0, 0, 0, 0.2); }
+  padding: 5rem 2rem; }
   #main-pages .main-view-pages {
     max-width: 1000px;
     margin: 0 auto;
     color: #fff; }
     #main-pages .main-view-pages .about-section {
       margin: 4rem;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.7); }
-      #main-pages .main-view-pages .about-section p {
+      padding: 2rem; }
+      #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
         font-size: 20px; }
 
-.coaching {
+.coaching, .about-section {
   color: #373737; }
 
 .facilitation {
@@ -1235,17 +1233,9 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: uppercase;
     font-size: 2.2rem; }
   .page-section .services {
-    margin: 2rem 0; }
+    margin: 3rem 0; }
     .page-section .services p {
       margin: 10px 0; }
-
-.page-template-template-about {
-  background-image: url("http://localhost/briantohana/wp-content/themes/brian_tohana/images/brian_center.jpg");
-  height: calc(100vh);
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-y: scroll;
-  background-attachment: fixed; }
 
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
@@ -1254,9 +1244,20 @@ h1, h2, h3, h4, h5, h6, p {
   transform: none;
   position: relative; }
 
+.page-template-template-about .site-footer {
+  box-shadow: 2px 5px 11px 4px rgba(0, 0, 0, 0.75); }
+
 @media screen and (max-width: 800px) {
   .site-header nav div #primary-menu li a {
     font-size: 22px; }
+  .page-header .helper h1 {
+    font-size: 2.5rem; }
+  .page-header .helper h3 {
+    font-size: 90%; }
+  #main-pages .main-view-pages .about-section {
+    margin: 1rem; }
+    #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
+      font-size: 16px; }
   #social-buttons ul li {
     margin-right: 0.2rem; }
     #social-buttons ul li a i {
