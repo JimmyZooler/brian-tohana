@@ -273,10 +273,10 @@ background: transparent; }
   border-top-color: #268bd2; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #78b9e6; }
+  opacity: 1; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #78b9e6; }
+  opacity: 1; }
 
 .reveal .controls .navigate-up.enabled:hover {
   border-bottom-color: #78b9e6; }

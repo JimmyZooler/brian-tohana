@@ -6,7 +6,7 @@ Template Name: About Page
 
 <?php get_header(); ?>
 
-<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_center.jpg'); background-position: bottom;">
+<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_center.jpg'); background-position: top;">
     <div class="helper">
         <h1><?php the_field('main_heading'); ?></h1>
         <h3>The world is waiting for you to become all you can be.<br> - Brian Tohana</h3>

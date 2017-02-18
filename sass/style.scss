@@ -111,8 +111,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 h1,h2, h3, h4, h5, h6 , p {
     letter-spacing: 1px;
-    } 
+}
 
+.main-navigation {
+    background: rgba(35, 21, 43, 0.8);
+}
+    
 .home #main, .home .main-intro,.home .main-view,.home .pattern-overlay,.home .site {
     position: absolute;
     overflow: hidden;
@@ -122,9 +126,10 @@ h1,h2, h3, h4, h5, h6 , p {
 .main-intro {
     display: block;
     z-index: 264;
-    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg') no-repeat center;
+    background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg') no-repeat;
     background-size: cover;
     background-color: #000; 
+    background-position-y: 26%;
     .intro-content {
         width: 100%;
         height: 100%;
@@ -137,10 +142,11 @@ h1,h2, h3, h4, h5, h6 , p {
             right: 0;
             bottom: 0;
             left: 0;
-            margin: auto;
-            border: 1px solid white;
-            background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-content.png') no-repeat top center;
+            margin: auto 10% 2rem auto;
+            /*border: 1px solid white;*/
+            background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-content_2.png') no-repeat top center;
             background-position: center;
+            background-size: contain;
             z-index: 266;
             a {
                 display: block;
@@ -148,15 +154,17 @@ h1,h2, h3, h4, h5, h6 , p {
                 text-decoration: none;
                 width: 143px;
                 position: absolute;
-                background: #392247;
+                /*background: #122c47;*/
+                background: $purple;
                 letter-spacing: 1px;
                 padding: 15px 20px;
                 border-radius: 5px; 
                 color: #fff;
                 cursor: pointer;
-                left:40%;
+                left:50%;
                 bottom: 30px;
                 text-transform: uppercase;
+                transform: translateX(-50%);
                 transition: background 200ms cubic-bezier(0.23, 1, 0.32, 1);
                 .arrow {
                     margin-left: 8px;
@@ -170,7 +178,7 @@ h1,h2, h3, h4, h5, h6 , p {
 }
 .arrow {
     position: absolute;
-    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png') no-repeat top center;
+    background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png') no-repeat top center;
     background-position: center;
     background-size: contain;
     height: 20px;
@@ -179,7 +187,8 @@ h1,h2, h3, h4, h5, h6 , p {
     transition: all 1ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .main-intro .intro-content .title-box a:hover {
-    background: $light-purple !important;
+    /*background: #284d74 !important;*/
+    background: $light-purple;
 }
 .main-intro .intro-content .title-box a:hover .arrow {
     transform: translateX(5px);
@@ -204,11 +213,11 @@ h1,h2, h3, h4, h5, h6 , p {
 .site-header {
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 56px;
     top: 60;
     left: 0;
     z-index: 260;
-    font-family: "Dense", Lato, Arial, sans-serif;
+    font-family: "Ubuntu Condensed", Lato, Arial, sans-serif;
     text-transform: uppercase;
     nav {
         div {
@@ -216,10 +225,10 @@ h1,h2, h3, h4, h5, h6 , p {
            #primary-menu {
                 display: inline-block;
                 li {
-                    padding: 10px;
+                    padding: 13px;
                     a {
                         color: #fff;
-                        font-size: 32px;
+                        font-size: 22px;
                         transition: all 0.2s;
                     }
                 }
@@ -243,19 +252,18 @@ h1,h2, h3, h4, h5, h6 , p {
 // Audio button
 #mute {
     position:absolute;
-    left: 10px;
-    top: 10px;
+    left: 8px;
+    top: 8px;
     color:#fff;
     z-index: 270;
-    width: 50px;
-    height: 50px;
-    background: #333;
+    width: 45px;
+    height: 45px;
+    /*background: #F2F2F2;*/
     cursor: pointer;
-    border-radius: 100px;
-    transition: all 0.2s;
-}
+    border-radius: 6px;
+    transition: all 0.2s;}
 #mute:hover {
-    background: #555;
+    /*background: #d2d2d2;*/
 }
 #mute #audio-icon {
     width: 100%;
@@ -263,10 +271,10 @@ h1,h2, h3, h4, h5, h6 , p {
     background-position: center center;
 }
 #mute .mute-on {
-    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/images/volume_down_2.png');
+    background: url('/briantohana/wp-content/themes/brian_tohana/images/volume_down_2.png');
 }
 #mute .mute-off {
-    background: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_2.png');
+    background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_2.png');
 }
 #social-buttons {
     position: absolute;
@@ -293,15 +301,15 @@ h1,h2, h3, h4, h5, h6 , p {
                      transition: all 0.3s;
                      font-size: 22 / 16 + rem;
                      border-radius: 200px;
-                     color: #fff;
-                     background: $purple;
+                     color: $purple;
+                     background: #fff;
                 }
             }
         }
     }
 }
 #social-buttons ul li a i:hover {
-    background: $light-purple;
+    background: #d2d2d2;
 }
 .row {
     margin: 0 auto;
@@ -480,7 +488,7 @@ h1,h2, h3, h4, h5, h6 , p {
     z-index: 299;
 }
 .footer-overlay:hover {
-    cursor: url('http://localhost/briantohana/wp-content/themes/brian_tohana/dist/images/closecursor.png') 15 15, default;
+    cursor: url('/wp-content/themes/brian_tohana/dist/images/closecursor.png') 15 15, default;
 }
 .site-footer.slide-up {
     transform: translateY(0px);
@@ -742,8 +750,9 @@ h1,h2, h3, h4, h5, h6 , p {
             div {
                #primary-menu {
                     li {
+                        padding: 10px;
                         a {
-                            font-size: 22px; }
+                            font-size: 20px; }
                     }
                }
             }
@@ -774,6 +783,20 @@ h1,h2, h3, h4, h5, h6 , p {
         height: 40px; }
     .open-footer span {
         font-size: 14px;
+    }
+    .main-intro .intro-content .title-box {
+        height: 300px!important;
+        width: 500px!important;
+        margin: auto 0 10px auto;
+        a {
+            font-size: 14px!important;
+            width: 123px!important;
+            bottom: 18px!important;
+            span {
+                height: 15px!important;
+                width: 15px!important;
+            }
+        }
     }
     .site-footer {
         .subscription-bar {

@@ -197,7 +197,7 @@ body {
   z-index: 30;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-40%);
   -webkit-user-select: none; }
 
 .reveal .controls button {
@@ -208,38 +208,47 @@ body {
   height: 0;
   background-color: transparent;
   border: 12px solid transparent;
-  -webkit-transform: scale(2.9999);
-          transform: scale(2.9999);
+  -webkit-transform: scale(0.9999);
+          transform: scale(0.9999);
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent; }
 @media screen and (max-width: 800px) {
     .reveal .controls button {
-        -webkit-transform: scale(1.9999)!important;
-        transform: scale(1.9999)!important; } 
+        width: 70px!important;
+        height: 70px!important; } 
 }
 .reveal .controls .enabled {
-  opacity: 0.7;
+  opacity: 0.8;
   cursor: pointer; }
 
 .reveal .controls .enabled:active {
   margin-top: 1px; }
 
 .reveal .controls .navigate-left {
-  top: 42px;
-  left: 10px;
-  border-right-width: 22px;
-  border-right-color: #000; }
+  top: 10px;
+  left: 20px;
+  background: url('square_arrow_white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-180deg);
+  border-right-width: 0px;}
 
 .reveal .controls .navigate-left.fragmented {
   opacity: 0.3; }
 
 .reveal .controls .navigate-right {
-  right: 10px;
-  top: 42px;
-  border-left-width: 22px;
-  border-left-color: #000; }
+  top: -2px;
+  right: 20px;
+  background: url('square_arrow_white.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  border-left-width: 0px; }
 
 .reveal .controls .navigate-right.fragmented {
   opacity: 0.3; }
