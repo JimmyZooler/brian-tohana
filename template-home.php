@@ -14,7 +14,7 @@ Template Name: Home Page
             Sorry your browser does not support this playfulness!
         </iframe>
     </div>
-    <div class="main-intro">
+    <div class="main-intro hide">
         <div class="intro-content">
             <div class="title-box">
                 <a class="btn enter">I Believe<span class="arrow"></span></a>

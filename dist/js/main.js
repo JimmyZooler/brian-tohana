@@ -88,12 +88,13 @@ document.getElementById('mute').addEventListener('click', function (e)
 
 // Script for main-intro
 (function($) {
-    $('.enter').on('click', function() {
-       $('.main-intro').addClass('hide'); 
-    });
+    if (sessionStorage["IntroShown"] != 'yes') {
+        $('.main-intro').removeClass('hide'); 
+    }; 
     
-    $('.prev-triangle').on('click', function() {
-        $('.main-intro').removeClass('hide');
+    $('.enter').on('click', function() {
+        $('.main-intro').addClass('hide');
+        sessionStorage["IntroShown"] = 'yes';
     });
 	
 })( jQuery );
@@ -109,6 +110,13 @@ document.getElementById('mute').addEventListener('click', function (e)
        $('.open-footer').addClass('hide');
        $('.footer-overlay').removeClass('zero-width');
 //       $('.close-footer').removeClass('hide');
+    });
+    
+    $('.close-footer').on('click', function() {
+        $siteFooter.removeClass('slide-up');
+        $('.footer-overlay').addClass('zero-width');
+       $('.open-footer').removeClass('hide');
+       $siteFooter.addClass('invisible');
     });
     
     $('.footer-overlay').on('click', function() {

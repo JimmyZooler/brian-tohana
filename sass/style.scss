@@ -115,6 +115,7 @@ h1,h2, h3, h4, h5, h6 , p {
 
 .main-navigation {
     background: rgba(35, 21, 43, 0.8);
+    height: 62px;
 }
     
 .home #main, .home .main-intro,.home .main-view,.home .pattern-overlay,.home .site {
@@ -424,22 +425,25 @@ h1,h2, h3, h4, h5, h6 , p {
     }
     .close-footer {
         position: absolute;
-        top: -45px;
-        display: inline-block;
-        left: 50%;
+        top: 0;
+        display: none;
+        right: 0;
         cursor: pointer;
-        padding: 10px;
-        transform: translateX(-50%);
+        padding: 5px;
+        z-index: 2;
         span {
-            color: #fff;
-            font-size: 18px;
+            color: #222;
+            font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
         .arrow {
         transform: rotate(90deg);
-        top: -10px;
-        left: 36%;
+        bottom: 30%;
+        left: -12px;
+        height: 14px;
+        width: 14px;
+        background-image: url('/briantohana/wp-content/themes/brian_tohana/dist/images/52204.png');
         transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1);
         }
     }
@@ -454,7 +458,7 @@ h1,h2, h3, h4, h5, h6 , p {
     transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .close-footer:hover > .arrow {
-    top: -5px !important;
+    bottom: 25% !important;
 }
 .open-footer {
     position: absolute;
@@ -502,7 +506,7 @@ h1,h2, h3, h4, h5, h6 , p {
     background: rgba(255, 255, 255, 0.2)!important;
 }
 .contact #contact-form .wpcf7-submit:hover {
-    background: #d2d2d2!important;
+    background: $light-purple!important;
 }
 ::-webkit-input-placeholder {
    color: $purple;
@@ -544,11 +548,11 @@ h1,h2, h3, h4, h5, h6 , p {
     left: 50px;
 }
 .page-template-template-contact {
-    background: $purple;
+    background: #fff;
 }
 .contact {
     margin-top: 5rem;
-        color: #fff;
+        color: $purple;
         padding: 50px 0;
         text-align: center;
         #contact-heading {
@@ -572,54 +576,56 @@ h1,h2, h3, h4, h5, h6 , p {
             margin: 0 auto;
             textarea {
                 height: 150px;
-                border: 3px solid #fff!important;
+                border: 3px solid $purple!important;
                 border-radius: 0!important;
                 background: transparent !important;
                 padding: 5px;
-                color: #fff;
+                color: $purple;
             }
             .your-name, .your-email {
                 width: 100%;
                 input {
-                    border: 3px solid #fff!important;
+                    border: 3px solid $purple!important;
                     border-radius: 0!important;
                     background: transparent !important;
                     width: 100%;
                     padding: 5px;
-                    color: #fff;
+                    color: $purple;
                 }
             }
             .wpcf7-submit {
-                color: $purple!important;
+                color: #fff!important;
                 font-weight: bold!important;
-                background: #fff!important;
+                background: $purple!important;
                 box-shadow: none!important;
+                text-shadow: none!important;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 border-radius: 0px!important;
                 font-size: 18px;
                 padding: 10px 22px;
+                border-style: none;
             }
             ::-webkit-input-placeholder {
-                color: #fff;
+                color: $light-purple;
                 font-size: 16px;
                 letter-spacing: 1px;
             }
 
             :-moz-placeholder { /* Firefox 18- */
-               color: #fff;  
+               color: $light-purple;  
                font-size: 16px;
                letter-spacing: 1px;
             }
 
             ::-moz-placeholder {  /* Firefox 19+ */
-               color: #fff;  
+               color: $light-purple;  
                font-size: 16px;
                letter-spacing: 1px;
             }
 
             :-ms-input-placeholder {  
-               color: #fff;  
+               color: $light-purple;  
                font-size: 16px;
                letter-spacing: 1px;
             }
@@ -648,6 +654,15 @@ h1,h2, h3, h4, h5, h6 , p {
 .hide {
     display: none!important;
 }
+.hide-header {
+    display: none!important;
+}
+.page-template-template-about .hide-header, 
+.page-template-template-contact .hide-header, 
+.page-template-template-services .hide-header  {
+    display: block!important;
+}
+
 .invisible {
     opacity: 0;
 }
@@ -718,7 +733,7 @@ h1,h2, h3, h4, h5, h6 , p {
     max-width: 1000px;
     margin: 0 auto;
     padding: 5rem 3rem;
-    text-align: center;
+    /*text-align: center;*/
     h2 {
         text-transform: uppercase;
         font-size: 2.2rem;
@@ -747,6 +762,7 @@ h1,h2, h3, h4, h5, h6 , p {
 @media screen and (max-width: 800px) {
     .site-header {
         nav {
+            height: 51px !important;
             div {
                #primary-menu {
                     li {
@@ -779,8 +795,10 @@ h1,h2, h3, h4, h5, h6 , p {
         font-size: 1rem;}
     }
     #mute{
-        width: 40px;
-        height: 40px; }
+        width: 40px; 
+        height: 40px;
+        top: 4px;
+        left: 4px; }
     .open-footer span {
         font-size: 14px;
     }
@@ -799,6 +817,9 @@ h1,h2, h3, h4, h5, h6 , p {
         }
     }
     .site-footer {
+        .close-footer {
+            display: inline-block;
+        }
         .subscription-bar {
             .subscription-heading {
                 width:100%;
@@ -848,3 +869,8 @@ h1,h2, h3, h4, h5, h6 , p {
         }
     }
 }
+.page-template-template-about .site-footer .close-footer, 
+.page-template-template-services .site-footer .close-footer, 
+.page-template-template-contact .site-footer .close-footer {
+            display: none!important;
+        }
