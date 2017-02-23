@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About Page
+Template Name: Testimonials Page
 */
 ?>
 
@@ -9,7 +9,7 @@ Template Name: About Page
 <header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_center.jpg'); background-position: top;">
     <div class="helper">
         <h1><?php the_field('main_heading'); ?></h1>
-        <h3><span class="purple-bg">It is my deepest privilege and gift to see who you truly are and guide you to become that.</span><br><span class="bold-name"><span class="purple-bg">Brian Tohana</span></span></span></h3>
+        <h3><span class="purple-bg">The world is waiting for you to become all you can be.</span><br><span class="bold-name"><span class="purple-bg">Brian Tohana</span></span></span></h3>
     </div>
     <!--<div class="dark-overlay"></div>-->
 </header>

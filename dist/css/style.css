@@ -49,7 +49,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   margin: 0; }
 
 article,
@@ -225,7 +225,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -703,8 +703,8 @@ object {
 /*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6, p {
-  letter-spacing: 1px; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto; }
 
 .main-navigation {
   background: rgba(35, 21, 43, 0.8);
@@ -742,6 +742,7 @@ h1, h2, h3, h4, h5, h6, p {
       background-size: contain;
       z-index: 266; }
       .main-intro .intro-content .title-box a {
+        font-family: "Oswald";
         display: block;
         font-size: 18px;
         text-decoration: none;
@@ -799,10 +800,10 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   width: 100%;
   height: 56px;
-  top: 60;
+  top: 0;
   left: 0;
   z-index: 260;
-  font-family: "Ubuntu Condensed", Lato, Arial, sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
   .site-header nav div {
     text-align: center; }
@@ -812,8 +813,10 @@ h1, h2, h3, h4, h5, h6, p {
         padding: 13px; }
         .site-header nav div #primary-menu li a {
           color: #fff;
-          font-size: 22px;
-          transition: all 0.2s; }
+          font-size: 18px;
+          transition: all 0.2s;
+          letter-spacing: 1px;
+          line-height: 33px; }
 
 #primary-menu li a:hover {
   color: #d2d2d2 !important; }
@@ -898,17 +901,13 @@ h1, h2, h3, h4, h5, h6, p {
     .site-footer .subscription-bar .subscription-heading {
       display: inline-block;
       float: left;
-      font-size: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-size: 24px;
       width: 38%;
       padding: 10px;
       text-align: center;
-      color: #392247;
-      letter-spacing: 1px;
-      /*            p {
-                margin-top: 1.3em;
-            }*/ }
+      color: #392247; }
+      .site-footer .subscription-bar .subscription-heading p {
+        margin-top: 14px; }
     .site-footer .subscription-bar .subscription-form {
       display: inline-block;
       width: 62%;
@@ -928,7 +927,8 @@ h1, h2, h3, h4, h5, h6, p {
           border-radius: 0 !important;
           background: transparent !important;
           padding-left: 3px;
-          padding-right: 3px; }
+          padding-right: 3px;
+          font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form .subscribe-email {
         width: 36% !important;
         padding-bottom: 0 !important;
@@ -938,36 +938,40 @@ h1, h2, h3, h4, h5, h6, p {
         .site-footer .subscription-bar .subscription-form .subscribe-email input {
           border: 3px solid #392247 !important;
           border-radius: 0 !important;
-          background: transparent !important; }
+          background: transparent !important;
+          font-family: "Roboto"; }
         .site-footer .subscription-bar .subscription-form .subscribe-email .mce_inline_error {
           margin: 0 !important; }
       .site-footer .subscription-bar .subscription-form .subscribe-button {
         display: inline-block;
         vertical-align: top; }
         .site-footer .subscription-bar .subscription-form .subscribe-button input {
-          font-weight: bold !important;
           background: #392247 !important;
           height: 46px !important;
           box-shadow: none !important;
           text-transform: uppercase;
           letter-spacing: 1px;
           border-radius: 0px !important;
-          text-shadow: none !important; }
+          text-shadow: none !important;
+          font-family: "Oswald"; }
       .site-footer .subscription-bar .subscription-form ::-webkit-input-placeholder {
-        color: #392247; }
+        color: #392247;
+        font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form :-moz-placeholder {
         /* Firefox 18- */
-        color: #392247; }
+        color: #392247;
+        font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form ::-moz-placeholder {
         /* Firefox 19+ */
-        color: #392247; }
+        color: #392247;
+        font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form :-ms-input-placeholder {
-        color: #392247; }
+        color: #392247;
+        font-family: "Roboto"; }
   .site-footer .site-info {
     font-size: 10px;
     background: #578fae;
     color: #fff;
-    text-transform: uppercase;
     text-align: center;
     clear: both; }
     .site-footer .site-info p {
@@ -988,7 +992,8 @@ h1, h2, h3, h4, h5, h6, p {
       color: #222;
       font-size: 14px;
       letter-spacing: 1px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "Oswald"; }
     .site-footer .close-footer .arrow {
       transform: rotate(90deg);
       bottom: 30%;
@@ -1027,7 +1032,8 @@ h1, h2, h3, h4, h5, h6, p {
   .open-footer span {
     color: #fff;
     font-size: 18px;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-family: "Oswald"; }
 
 .open-footer:hover > .arrow {
   top: -10px !important; }
@@ -1052,7 +1058,7 @@ h1, h2, h3, h4, h5, h6, p {
 .contact #contact-form .your-name input:focus,
 .contact #contact-form .your-email input:focus,
 .contact #contact-form .your-message textarea:focus {
-  background: rgba(255, 255, 255, 0.2) !important; }
+  background: white !important; }
 
 .contact #contact-form .wpcf7-submit:hover {
   background: #493257 !important; }
@@ -1092,8 +1098,8 @@ h1, h2, h3, h4, h5, h6, p {
 .prev-triangle {
   left: 50px; }
 
-.page-template-template-contact {
-  background: #fff; }
+.page-template-template-contact #content {
+  background: #f8f8f8; }
 
 .contact {
   margin-top: 5rem;
@@ -1101,39 +1107,47 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 50px 0;
   text-align: center; }
   .contact #contact-heading {
+    max-width: 600px;
     padding: 10px 20px;
-    text-align: center; }
+    margin: 0 auto 0 3.5rem;
+    text-align: left; }
     .contact #contact-heading hr {
       width: 50px;
-      margin: 0 auto; }
+      margin: 0 auto 0 0;
+      margin-left: 180px; }
     .contact #contact-heading h2 {
-      text-transform: uppercase;
-      font-size: 36px; }
+      font-size: 56px;
+      font-weight: 300;
+      display: inline;
+      margin-left: 10px; }
     .contact #contact-heading p {
-      font-size: 22px; }
+      font-size: 22px;
+      font-weight: 700;
+      color: #333;
+      margin-left: 180px; }
   .contact #contact-form {
     max-width: 600px;
     padding: 10px 20px;
     margin: 0 auto; }
     .contact #contact-form textarea {
       height: 150px;
-      border: 3px solid #392247 !important;
+      /*border: 3px solid $purple!important;*/
       border-radius: 0 !important;
-      background: transparent !important;
-      padding: 5px;
+      background: white !important;
+      padding: 18px;
       color: #392247; }
     .contact #contact-form .your-name, .contact #contact-form .your-email {
       width: 100%; }
       .contact #contact-form .your-name input, .contact #contact-form .your-email input {
-        border: 3px solid #392247 !important;
+        /*border: 3px solid $purple!important;*/
         border-radius: 0 !important;
-        background: transparent !important;
+        background: #fff !important;
         width: 100%;
-        padding: 5px;
+        padding: 18px;
         color: #392247; }
     .contact #contact-form .wpcf7-submit {
       color: #fff !important;
-      font-weight: bold !important;
+      font-family: "Oswald";
       background: #392247 !important;
       box-shadow: none !important;
       text-shadow: none !important;
@@ -1141,26 +1155,27 @@ h1, h2, h3, h4, h5, h6, p {
       letter-spacing: 1px;
       border-radius: 0px !important;
       font-size: 18px;
-      padding: 10px 22px;
-      border-style: none; }
+      padding: 15px 22px;
+      border-style: none;
+      width: 100%; }
     .contact #contact-form ::-webkit-input-placeholder {
       color: #493257;
       font-size: 16px;
-      letter-spacing: 1px; }
+      font-family: "Roboto"; }
     .contact #contact-form :-moz-placeholder {
       /* Firefox 18- */
       color: #493257;
       font-size: 16px;
-      letter-spacing: 1px; }
+      font-family: "Roboto"; }
     .contact #contact-form ::-moz-placeholder {
       /* Firefox 19+ */
       color: #493257;
       font-size: 16px;
-      letter-spacing: 1px; }
+      font-family: "Roboto"; }
     .contact #contact-form :-ms-input-placeholder {
       color: #493257;
       font-size: 16px;
-      letter-spacing: 1px; }
+      font-family: "Roboto"; }
 
 #alert-to-landscape {
   position: fixed;
@@ -1205,8 +1220,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   background-size: cover;
   background-position: center bottom;
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
   .page-header .dark-overlay {
     opacity: 0.4; }
   .page-header .helper {
@@ -1219,13 +1233,26 @@ h1, h2, h3, h4, h5, h6, p {
       text-align: center;
       text-transform: uppercase;
       font-size: 3.5rem;
-      color: #eee; }
+      color: #eee;
+      display: none; }
     .page-header .helper h3 {
-      font-style: italic;
-      font-weight: normal;
-      max-width: 800px;
-      margin: 10px auto 0;
-      color: #eee; }
+      font-weight: 300;
+      max-width: 570px;
+      margin: 10px auto 0 15px;
+      color: #eee;
+      font-size: 2.5rem;
+      line-height: initial;
+      float: left; }
+      .page-header .helper h3 .purple-bg {
+        background: rgba(35, 21, 43, 0.9);
+        box-shadow: 10px 0 0 rgba(35, 21, 43, 0.9), -10px 0 0 rgba(35, 21, 43, 0.9); }
+      .page-header .helper h3 .bold-name {
+        font-weight: 700;
+        font-size: 70%;
+        font-style: italic; }
+    .page-header .helper #services-quote {
+      float: right;
+      margin-right: 10%; }
 
 #main-pages {
   padding: 5rem 2rem; }
@@ -1266,20 +1293,31 @@ h1, h2, h3, h4, h5, h6, p {
   transform: none;
   position: relative; }
 
+.page-template-template-about .site-header,
+.page-template-template-contact .site-header,
+.page-template-template-services .site-header {
+  position: relative; }
+  .page-template-template-about .site-header .main-navigation,
+  .page-template-template-contact .site-header .main-navigation,
+  .page-template-template-services .site-header .main-navigation {
+    background: #392247; }
+
 .page-template-template-about .site-footer {
   box-shadow: 2px 5px 11px 4px rgba(0, 0, 0, 0.75); }
 
 @media screen and (max-width: 800px) {
-  .site-header nav {
-    height: 51px !important; }
-    .site-header nav div #primary-menu li {
-      padding: 10px; }
-      .site-header nav div #primary-menu li a {
-        font-size: 20px; }
+  .site-header {
+    height: auto; }
+    .site-header nav {
+      height: 51px !important; }
+      .site-header nav div #primary-menu li {
+        padding: 10px; }
+        .site-header nav div #primary-menu li a {
+          font-size: 14px; }
   .page-header .helper h1 {
     font-size: 2.5rem; }
   .page-header .helper h3 {
-    font-size: 90%; }
+    font-size: 1.8rem; }
   #main-pages .main-view-pages .about-section {
     margin: 1rem; }
     #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
@@ -1294,8 +1332,8 @@ h1, h2, h3, h4, h5, h6, p {
   #mute {
     width: 40px;
     height: 40px;
-    top: 4px;
-    left: 4px; }
+    top: 5px;
+    left: 5px; }
   .open-footer span {
     font-size: 14px; }
   .main-intro .intro-content .title-box {
@@ -1319,15 +1357,19 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%; }
     .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll {
       text-align: center; }
-  .contact #contact-heading p {
-    font-size: 14px; }
+  .contact #contact-heading {
+    margin-left: 0 !important; }
+    .contact #contact-heading p {
+      font-size: 14px; }
   .contact #contact-form textarea {
     height: 120px; }
   .contact #contact-form p {
     margin-bottom: 0; }
   .contact #contact-form .wpcf7-submit {
     font-size: 14px;
-    padding: 10px 22px; }
+    padding: 10px 22px;
+    font-family: "Oswald";
+    letter-spacing: 1px; }
   .contact #contact-form ::-webkit-input-placeholder {
     font-size: 14px; }
   .contact #contact-form :-moz-placeholder {
@@ -1341,3 +1383,10 @@ h1, h2, h3, h4, h5, h6, p {
 .page-template-template-services .site-footer .close-footer,
 .page-template-template-contact .site-footer .close-footer {
   display: none !important; }
+
+@font-face {
+  font-family: 'geomanist';
+  src: url("../../geomanist/geomanist-regular-webfont.eot");
+  src: url("../../geomanist/geomanist-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../geomanist/geomanist-regular-webfont.woff2") format("woff2"), url("../../geomanist/geomanist-regular-webfont.woff") format("woff"), url("../../geomanist/geomanist-regular-webfont.ttf") format("truetype"), url("../../geomanist/geomanist-regular-webfont.svg#geomanist_regularregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }

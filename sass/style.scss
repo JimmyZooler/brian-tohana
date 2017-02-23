@@ -109,9 +109,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Custom Styles
 --------------------------------------------------------------*/
-h1,h2, h3, h4, h5, h6 , p {
-    letter-spacing: 1px;
+
+h1,h2, h3, h4, h5, h6 {
+    font-family: Roboto;
 }
+
 
 .main-navigation {
     background: rgba(35, 21, 43, 0.8);
@@ -150,6 +152,7 @@ h1,h2, h3, h4, h5, h6 , p {
             background-size: contain;
             z-index: 266;
             a {
+                font-family: "Oswald";
                 display: block;
                 font-size: 18px;
                 text-decoration: none;
@@ -215,10 +218,10 @@ h1,h2, h3, h4, h5, h6 , p {
     position: absolute;
     width: 100%;
     height: 56px;
-    top: 60;
+    top: 0;
     left: 0;
     z-index: 260;
-    font-family: "Ubuntu Condensed", Lato, Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     nav {
         div {
@@ -229,8 +232,10 @@ h1,h2, h3, h4, h5, h6 , p {
                     padding: 13px;
                     a {
                         color: #fff;
-                        font-size: 22px;
+                        font-size: 18px;
                         transition: all 0.2s;
+                        letter-spacing: 1px;
+                        line-height: 33px;
                     }
                 }
             } 
@@ -325,17 +330,14 @@ h1,h2, h3, h4, h5, h6 , p {
         .subscription-heading {
             display: inline-block;
             float: left;
-            font-size: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-size: 24px;
             width: 38%;
             padding: 10px;
             text-align: center;
             color: $purple;
-            letter-spacing: 1px;
-/*            p {
-                margin-top: 1.3em;
-            }*/
+            p {
+                margin-top: 14px;
+            }
         }
         .subscription-form {
             display: inline-block;
@@ -358,6 +360,7 @@ h1,h2, h3, h4, h5, h6 , p {
                     background: transparent !important;
                     padding-left: 3px;
                     padding-right: 3px;
+                    font-family: "Roboto";
                 }
             }
             .subscribe-email {
@@ -370,6 +373,7 @@ h1,h2, h3, h4, h5, h6 , p {
                 border: 3px solid $purple!important;
                 border-radius: 0!important;
                background: transparent !important;
+               font-family: "Roboto";
                 }
                 .mce_inline_error {
                     margin: 0 !important;
@@ -379,7 +383,6 @@ h1,h2, h3, h4, h5, h6 , p {
                 display: inline-block;
                 vertical-align: top;
                 input {
-                    font-weight: bold!important;
                     background: $purple!important;
                     height: 46px!important;
                     box-shadow: none!important;
@@ -387,22 +390,27 @@ h1,h2, h3, h4, h5, h6 , p {
                     letter-spacing: 1px;
                     border-radius: 0px!important;
                     text-shadow: none!important;
+                    font-family: "Oswald";
                 }
             }
             ::-webkit-input-placeholder {
                 color: $purple;
+                font-family: "Roboto";
              }
 
              :-moz-placeholder { /* Firefox 18- */
                 color: $purple;  
+                font-family: "Roboto";
              }
 
              ::-moz-placeholder {  /* Firefox 19+ */
                 color: $purple;  
+                font-family: "Roboto";
              }
 
              :-ms-input-placeholder {  
                 color: $purple;  
+                font-family: "Roboto";
              }
         }
     }
@@ -410,7 +418,6 @@ h1,h2, h3, h4, h5, h6 , p {
         font-size: 10px;
         background: $light-blue;
         color: #fff;
-        text-transform: uppercase;
         text-align: center;
         clear: both;
         p {
@@ -436,6 +443,7 @@ h1,h2, h3, h4, h5, h6 , p {
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
+            font-family: "Oswald";
         }
         .arrow {
         transform: rotate(90deg);
@@ -479,6 +487,7 @@ h1,h2, h3, h4, h5, h6 , p {
         color: #fff;
         font-size: 18px;
         letter-spacing: 1px;
+        font-family: "Oswald";
     }
 }
 .open-footer:hover > .arrow {
@@ -503,7 +512,7 @@ h1,h2, h3, h4, h5, h6 , p {
 .contact #contact-form .your-name input:focus,
 .contact #contact-form .your-email input:focus,
 .contact #contact-form .your-message textarea:focus{
-    background: rgba(255, 255, 255, 0.2)!important;
+    background: rgba(255, 255, 255, 1)!important;
 }
 .contact #contact-form .wpcf7-submit:hover {
     background: $light-purple!important;
@@ -547,8 +556,8 @@ h1,h2, h3, h4, h5, h6 , p {
 .prev-triangle {
     left: 50px;
 }
-.page-template-template-contact {
-    background: #fff;
+.page-template-template-contact #content {
+    background: #f8f8f8;
 }
 .contact {
     margin-top: 5rem;
@@ -556,18 +565,26 @@ h1,h2, h3, h4, h5, h6 , p {
         padding: 50px 0;
         text-align: center;
         #contact-heading {
+            max-width: 600px;
             padding: 10px 20px;
-            text-align: center;
+            margin: 0 auto 0 3.5rem;
+            text-align: left;
             hr {
                 width: 50px;
-                margin:0 auto;
+                margin:0 auto 0 0;
+                margin-left: 180px;
             }
             h2 {
-                text-transform: uppercase;
-                font-size: 36px;
+                font-size: 56px;
+                font-weight: 300;
+                display: inline;
+                margin-left: 10px
             }            
             p {
                 font-size: 22px;
+                font-weight: 700;
+                color:#333;
+                margin-left: 180px;
             }
         }
         #contact-form {
@@ -576,26 +593,26 @@ h1,h2, h3, h4, h5, h6 , p {
             margin: 0 auto;
             textarea {
                 height: 150px;
-                border: 3px solid $purple!important;
+                /*border: 3px solid $purple!important;*/
                 border-radius: 0!important;
-                background: transparent !important;
-                padding: 5px;
+                background: rgba(255, 255, 255, 1)!important;
+                padding: 18px;
                 color: $purple;
             }
             .your-name, .your-email {
                 width: 100%;
                 input {
-                    border: 3px solid $purple!important;
+                    /*border: 3px solid $purple!important;*/
                     border-radius: 0!important;
-                    background: transparent !important;
+                    background: #fff !important;
                     width: 100%;
-                    padding: 5px;
+                    padding: 18px;
                     color: $purple;
                 }
             }
             .wpcf7-submit {
                 color: #fff!important;
-                font-weight: bold!important;
+                font-family: "Oswald";
                 background: $purple!important;
                 box-shadow: none!important;
                 text-shadow: none!important;
@@ -603,31 +620,32 @@ h1,h2, h3, h4, h5, h6 , p {
                 letter-spacing: 1px;
                 border-radius: 0px!important;
                 font-size: 18px;
-                padding: 10px 22px;
+                padding: 15px 22px;
                 border-style: none;
+                width: 100%;
             }
             ::-webkit-input-placeholder {
                 color: $light-purple;
                 font-size: 16px;
-                letter-spacing: 1px;
+                font-family: "Roboto";
             }
 
             :-moz-placeholder { /* Firefox 18- */
                color: $light-purple;  
                font-size: 16px;
-               letter-spacing: 1px;
+               font-family: "Roboto";
             }
 
             ::-moz-placeholder {  /* Firefox 19+ */
                color: $light-purple;  
                font-size: 16px;
-               letter-spacing: 1px;
+               font-family: "Roboto";
             }
 
             :-ms-input-placeholder {  
                color: $light-purple;  
                font-size: 16px;
-               letter-spacing: 1px;
+               font-family: "Roboto";
             }
         }
     }
@@ -679,7 +697,6 @@ h1,h2, h3, h4, h5, h6 , p {
     background-size: cover;
     background-position: center bottom;
     position: relative;
-    background-attachment: fixed;
     .dark-overlay {
         opacity: 0.4;
     }
@@ -694,13 +711,29 @@ h1,h2, h3, h4, h5, h6 , p {
             text-transform: uppercase;
             font-size: 3.5rem;
             color: #eee;
+            display: none;
         }
         h3 {
-            font-style: italic;
-            font-weight: normal;
-            max-width: 800px;
-            margin: 10px auto 0;
+            font-weight: 300;
+            max-width: 570px;
+            margin: 10px auto 0 15px;
             color: #eee;
+            font-size: 2.5rem;
+            line-height: initial;
+            float: left;
+            .purple-bg {
+                background: rgba(35, 21, 43, 0.9);
+                box-shadow: 10px 0 0 rgba(35, 21, 43, 0.9), -10px 0 0 rgba(35, 21, 43, 0.9);
+            }
+            .bold-name {
+                font-weight: 700;
+                font-size: 70%;
+                font-style: italic;
+            }
+        }
+        #services-quote {
+            float: right;
+            margin-right: 10%;
         }
     }
 }
@@ -753,6 +786,15 @@ h1,h2, h3, h4, h5, h6 , p {
     transform: none;
     position: relative;
 }
+.page-template-template-about .site-header, 
+.page-template-template-contact .site-header, 
+.page-template-template-services .site-header  {
+    
+    position: relative;
+    .main-navigation {
+        background: $purple;
+    }
+}
 .page-template-template-about .site-footer {
     -webkit-box-shadow: 2px 5px 11px 4px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 5px 11px 4px rgba(0,0,0,0.75);
@@ -761,6 +803,7 @@ h1,h2, h3, h4, h5, h6 , p {
 
 @media screen and (max-width: 800px) {
     .site-header {
+        height: auto;
         nav {
             height: 51px !important;
             div {
@@ -768,7 +811,7 @@ h1,h2, h3, h4, h5, h6 , p {
                     li {
                         padding: 10px;
                         a {
-                            font-size: 20px; }
+                            font-size: 14px;   }
                     }
                }
             }
@@ -778,7 +821,7 @@ h1,h2, h3, h4, h5, h6 , p {
         font-size: 2.5rem;
     }
     .page-header .helper h3 {
-        font-size: 90%;
+        font-size: 1.8rem;
     }
     #main-pages .main-view-pages .about-section {
         margin: 1rem;
@@ -797,8 +840,8 @@ h1,h2, h3, h4, h5, h6 , p {
     #mute{
         width: 40px; 
         height: 40px;
-        top: 4px;
-        left: 4px; }
+        top: 5px;
+        left: 5px; }
     .open-footer span {
         font-size: 14px;
     }
@@ -837,6 +880,7 @@ h1,h2, h3, h4, h5, h6 , p {
     }
     .contact {
         #contact-heading {
+            margin-left: 0!important;
             p {
                 font-size: 14px; 
             }
@@ -844,6 +888,7 @@ h1,h2, h3, h4, h5, h6 , p {
         #contact-form {
             textarea {
                 height: 120px;
+                
             }
             p {
                 margin-bottom: 0;
@@ -851,6 +896,8 @@ h1,h2, h3, h4, h5, h6 , p {
             .wpcf7-submit {
                 font-size: 14px;
                 padding: 10px 22px;
+                font-family: "Oswald";
+                letter-spacing: 1px;
             }
             ::-webkit-input-placeholder {
                 font-size: 14px;
@@ -874,3 +921,16 @@ h1,h2, h3, h4, h5, h6 , p {
 .page-template-template-contact .site-footer .close-footer {
             display: none!important;
         }
+        
+// Geomanist regular 
+@font-face {
+    font-family: 'geomanist';
+	src: url('../../geomanist/geomanist-regular-webfont.eot');
+	src: url('../../geomanist/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../geomanist/geomanist-regular-webfont.woff2') format('woff2'),
+		 url('../../geomanist/geomanist-regular-webfont.woff') format('woff'),
+		 url('../../geomanist/geomanist-regular-webfont.ttf') format('truetype'),
+		 url('../../geomanist/geomanist-regular-webfont.svg#geomanist_regularregular') format('svg');
+	font-weight: 400;
+	font-style: normal; 
+}

@@ -18,7 +18,7 @@
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">
-                        <p>Join us to receive Some Magic.</p>
+                        <p>Join us to receive some magic.</p>
                     </div>
                     <div class="subscription-form">
                         <!-- Begin MailChimp Signup Form -->
@@ -53,8 +53,8 @@
                 </div>
             </div>
             <div class="site-info">
-                <p>Made With ♥ by <a href="http://getgeometric.com">Geometric</a>.</p>
-                <p id="copyright">© 2017 Brian Tohana. ALL RIGHTS RESERVED.</p>
+                <p>Made with ♥ by <a href="http://getgeometric.com">Geometric</a>.</p>
+                <p id="copyright">© 2017 Brian Tohana. All rights reserved.</p>
             </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

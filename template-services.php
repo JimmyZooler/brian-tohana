@@ -8,9 +8,12 @@ Template Name: Services Page
 <header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_parlament.jpg');">
     <div class="helper">
         <h1>Services</h1>
-        <h3>Coaching is like leadership. As I guide you into yourself I call forward your highest truth and potential to allow you to become more than you realize you can be.</h3>
+        <h3 id="services-quote"><span class="purple-bg">Coaching is like leadership.
+                As I guide you into yourself I call forward your highest truth and 
+                potential to allow you to become more than you realize you can be.</span></h3>
+        
     </div>
-    <div class="dark-overlay"></div>
+    <!--<div class="dark-overlay"></div>-->
 </header>
 <div class="coaching">
     <div class="page-section">
