@@ -116,7 +116,7 @@ h1,h2, h3, h4, h5, h6 {
 
 
 .main-navigation {
-    background: rgba(35, 21, 43, 0.8);
+    background: #fff;
     height: 62px;
 }
     
@@ -231,7 +231,7 @@ h1,h2, h3, h4, h5, h6 {
                 li {
                     padding: 13px;
                     a {
-                        color: #fff;
+                        color: #392247;
                         font-size: 18px;
                         transition: all 0.2s;
                         letter-spacing: 1px;
@@ -277,10 +277,10 @@ h1,h2, h3, h4, h5, h6 {
     background-position: center center;
 }
 #mute .mute-on {
-    background: url('/briantohana/wp-content/themes/brian_tohana/images/volume_down_2.png');
+    background: url('/briantohana/wp-content/themes/brian_tohana/images/volume_down_grey.png');
 }
 #mute .mute-off {
-    background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_2.png');
+    background: url('/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_grey.png');
 }
 #social-buttons {
     position: absolute;
@@ -698,7 +698,7 @@ h1,h2, h3, h4, h5, h6 {
     background-position: center bottom;
     position: relative;
     .dark-overlay {
-        opacity: 0.4;
+        opacity: 0.1;
     }
     .helper {
         display: table-cell;
@@ -715,7 +715,7 @@ h1,h2, h3, h4, h5, h6 {
         }
         h3 {
             font-weight: 300;
-            max-width: 570px;
+            max-width: 590px;
             margin: 10px auto 0 15px;
             color: #eee;
             font-size: 2.5rem;
@@ -738,22 +738,110 @@ h1,h2, h3, h4, h5, h6 {
     }
 }
 #main-pages {
-    padding: 5rem 2rem;
-    .main-view-pages {
-        max-width: 1000px;
-        margin: 0 auto;
-        color: #fff;
         .about-section {
-            margin: 4rem;
-            padding: 2rem;
-            p, li {
-                font-size: 20px;
+            font-size: 18px;
+            overflow: auto;
+            .inner-content {
+                p, li {
+                font-size: 18px;
+                }
+                h4 {
+                    font-size: 22px;
+                }
             }
         }
-    }
+        #about-section-2 {
+            .inner-content {
+                margin: 1rem auto 1rem 40%;
+                max-width: 600px;
+                padding: 1rem;
+                background: rgba(255, 255, 255, 0.8);
+            }
+            position: relative;
+            background-position-x: left;
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #about-section-3 {
+            min-height: calc(100vh - 200px);
+            background-position-x: center;
+            background-position-y: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*background-attachment: fixed;*/
+            .inner-content {
+                max-width: 500px;
+                padding: 1rem;
+                margin: 2rem auto 2rem 2rem;
+                p {
+                    display: inline-block;
+                    margin: 5px 0;
+                    background: #fff;
+                    box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+                }
+            }
+        }
+        #about-section-4 {
+            background-position-x: 3rem;
+            background-position-y: bottom;
+            background-size: 400px;
+            background-repeat: no-repeat;
+            .inner-content {
+                max-width: 600px;
+                padding: 1rem;
+                margin: 2rem 2rem 2rem auto;
+            }
+        }
+        #about-section-5 {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            .inner-content {
+                position: absolute;
+                top: 10%;
+                max-width: 600px;
+                left:50%;
+                transform: translateX(-50%);
+                z-index: 2;
+                div {
+                    text-align: center;
+                    a {
+                    background: $purple!important;
+                    padding: 20px 50px;
+                    color: #fff;
+                    box-shadow: none!important;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    border-radius: 0px!important;
+                    text-shadow: none!important;
+                    font-family: "Oswald";
+                    display: inline-block;
+                    margin: 40px auto;
+                }
+                }
+            }
+        }
 }
-        
-
+#main-pages #about-section-5 .inner-content div a:hover {
+    background: $light-purple!important;
+}
+.first-letter {
+    padding: 5px 30px;
+    font-family: Georgia; 
+    font-size: 54px;
+    color: #fff;
+    background: $purple;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}        
+.about-quote {
+    font-style: italic;
+    font-size: 120%;
+}
 
 .coaching, .about-section {
     color: #373737;
@@ -768,8 +856,12 @@ h1,h2, h3, h4, h5, h6 {
     padding: 5rem 3rem;
     /*text-align: center;*/
     h2 {
-        text-transform: uppercase;
-        font-size: 2.2rem;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    hr {
+        width: 50px;
+        margin-left: 0;
     }
     .services {
         margin: 3rem 0;
@@ -789,16 +881,14 @@ h1,h2, h3, h4, h5, h6 {
 .page-template-template-about .site-header, 
 .page-template-template-contact .site-header, 
 .page-template-template-services .site-header  {
-    
     position: relative;
-    .main-navigation {
-        background: $purple;
-    }
 }
-.page-template-template-about .site-footer {
-    -webkit-box-shadow: 2px 5px 11px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 2px 5px 11px 4px rgba(0,0,0,0.75);
-    box-shadow: 2px 5px 11px 4px rgba(0,0,0,0.75);
+
+@media screen and (max-width: 1100px) { 
+    .page-header .helper h3 {
+        font-size: 2rem;
+        max-width: 390px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -822,9 +912,9 @@ h1,h2, h3, h4, h5, h6 {
     }
     .page-header .helper h3 {
         font-size: 1.8rem;
+        max-width: 290px;
     }
     #main-pages .main-view-pages .about-section {
-        margin: 1rem;
         p, li {
             font-size: 16px;
         }

@@ -6,45 +6,36 @@ Template Name: About Page
 
 <?php get_header(); ?>
 
-<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_center.jpg'); background-position: top;">
+<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/new_about.jpg'); background-position: top; background-attachment: fixed;">
     <div class="helper">
         <h1><?php the_field('main_heading'); ?></h1>
         <h3><span class="purple-bg">It is my deepest privilege and gift to see who you truly are and guide you to become that.</span><br><span class="bold-name"><span class="purple-bg">Brian Tohana</span></span></span></h3>
     </div>
-    <!--<div class="dark-overlay"></div>-->
+    <div class="dark-overlay"></div>
 </header>
 <div id="main-pages">
     <div class="main-view-pages">
-        <div class="inner-content">
-            <hr>
-            <div class="about-section">
+        <div id="about-section-2" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/snow_legs.png');">
+            <div class="inner-content">    
                 <?php the_field('about_section_2'); ?>
             </div>
-            <hr>
-            <div class="about-section">
+        </div>
+        <div id="about-section-3" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_center.jpg');">
+            <div class="inner-content"> 
                 <?php the_field('about_section_3'); ?>
             </div>
-            <hr>
-            <div class="about-section">
+        </div>
+        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_cutout.png');">
+            <div class="inner-content"> 
                 <?php the_field('about_section_4'); ?>
             </div>
-            <hr>
-            <div class="about-section">
+        </div>
+        <div id="about-section-5" class="about-section">
+            <img src="<?php echo get_template_directory_uri(); ?>/dist/images/brian_blue.jpg" />
+            <div class="inner-content"> 
                 <?php the_field('about_section_5'); ?>
+                <div><a href="../services">Check out how I can help you here</a></div>
             </div>
-            <hr>
-            <div class="about-section">
-                <?php the_field('about_section_6'); ?>
-            </div>
-            <hr>
-            <div class="about-section">
-                <?php the_field('about_section_7'); ?>
-            </div>
-            <hr>
-            <div class="about-section">
-                <?php the_field('about_section_8'); ?>
-            </div>
-            <hr>
         </div>
         <!--<div class="pattern-overlay" style="background: url('<?php echo get_template_directory_uri(); ?>/images/black-squares.png') repeat;"></div>-->
     </div>

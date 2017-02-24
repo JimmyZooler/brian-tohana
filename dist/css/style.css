@@ -707,7 +707,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Roboto; }
 
 .main-navigation {
-  background: rgba(35, 21, 43, 0.8);
+  background: #fff;
   height: 62px; }
 
 .home #main, .home .main-intro, .home .main-view, .home .pattern-overlay, .home .site {
@@ -812,7 +812,7 @@ h1, h2, h3, h4, h5, h6 {
       .site-header nav div #primary-menu li {
         padding: 13px; }
         .site-header nav div #primary-menu li a {
-          color: #fff;
+          color: #392247;
           font-size: 18px;
           transition: all 0.2s;
           letter-spacing: 1px;
@@ -852,10 +852,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center; }
 
 #mute .mute-on {
-  background: url("/briantohana/wp-content/themes/brian_tohana/images/volume_down_2.png"); }
+  background: url("/briantohana/wp-content/themes/brian_tohana/images/volume_down_grey.png"); }
 
 #mute .mute-off {
-  background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_2.png"); }
+  background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_grey.png"); }
 
 #social-buttons {
   position: absolute;
@@ -1222,7 +1222,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center bottom;
   position: relative; }
   .page-header .dark-overlay {
-    opacity: 0.4; }
+    opacity: 0.1; }
   .page-header .helper {
     display: table-cell;
     vertical-align: middle;
@@ -1237,7 +1237,7 @@ h1, h2, h3, h4, h5, h6 {
       display: none; }
     .page-header .helper h3 {
       font-weight: 300;
-      max-width: 570px;
+      max-width: 590px;
       margin: 10px auto 0 15px;
       color: #eee;
       font-size: 2.5rem;
@@ -1254,17 +1254,96 @@ h1, h2, h3, h4, h5, h6 {
       float: right;
       margin-right: 10%; }
 
-#main-pages {
-  padding: 5rem 2rem; }
-  #main-pages .main-view-pages {
-    max-width: 1000px;
-    margin: 0 auto;
-    color: #fff; }
-    #main-pages .main-view-pages .about-section {
-      margin: 4rem;
-      padding: 2rem; }
-      #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
-        font-size: 20px; }
+#main-pages .about-section {
+  font-size: 18px;
+  overflow: auto; }
+  #main-pages .about-section .inner-content p, #main-pages .about-section .inner-content li {
+    font-size: 18px; }
+  #main-pages .about-section .inner-content h4 {
+    font-size: 22px; }
+
+#main-pages #about-section-2 {
+  position: relative;
+  background-position-x: left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  #main-pages #about-section-2 .inner-content {
+    margin: 1rem auto 1rem 40%;
+    max-width: 600px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8); }
+
+#main-pages #about-section-3 {
+  min-height: calc(100vh - 200px);
+  background-position-x: center;
+  background-position-y: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/ }
+  #main-pages #about-section-3 .inner-content {
+    max-width: 500px;
+    padding: 1rem;
+    margin: 2rem auto 2rem 2rem; }
+    #main-pages #about-section-3 .inner-content p {
+      display: inline-block;
+      margin: 5px 0;
+      background: #fff;
+      box-shadow: 10px 0 0 #fff, -10px 0 0 #fff; }
+
+#main-pages #about-section-4 {
+  background-position-x: 3rem;
+  background-position-y: bottom;
+  background-size: 400px;
+  background-repeat: no-repeat; }
+  #main-pages #about-section-4 .inner-content {
+    max-width: 600px;
+    padding: 1rem;
+    margin: 2rem 2rem 2rem auto; }
+
+#main-pages #about-section-5 {
+  position: relative; }
+  #main-pages #about-section-5 img {
+    width: 100%; }
+  #main-pages #about-section-5 .inner-content {
+    position: absolute;
+    top: 10%;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; }
+    #main-pages #about-section-5 .inner-content div {
+      text-align: center; }
+      #main-pages #about-section-5 .inner-content div a {
+        background: #392247 !important;
+        padding: 20px 50px;
+        color: #fff;
+        box-shadow: none !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 0px !important;
+        text-shadow: none !important;
+        font-family: "Oswald";
+        display: inline-block;
+        margin: 40px auto; }
+
+#main-pages #about-section-5 .inner-content div a:hover {
+  background: #493257 !important; }
+
+.first-letter {
+  padding: 5px 30px;
+  font-family: Georgia;
+  font-size: 54px;
+  color: #fff;
+  background: #392247;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+.about-quote {
+  font-style: italic;
+  font-size: 120%; }
 
 .coaching, .about-section {
   color: #373737; }
@@ -1279,8 +1358,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5rem 3rem;
   /*text-align: center;*/ }
   .page-section h2 {
-    text-transform: uppercase;
-    font-size: 2.2rem; }
+    font-size: 3rem;
+    font-weight: 300; }
+  .page-section hr {
+    width: 50px;
+    margin-left: 0; }
   .page-section .services {
     margin: 3rem 0; }
     .page-section .services p {
@@ -1297,13 +1379,11 @@ h1, h2, h3, h4, h5, h6 {
 .page-template-template-contact .site-header,
 .page-template-template-services .site-header {
   position: relative; }
-  .page-template-template-about .site-header .main-navigation,
-  .page-template-template-contact .site-header .main-navigation,
-  .page-template-template-services .site-header .main-navigation {
-    background: #392247; }
 
-.page-template-template-about .site-footer {
-  box-shadow: 2px 5px 11px 4px rgba(0, 0, 0, 0.75); }
+@media screen and (max-width: 1100px) {
+  .page-header .helper h3 {
+    font-size: 2rem;
+    max-width: 390px; } }
 
 @media screen and (max-width: 800px) {
   .site-header {
@@ -1317,11 +1397,10 @@ h1, h2, h3, h4, h5, h6 {
   .page-header .helper h1 {
     font-size: 2.5rem; }
   .page-header .helper h3 {
-    font-size: 1.8rem; }
-  #main-pages .main-view-pages .about-section {
-    margin: 1rem; }
-    #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
-      font-size: 16px; }
+    font-size: 1.8rem;
+    max-width: 290px; }
+  #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
+    font-size: 16px; }
   #social-buttons ul li {
     margin-right: 0.2rem; }
     #social-buttons ul li a i {

@@ -13,11 +13,12 @@ Template Name: Services Page
                 potential to allow you to become more than you realize you can be.</span></h3>
         
     </div>
-    <!--<div class="dark-overlay"></div>-->
+    <div class="dark-overlay"></div>
 </header>
 <div class="coaching">
     <div class="page-section">
         <h2>Coaching</h2>
+        <hr>
         <h3>My Philosophy:</h3>
         <p>You don’t need fixing because there’s nothing wrong with you.</p>
             <p>You don’t need to be told what to do because the answers are inside of you.</p>
@@ -47,6 +48,7 @@ Template Name: Services Page
 <div class="facilitation">
     <div class="page-section">
         <h2>Facilitation</h2>
+        <hr>
         <div class="services">
             <!--<img src='<?php echo get_template_directory_uri(); ?>/dist/images/circling_1.png' />-->
             <h3>Authentic Relating + Circling</h3>
