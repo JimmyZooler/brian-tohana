@@ -13,7 +13,6 @@ Template Name: Contact Page
                 <div id="contact-heading">
                     <img src="../wp-content/themes/brian_tohana/images/contact-icon-bubbles.png">
                     <h2>Let's connect</h2>
-                    <hr>
                     <p>I would love to hear from you.</p>
                 </div>
                 <div id="contact-form">

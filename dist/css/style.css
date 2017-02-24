@@ -1284,8 +1284,9 @@ h1, h2, h3, h4, h5, h6 {
   #main-pages #about-section-3 .inner-content {
     max-width: 500px;
     padding: 1rem;
-    margin: 2rem auto 2rem 2rem; }
+    margin: 3rem auto 2rem 3rem; }
     #main-pages #about-section-3 .inner-content p {
+      font-size: 20px;
       display: inline-block;
       margin: 5px 0;
       background: #fff;
@@ -1308,7 +1309,7 @@ h1, h2, h3, h4, h5, h6 {
   #main-pages #about-section-5 .inner-content {
     position: absolute;
     top: 10%;
-    max-width: 600px;
+    width: 600px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; }
