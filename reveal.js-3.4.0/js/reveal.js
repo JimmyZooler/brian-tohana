@@ -3994,7 +3994,7 @@
 		// Normal navigation
 		else if( ( isOverview() || nextFragment() === false ) && availableRoutes().right ) {
 			slide( indexh + 1 );
-                        if (getIndices()["h"] === 2 ) {
+                        if (getIndices()["h"] === 1 ) {
                             parent.document.getElementById('masthead').className = "site-header";
                         }
 		}

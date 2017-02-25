@@ -24,7 +24,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'brian_tohana' ); ?></a>
 
 	<header id="masthead" class="site-header hide-header" role="banner">
-		<nav id="site-navigation" class="main-navigation" role="navigation">
+		<nav id="site-navigation" class="main-navigation" role="navigation">  
+                    <a id="site-title" href="<?php $url = home_url( '/', 'http' ); echo esc_url( $url ); ?>" >Brian Tohana</a>
 			<button class="menu-toggle hide" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'brian_tohana' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
@@ -35,9 +36,9 @@
         <div id="mute"><div id="audio-icon" class="mute-on"></div></div>
         <div id="social-buttons">
             <ul class="social-icons">
-                <li class="social-icon"><a href="https://www.facebook.com/youngprosmvmt/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-icon"><a href="https://www.instagram.com/youngprosmvmt/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-icon"><a href="https://www.youtube.com/channel/UChwRZLioUjxODgHFOyP-7uA" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li class="social-icon"><a href="https://www.facebook.com/btohana" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <!--<li class="social-icon"><a href="https://www.instagram.com/youngprosmvmt/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+                <li class="social-icon"><a href="https://soundcloud.com/briantohana" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div id="alert-to-landscape" class="hide">

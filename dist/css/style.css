@@ -719,7 +719,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-intro {
   display: block;
   z-index: 264;
-  background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-background_1.jpg") no-repeat;
+  background: url("../images/home-intro-background_1.jpg") no-repeat;
   background-size: cover;
   background-color: #000;
   background-position-y: 26%; }
@@ -737,7 +737,7 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       margin: auto 10% 2rem auto;
       /*border: 1px solid white;*/
-      background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/home-intro-content_2.png") no-repeat top center;
+      background: url("../images/home-intro-content_2.png") no-repeat top center;
       background-position: center;
       background-size: contain;
       z-index: 266; }
@@ -767,7 +767,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrow {
   position: absolute;
-  background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/square_arrow_white.png") no-repeat top center;
+  background: url("../images/square_arrow_white.png") no-repeat top center;
   background-position: center;
   background-size: contain;
   height: 20px;
@@ -805,32 +805,47 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 260;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
+  .site-header nav #site-title {
+    color: #392247;
+    font-size: 32px;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+    line-height: 33px;
+    float: left;
+    padding: 13px; }
   .site-header nav div {
-    text-align: center; }
+    text-align: left; }
     .site-header nav div #primary-menu {
-      display: inline-block; }
+      display: inline-block;
+      margin-left: 20px; }
       .site-header nav div #primary-menu li {
         padding: 13px; }
         .site-header nav div #primary-menu li a {
           color: #392247;
-          font-size: 18px;
+          font-size: 16px;
           transition: all 0.2s;
           letter-spacing: 1px;
-          line-height: 33px; }
+          line-height: 33px;
+          padding-left: 2px; }
+
+#primary-menu .current_page_item a {
+  /*box-shadow: 0 2px 0 rgba(35, 21, 43, 0.3);*/
+  color: #c2c2c2 !important; }
 
 #primary-menu li a:hover {
-  color: #d2d2d2 !important; }
+  color: #c2c2c2 !important; }
 
 .dark-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #000;
-  opacity: 0.20;
+  opacity: 0.40;
   top: 0;
   left: 0; }
 
 #mute {
+  display: none;
   position: absolute;
   left: 8px;
   top: 8px;
@@ -852,10 +867,10 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center; }
 
 #mute .mute-on {
-  background: url("/briantohana/wp-content/themes/brian_tohana/images/volume_down_grey.png"); }
+  background: url("../images/volume_down_grey.png"); }
 
 #mute .mute-off {
-  background: url("/briantohana/wp-content/themes/brian_tohana/dist/images/volume_up_grey.png"); }
+  background: url("../images/volume_up_grey.png"); }
 
 #social-buttons {
   position: absolute;
@@ -1000,7 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
       left: -12px;
       height: 14px;
       width: 14px;
-      background-image: url("/briantohana/wp-content/themes/brian_tohana/dist/images/52204.png");
+      background-image: url("../images/52204.png");
       transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .home .site-footer {
@@ -1047,7 +1062,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 299; }
 
 .footer-overlay:hover {
-  cursor: url("/wp-content/themes/brian_tohana/dist/images/closecursor.png") 15 15, default; }
+  cursor: url("../images/closecursor.png") 15 15, default; }
 
 .site-footer.slide-up {
   transform: translateY(0px); }
@@ -1238,14 +1253,17 @@ h1, h2, h3, h4, h5, h6 {
     .page-header .helper h3 {
       font-weight: 300;
       max-width: 590px;
-      margin: 10px auto 0 15px;
-      color: #eee;
+      margin: 10px auto 0 3rem;
+      color: #333;
       font-size: 2.5rem;
       line-height: initial;
       float: left; }
       .page-header .helper h3 .purple-bg {
         background: rgba(35, 21, 43, 0.9);
         box-shadow: 10px 0 0 rgba(35, 21, 43, 0.9), -10px 0 0 rgba(35, 21, 43, 0.9); }
+      .page-header .helper h3 .white-bg {
+        background: #fff;
+        box-shadow: 10px 0 0 #fff, -10px 0 0 #fff; }
       .page-header .helper h3 .bold-name {
         font-weight: 700;
         font-size: 70%;
@@ -1253,6 +1271,10 @@ h1, h2, h3, h4, h5, h6 {
     .page-header .helper #services-quote {
       float: right;
       margin-right: 10%; }
+
+.white-bg {
+  background: #fff;
+  box-shadow: 10px 0 0 #fff, -10px 0 0 #fff; }
 
 #main-pages .about-section {
   font-size: 18px;
@@ -1284,6 +1306,7 @@ h1, h2, h3, h4, h5, h6 {
   #main-pages #about-section-3 .inner-content {
     max-width: 500px;
     padding: 1rem;
+    background: #fff;
     margin: 3rem auto 2rem 3rem; }
     #main-pages #about-section-3 .inner-content p {
       font-size: 20px;
@@ -1300,7 +1323,8 @@ h1, h2, h3, h4, h5, h6 {
   #main-pages #about-section-4 .inner-content {
     max-width: 600px;
     padding: 1rem;
-    margin: 2rem 2rem 2rem auto; }
+    margin: 2rem 2rem 2rem auto;
+    background: rgba(255, 255, 255, 0.3); }
 
 #main-pages #about-section-5 {
   position: relative; }
@@ -1310,12 +1334,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 10%;
     width: 600px;
+    padding: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; }
-    #main-pages #about-section-5 .inner-content div {
+    #main-pages #about-section-5 .inner-content #button-helper {
       text-align: center; }
-      #main-pages #about-section-5 .inner-content div a {
+      #main-pages #about-section-5 .inner-content #button-helper a {
         background: #392247 !important;
         padding: 20px 50px;
         color: #fff;
@@ -1391,15 +1416,22 @@ h1, h2, h3, h4, h5, h6 {
     height: auto; }
     .site-header nav {
       height: 51px !important; }
+      .site-header nav #site-title {
+        font-size: 30px;
+        padding: 9px; }
       .site-header nav div #primary-menu li {
         padding: 10px; }
         .site-header nav div #primary-menu li a {
-          font-size: 14px; }
+          font-size: 12px; }
   .page-header .helper h1 {
     font-size: 2.5rem; }
   .page-header .helper h3 {
     font-size: 1.8rem;
     max-width: 290px; }
+  #main-pages #about-section-4 {
+    background: none !important; }
+  #main-pages #about-section-5 .inner-content {
+    top: 0 !important; }
   #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
     font-size: 16px; }
   #social-buttons ul li {
