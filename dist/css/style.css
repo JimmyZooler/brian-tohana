@@ -1255,9 +1255,11 @@ h1, h2, h3, h4, h5, h6 {
       max-width: 590px;
       margin: 10px auto 0 3rem;
       color: #333;
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: initial;
-      float: left; }
+      float: left;
+      background: #fff;
+      padding: 10px; }
       .page-header .helper h3 .purple-bg {
         background: rgba(35, 21, 43, 0.9);
         box-shadow: 10px 0 0 rgba(35, 21, 43, 0.9), -10px 0 0 rgba(35, 21, 43, 0.9); }

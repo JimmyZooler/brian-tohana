@@ -8,8 +8,8 @@ Template Name: About Page
 
 <header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/new_about.jpg'); background-position: top; background-attachment: fixed;">
     <div class="helper">
-        <h1><?php the_field('main_heading'); ?></h1>
-        <h3><span class="white-bg">It is my deepest privilege and gift to see who you truly are and guide you to become that.</span><br><span class="bold-name"><span class="white-bg">Brian Tohana</span></span></span></h3>
+        <h1>About Me</h1>
+        <h3><?php the_field('main_heading'); ?></h3>
     </div>
     <div class="dark-overlay"></div>
 </header>
@@ -36,9 +36,7 @@ Template Name: About Page
                 <?php the_field('about_section_5'); ?>
                 <div id="button-helper"><a href="../services">Check out how I can help you here</a></div>
             </div>
-            
         </div>
-        <!--<div class="pattern-overlay" style="background: url('<?php echo get_template_directory_uri(); ?>/images/black-squares.png') repeat;"></div>-->
     </div>
 </div>
 <?php get_footer(); ?>
