@@ -117,7 +117,7 @@ h1,h2, h3, h4, h5, h6 {
 
 .main-navigation {
     background: #fff;
-    height: 62px;
+    height: 52px;
 }
     
 .home #main, .home .main-intro,.home .main-view,.home .pattern-overlay,.home .site {
@@ -226,12 +226,13 @@ h1,h2, h3, h4, h5, h6 {
     nav {
         #site-title {
             color: #392247;
-            font-size: 32px;
+            font-size: 24px;
             transition: all 0.2s;
             letter-spacing: 1px;
             line-height: 33px;
             float:left;
-            padding: 13px;
+            padding: 8px;
+            margin-left: 10px;
         }
         div {
             text-align: left;
@@ -239,10 +240,10 @@ h1,h2, h3, h4, h5, h6 {
                 display: inline-block;
                 margin-left: 20px;
                 li {
-                    padding: 13px;
+                    padding: 9px;
                     a {
                         color: #392247;
-                        font-size: 16px;
+                        font-size: 14px;
                         transition: all 0.2s;
                         letter-spacing: 1px;
                         line-height: 33px;
@@ -301,7 +302,7 @@ h1,h2, h3, h4, h5, h6 {
 #social-buttons {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 5px;
     z-index: 270;
     display: inline-block;
     ul {
@@ -321,7 +322,7 @@ h1,h2, h3, h4, h5, h6 {
                     height: 40px;
                     line-height: 40px;
                      transition: all 0.3s;
-                     font-size: 22 / 16 + rem;
+                     font-size: 20 / 16 + rem;
                      border-radius: 200px;
                      color: $purple;
                      background: #fff;
@@ -926,15 +927,15 @@ h1,h2, h3, h4, h5, h6 {
     .site-header {
         height: auto;
         nav {
-            height: 51px !important;
+            height: 42px !important;
             #site-title {
-                font-size: 30px;
-                padding: 9px;
+                font-size: 22px;
+                padding: 4px;
             }
             div {
                #primary-menu {
                     li {
-                        padding: 10px;
+                        padding: 4.5px;
                         a {
                             font-size: 12px;   }
                     }
@@ -967,9 +968,9 @@ h1,h2, h3, h4, h5, h6 {
     #social-buttons ul li {
         margin-right: 0.2rem;
         a i {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
         font-size: 1rem;}
     }
     #mute{
