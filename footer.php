@@ -18,7 +18,7 @@
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">
-                        <p>Join us to receive some magic.</p>
+                        <p>The unknown awaits.</p>
                     </div>
                     <div class="subscription-form">
                         <!-- Begin MailChimp Signup Form -->
@@ -37,7 +37,7 @@
                         <div class="mc-field-group subscribe-email">
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email *">
                         </div>
-                        <div class="subscribe-button"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="subscribe-button"><input type="submit" value="Join Us" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                 <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>

@@ -13,9 +13,9 @@ Template Name: Home Page
         <iframe width="100%" height="100%" style="position: absolute; border: none;z-index: 3;" marginheight="0" marginwidth="0" src="<?php echo get_template_directory_uri(); ?>/reveal.js-3.4.0/index.html#/">
             Sorry your browser does not support this playfulness!
         </iframe>
-        <div id="end-slideshow-cta hide">
+<!--        <div id="end-slideshow-cta hide">
             <a href="/about">Learn more about me.</a>
-        </div>
+        </div>-->
     </div>
     <div class="main-intro hide">
         <div class="intro-content">

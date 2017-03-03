@@ -217,7 +217,6 @@ h1,h2, h3, h4, h5, h6 {
 .site-header {
     position: absolute;
     width: 100%;
-    height: 56px;
     top: 0;
     left: 0;
     z-index: 260;
@@ -253,6 +252,17 @@ h1,h2, h3, h4, h5, h6 {
             } 
         }
     }
+}
+.site-header nav #site-title:before {
+    content: "";
+    width: 30px;
+    margin-top: 2px;
+    margin-right: 4px;
+    float: left;
+    display: inline-block;
+    height: 30px;
+    background: url('../images/logo.png');
+    background-size: cover;
 }
 #primary-menu .current_page_item a {
     /*box-shadow: 0 2px 0 rgba(35, 21, 43, 0.3);*/
@@ -577,14 +587,14 @@ h1,h2, h3, h4, h5, h6 {
     background: #f8f8f8;
 }
 .contact {
-    margin-top: 5rem;
+    margin-top: 2rem;
         color: $purple;
-        padding: 50px 0;
+        padding: 10px 0;
         text-align: center;
         #contact-heading {
             max-width: 600px;
             padding: 10px 20px;
-            margin: 0 auto 0 3.5rem;
+            margin: 0 auto 0;
             text-align: left;
             hr {
                 width: 50px;
@@ -601,7 +611,10 @@ h1,h2, h3, h4, h5, h6 {
                 font-size: 22px;
                 font-weight: 700;
                 color:#333;
-                margin-left: 180px;
+                margin-left: 120px;
+            }
+            img {
+                width: 100px;
             }
         }
         #contact-form {
@@ -734,11 +747,11 @@ h1,h2, h3, h4, h5, h6 {
             font-weight: 300;
             max-width: 590px;
             margin: 10px auto 0 3rem;
-            color: #333;
+            color: #fff;
             font-size: 2rem;
             line-height: initial;
             float: left;
-            background: #fff;
+            background: rgba(35, 21, 43, 0.9);
             padding: 10px;
             .purple-bg {
                 background: rgba(35, 21, 43, 0.9);
@@ -943,6 +956,11 @@ h1,h2, h3, h4, h5, h6 {
             }
         }
     }
+    .site-header nav #site-title:before {
+        width:20px;
+        height: 20px;
+        margin-top: 6.5px;
+    }
     .page-header .helper h1 {
         font-size: 2.5rem;
     }
@@ -1017,6 +1035,9 @@ h1,h2, h3, h4, h5, h6 {
     .contact {
         #contact-heading {
             margin-left: 0!important;
+            h2 {
+                font-size: 40px;
+            }
             p {
                 font-size: 14px; 
             }
