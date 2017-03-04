@@ -110,7 +110,7 @@ function brian_tohana_scripts() {
 
 	wp_enqueue_script( 'brian_tohana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
         
-        wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:300,400,700');
+        wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700|Alegreya:400,700');
         
         wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/9e4c5fbff6.js', array(), '20161201', true );
 

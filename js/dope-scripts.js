@@ -115,3 +115,16 @@ document.getElementById('mute').addEventListener('click', function (e)
     });
 
 })( jQuery );
+
+
+// Scroll arrow script
+
+jQuery(document).ready(function() {
+    
+    jQuery (".scroll-arrow").click( function() {
+        event.preventDefault();
+        jQuery('html, body').animate({
+            scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
+        }, 1300);
+    });
+});

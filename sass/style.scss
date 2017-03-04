@@ -114,7 +114,9 @@ h1,h2, h3, h4, h5, h6 {
     font-family: Roboto;
 }
 
-
+.text-center {
+    text-align: center;
+}
 .main-navigation {
     background: #fff;
     height: 52px;
@@ -348,6 +350,12 @@ h1,h2, h3, h4, h5, h6 {
     margin: 0 auto;
     max-width: 62.5rem;
     width: 100%;
+}
+.content-wrap {
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    padding: 0 2rem
 }
 .site-footer {    
     background: #fff;
@@ -720,6 +728,23 @@ h1,h2, h3, h4, h5, h6 {
 .italic {
     font-style: italic;
 }
+.scroll-arrow {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: url('../images/scroll_arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.8;
+    transition: bottom .25s;
+    z-index: 500;
+}
+.scroll-arrow:hover {
+    bottom: 40px;
+}
 .page-header {
     display: table;
     height: calc(90vh);
@@ -745,6 +770,7 @@ h1,h2, h3, h4, h5, h6 {
         }
         h3 {
             font-weight: 300;
+            font-family: 'Alegreya', serif;
             max-width: 590px;
             margin: 10px auto 0 3rem;
             color: #fff;
@@ -792,7 +818,7 @@ h1,h2, h3, h4, h5, h6 {
         }
         #about-section-2 {
             .inner-content {
-                margin: 1rem auto 1rem 40%;
+                margin: 4rem auto 3rem auto;
                 max-width: 600px;
                 padding: 1rem;
                 background: rgba(255, 255, 255, 0.8);
@@ -805,22 +831,18 @@ h1,h2, h3, h4, h5, h6 {
         }
         #about-section-3 {
             min-height: calc(100vh - 200px);
-            background-position-x: center;
-            background-position-y: 10px;
+            background-position-x: 250px;
             background-size: cover;
             background-repeat: no-repeat;
-            /*background-attachment: fixed;*/
+            background-attachment: fixed;
             .inner-content {
-                max-width: 500px;
-                padding: 1rem;
-                background: #fff;
-                margin: 3rem auto 2rem 3rem;
+                max-width: 600px;
+                padding: 4rem 4rem 6rem;
+                background: #f8f8f8;
                 p {
                     font-size: 20px;
                     display: inline-block;
                     margin: 5px 0;
-                    background: #fff;
-                    box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
                 }
             }
         }
@@ -843,7 +865,7 @@ h1,h2, h3, h4, h5, h6 {
             }
             .inner-content {
                 position: absolute;
-                top: 10%;
+                top: 1%;
                 width: 600px;
                 padding: 20px;
                 left:50%;
@@ -874,7 +896,7 @@ h1,h2, h3, h4, h5, h6 {
 }
 .first-letter {
     padding: 5px 30px;
-    font-family: Georgia; 
+    font-family: Alegreya; 
     font-size: 54px;
     color: #fff;
     background: $purple;
@@ -887,7 +909,11 @@ h1,h2, h3, h4, h5, h6 {
     font-style: italic;
     font-size: 120%;
 }
+/*---------------------------------------------
 
+Services Page Styles
+
+----------------------------------------------*/
 .coaching, .about-section {
     color: #373737;
 }
@@ -896,25 +922,75 @@ h1,h2, h3, h4, h5, h6 {
     color: #fff;
 }
 .page-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 5rem 3rem;
-    /*text-align: center;*/
+    padding: 3rem 0 3rem;
     h2 {
-        font-size: 3rem;
-        font-weight: 300;
+        font-size: 2.5rem;
+        font-family: 'Alegreya', serif;
+        font-weight: 700;
     }
-    hr {
-        width: 50px;
-        margin-left: 0;
+    h3 {
+        text-transform: uppercase;
     }
-    .services {
-        margin: 3rem 0;
+    .sub {
+        padding: 1rem 0 2rem;
         p {
-            margin: 10px 0;
+            margin: 10px 0 16px;
         }
     }
 }
+#philosophy {
+    display: table;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    .content-inner {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+#what-taught {
+    padding: 2rem;
+    height: 90vh;
+    display: table;
+    background: #222;
+    position: relative;
+    width: 100%;
+    background: url('../images/belgium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content-inner {
+        display: table-cell;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+#four-pillars {
+    .row {
+        overflow: auto;
+        max-width: 600px;
+        margin:0 auto;
+        .pillar {
+            width: 50%;
+            float: left;
+            padding: 2rem;
+            p {
+                margin: 10px 0 16px;
+            }
+        }
+    }
+}
+#typical-session {
+    background: #f8f8f8;
+}
+
 
 .page-template-template-about #page .site-footer, 
 .page-template-template-contact #page .site-footer, 

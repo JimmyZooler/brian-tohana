@@ -12,6 +12,7 @@ Template Name: About Page
         <h3><?php the_field('main_heading'); ?></h3>
     </div>
     <div class="dark-overlay"></div>
+    <a class='scroll-arrow' href="#main-pages"></a>
 </header>
 <div id="main-pages">
     <div class="main-view-pages">
