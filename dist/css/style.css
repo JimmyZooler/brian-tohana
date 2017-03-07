@@ -1347,11 +1347,11 @@ About Page Styles
   font-size: 18px;
   overflow: auto; }
   #main-pages .about-section .inner-content p, #main-pages .about-section .inner-content li {
-    font-size: 17px; }
+    font-size: 18px;
+    line-height: 1.6; }
   #main-pages .about-section .inner-content h4 {
     font-size: 24px;
-    font-family: 'Alegreya', serif;
-    font-style: italic; }
+    font-family: 'Alegreya', serif; }
 
 #main-pages #about-section-2 {
   position: relative;
@@ -1360,7 +1360,7 @@ About Page Styles
   background-repeat: no-repeat;
   background-attachment: fixed; }
   #main-pages #about-section-2 .inner-content {
-    margin: 4rem 1rem 3rem auto;
+    margin: 2rem 2rem 2rem auto;
     max-width: 600px;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.8); }
