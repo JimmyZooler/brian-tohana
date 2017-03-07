@@ -109,6 +109,9 @@ function brian_tohana_scripts() {
 	wp_enqueue_script( 'brian_tohana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'brian_tohana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+        wp_enqueue_script( 'brian_tohana-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20151215', true );
+
         
         wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700|Alegreya:400,700');
         

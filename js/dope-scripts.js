@@ -117,7 +117,7 @@ document.getElementById('mute').addEventListener('click', function (e)
 })( jQuery );
 
 
-// Scroll arrow script
+// Scroll arrow and Back to Top script
 
 jQuery(document).ready(function() {
     
@@ -127,7 +127,34 @@ jQuery(document).ready(function() {
             scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
         }, 1300);
     });
-    if ( Reveal.isLastSlide() === true ) {
-        jQuery('#end-slideshow-cta').removeClass('hide');
-    }
+    jQuery ("#back-to-top a").click( function() {
+        event.preventDefault();
+        jQuery('html, body').animate({
+            scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
+        }, 1200);
+    });
+});
+
+// Back to Top Element
+
+jQuery(document).ready(function() { 
+    var servicesWaypoint = jQuery('#what-taught').waypoint({
+        handler: function(direction) {
+          if (direction === "down" ) {
+              jQuery('#back-to-top').removeClass('opacity-zero');  
+          } else {
+              jQuery('#back-to-top').addClass('opacity-zero'); 
+          }
+        }
+      });
+      
+      var aboutWaypoint = jQuery('#about-section-2').waypoint({
+        handler: function(direction) {
+          if (direction === "down" ) {
+              jQuery('#back-to-top').removeClass('opacity-zero');  
+          } else {
+              jQuery('#back-to-top').addClass('opacity-zero'); 
+          }
+        }
+      });
 });

@@ -68,5 +68,7 @@ Template Name: Services Page
         </div>
     </div>
 </div>
-
+<div id="back-to-top" class="opacity-zero">
+    <a href="#masthead"></a>
+</div>
 <?php get_footer(); ?>
