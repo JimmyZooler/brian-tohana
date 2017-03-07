@@ -170,6 +170,9 @@ jQuery(document).ready(function() {
             scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
         }, 1300);
     });
+    if ( Reveal.isLastSlide() === true ) {
+        jQuery('#end-slideshow-cta').removeClass('hide');
+    }
 });
 /**
  * File navigation.js.

@@ -9,14 +9,14 @@ Template Name: About Page
 <header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/new_about.jpg'); background-position: top; background-attachment: fixed;">
     <div class="helper">
         <h1>About Me</h1>
-        <h3><?php the_field('main_heading'); ?></h3>
+        <h3 id="about-quote"><?php the_field('main_heading'); ?></h3>
     </div>
     <div class="dark-overlay"></div>
     <a class='scroll-arrow' href="#main-pages"></a>
 </header>
 <div id="main-pages">
     <div class="main-view-pages">
-        <div id="about-section-2" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/snow_legs.png');">
+        <div id="about-section-2" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/snow_legs_2.png');">
             <div class="inner-content">    
                 <?php the_field('about_section_2'); ?>
             </div>
@@ -26,7 +26,7 @@ Template Name: About Page
                 <?php the_field('about_section_3'); ?>
             </div>
         </div>
-        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_cutout.png');">
+        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_cutout_2.png');">
             <div class="inner-content"> 
                 <?php the_field('about_section_4'); ?>
             </div>

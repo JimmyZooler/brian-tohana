@@ -709,6 +709,29 @@ h1, h2, h3, h4, h5, h6 {
 .text-center {
   text-align: center; }
 
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.40;
+  top: 0;
+  left: 0; }
+
+.row {
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%; }
+
+.content-wrap {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 2rem; }
+
+/*--------------------------------------------------------------
+# Navigation Bar Styles
+--------------------------------------------------------------*/
 .main-navigation {
   background: #fff;
   height: 52px; }
@@ -719,6 +742,118 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%; }
 
+.site-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 260;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+  .site-header nav #site-title {
+    color: #392247;
+    font-size: 24px;
+    transition: all 0.2s;
+    letter-spacing: 1px;
+    line-height: 33px;
+    float: left;
+    padding: 8px;
+    margin-left: 10px; }
+  .site-header nav div {
+    text-align: left; }
+    .site-header nav div #primary-menu {
+      display: inline-block;
+      margin-left: 20px; }
+      .site-header nav div #primary-menu li {
+        padding: 9px; }
+        .site-header nav div #primary-menu li a {
+          color: #392247;
+          font-size: 14px;
+          transition: all 0.2s;
+          letter-spacing: 1px;
+          line-height: 33px;
+          padding-left: 2px; }
+
+.site-header nav #site-title:before {
+  content: "";
+  width: 30px;
+  margin-top: 2px;
+  margin-right: 4px;
+  float: left;
+  display: inline-block;
+  height: 30px;
+  background: url("../images/logo.png");
+  background-size: cover; }
+
+#primary-menu .current_page_item a {
+  /*box-shadow: 0 2px 0 rgba(35, 21, 43, 0.3);*/
+  color: #c2c2c2 !important; }
+
+#primary-menu li a:hover {
+  color: #c2c2c2 !important; }
+
+#mute {
+  display: none;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  color: #fff;
+  z-index: 270;
+  width: 45px;
+  height: 45px;
+  /*background: #F2F2F2;*/
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s; }
+
+#mute:hover {
+  /*background: #d2d2d2;*/ }
+
+#mute #audio-icon {
+  width: 100%;
+  height: 100%;
+  background-position: center center; }
+
+#mute .mute-on {
+  background: url("../images/volume_down_grey.png"); }
+
+#mute .mute-off {
+  background: url("../images/volume_up_grey.png"); }
+
+#social-buttons {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 270;
+  display: inline-block; }
+  #social-buttons ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #social-buttons ul li {
+      display: inline;
+      float: left;
+      text-align: center;
+      margin: 0 0.5rem; }
+      #social-buttons ul li a {
+        display: block; }
+        #social-buttons ul li a i {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          transition: all 0.3s;
+          font-size: 1.25rem;
+          border-radius: 200px;
+          color: #392247;
+          background: #fff; }
+
+#social-buttons ul li a i:hover {
+  background: #d2d2d2; }
+
+/*--------------------------------------------------------------
+  Main Intro Styles
+--------------------------------------------------------------*/
 .main-intro {
   display: block;
   z-index: 264;
@@ -785,6 +920,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-intro .intro-content .title-box a:hover .arrow {
   transform: translateX(5px); }
 
+/*--------------------------------------------------------------
+  Home Page Styles
+--------------------------------------------------------------*/
 .main-view {
   z-index: 1;
   background-size: cover;
@@ -799,135 +937,31 @@ h1, h2, h3, h4, h5, h6 {
   .main-view .dark-overlay {
     z-index: 3; }
 
-.site-header {
+#mobile-slideshow {
+  display: block; }
+
+#desktop-slideshow {
+  display: none; }
+
+#end-slideshow-cta {
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 260;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase; }
-  .site-header nav #site-title {
-    color: #392247;
-    font-size: 24px;
-    transition: all 0.2s;
-    letter-spacing: 1px;
-    line-height: 33px;
-    float: left;
-    padding: 8px;
-    margin-left: 10px; }
-  .site-header nav div {
-    text-align: left; }
-    .site-header nav div #primary-menu {
-      display: inline-block;
-      margin-left: 20px; }
-      .site-header nav div #primary-menu li {
-        padding: 9px; }
-        .site-header nav div #primary-menu li a {
-          color: #392247;
-          font-size: 14px;
-          transition: all 0.2s;
-          letter-spacing: 1px;
-          line-height: 33px;
-          padding-left: 2px; }
+  z-index: 500;
+  background: url("../images/square_arrow_white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  right: 30px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%); }
+  #end-slideshow-cta a {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
-.site-header nav #site-title:before {
-  content: "";
-  width: 30px;
-  margin-top: 2px;
-  margin-right: 4px;
-  float: left;
-  display: inline-block;
-  height: 30px;
-  background: url("../images/logo.png");
-  background-size: cover; }
-
-#primary-menu .current_page_item a {
-  /*box-shadow: 0 2px 0 rgba(35, 21, 43, 0.3);*/
-  color: #c2c2c2 !important; }
-
-#primary-menu li a:hover {
-  color: #c2c2c2 !important; }
-
-.dark-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.40;
-  top: 0;
-  left: 0; }
-
-#mute {
-  display: none;
-  position: absolute;
-  left: 8px;
-  top: 8px;
-  color: #fff;
-  z-index: 270;
-  width: 45px;
-  height: 45px;
-  /*background: #F2F2F2;*/
-  cursor: pointer;
-  border-radius: 6px;
-  transition: all 0.2s; }
-
-#mute:hover {
-  /*background: #d2d2d2;*/ }
-
-#mute #audio-icon {
-  width: 100%;
-  height: 100%;
-  background-position: center center; }
-
-#mute .mute-on {
-  background: url("../images/volume_down_grey.png"); }
-
-#mute .mute-off {
-  background: url("../images/volume_up_grey.png"); }
-
-#social-buttons {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  z-index: 270;
-  display: inline-block; }
-  #social-buttons ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    #social-buttons ul li {
-      display: inline;
-      float: left;
-      text-align: center;
-      margin: 0 0.5rem; }
-      #social-buttons ul li a {
-        display: block; }
-        #social-buttons ul li a i {
-          width: 40px;
-          height: 40px;
-          line-height: 40px;
-          transition: all 0.3s;
-          font-size: 1.25rem;
-          border-radius: 200px;
-          color: #392247;
-          background: #fff; }
-
-#social-buttons ul li a i:hover {
-  background: #d2d2d2; }
-
-.row {
-  margin: 0 auto;
-  max-width: 62.5rem;
-  width: 100%; }
-
-.content-wrap {
-  margin: 0 auto;
-  max-width: 900px;
-  width: 100%;
-  padding: 0 2rem; }
-
+/*--------------------------------------------------------------
+Site Footer Styles
+--------------------------------------------------------------*/
 .site-footer {
   background: #fff; }
   .site-footer .subscription-bar {
@@ -1112,27 +1146,9 @@ h1, h2, h3, h4, h5, h6 {
 :-ms-input-placeholder {
   color: #392247; }
 
-.next-triangle, .prev-triangle {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 40%;
-  z-index: 300;
-  cursor: pointer; }
-  .next-triangle img, .prev-triangle img {
-    opacity: 0.8;
-    transition: opacity 0.2s; }
-
-.next-triangle img:hover, .prev-triangle img:hover {
-  opacity: 1; }
-
-.next-triangle {
-  right: 50px;
-  transform: rotate(180deg); }
-
-.prev-triangle {
-  left: 50px; }
-
+/*--------------------------------------------------------------
+Contact Page Styles
+--------------------------------------------------------------*/
 .page-template-template-contact #content {
   background: #f8f8f8; }
 
@@ -1251,6 +1267,9 @@ h1, h2, h3, h4, h5, h6 {
 .italic {
   font-style: italic; }
 
+/*--------------------------------------------------------------
+Page Header Styles
+--------------------------------------------------------------*/
 .scroll-arrow {
   bottom: 20px;
   left: 50%;
@@ -1261,12 +1280,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: bottom .25s;
   z-index: 500; }
 
 .scroll-arrow:hover {
-  bottom: 40px; }
+  bottom: 40px;
+  opacity: 1; }
 
 .page-header {
   display: table;
@@ -1291,11 +1311,10 @@ h1, h2, h3, h4, h5, h6 {
       display: none; }
     .page-header .helper h3 {
       font-weight: 300;
-      font-family: 'Alegreya', serif;
+      font-family: 'Roboto', sans-serif;
       max-width: 590px;
-      margin: 10px auto 0 3rem;
       color: #fff;
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: initial;
       float: left;
       background: rgba(35, 21, 43, 0.9);
@@ -1312,28 +1331,36 @@ h1, h2, h3, h4, h5, h6 {
         font-style: italic; }
     .page-header .helper #services-quote {
       float: right;
-      margin-right: 10%; }
+      margin-right: 10%;
+      margin-bottom: 5rem; }
+    .page-header .helper #about-quote {
+      margin-left: 3rem; }
 
 .white-bg {
   background: #fff;
   box-shadow: 10px 0 0 #fff, -10px 0 0 #fff; }
 
+/*--------------------------------------------------------------
+About Page Styles
+--------------------------------------------------------------*/
 #main-pages .about-section {
   font-size: 18px;
   overflow: auto; }
   #main-pages .about-section .inner-content p, #main-pages .about-section .inner-content li {
-    font-size: 18px; }
+    font-size: 17px; }
   #main-pages .about-section .inner-content h4 {
-    font-size: 22px; }
+    font-size: 24px;
+    font-family: 'Alegreya', serif;
+    font-style: italic; }
 
 #main-pages #about-section-2 {
   position: relative;
   background-position-x: left;
-  background-size: 50%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
   #main-pages #about-section-2 .inner-content {
-    margin: 4rem auto 3rem auto;
+    margin: 4rem 1rem 3rem auto;
     max-width: 600px;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.8); }
@@ -1349,12 +1376,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4rem 4rem 6rem;
     background: #f8f8f8; }
     #main-pages #about-section-3 .inner-content p {
-      font-size: 20px;
+      font-size: 18px;
       display: inline-block;
       margin: 5px 0; }
 
 #main-pages #about-section-4 {
-  background-position-x: 3rem;
+  background-position-x: 1rem;
   background-position-y: bottom;
   background-size: 400px;
   background-repeat: no-repeat; }
@@ -1362,7 +1389,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 600px;
     padding: 1rem;
     margin: 2rem 2rem 2rem auto;
-    background: rgba(255, 255, 255, 0.3); }
+    background: rgba(255, 255, 255, 0.4); }
 
 #main-pages #about-section-5 {
   position: relative; }
@@ -1405,15 +1432,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 20px;
   margin-bottom: 10px; }
 
-.about-quote {
-  font-style: italic;
-  font-size: 120%; }
-
-/*---------------------------------------------
-
+/*--------------------------------------------------------------
 Services Page Styles
-
-----------------------------------------------*/
+--------------------------------------------------------------*/
 .coaching, .about-section {
   color: #373737; }
 
@@ -1428,26 +1449,17 @@ Services Page Styles
     font-family: 'Alegreya', serif;
     font-weight: 700; }
   .page-section h3 {
-    text-transform: uppercase; }
-  .page-section .sub {
-    padding: 1rem 0 2rem; }
-    .page-section .sub p {
-      margin: 10px 0 16px; }
+    font-size: 130%; }
+  .page-section p {
+    margin: 10px 0 16px; }
 
 #philosophy {
-  display: table;
   position: relative;
-  height: 70vh;
   width: 100%; }
   #philosophy .content-inner {
-    display: table-cell;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle; }
+    margin-bottom: 40px; }
 
 #what-taught {
-  padding: 2rem;
-  height: 90vh;
   display: table;
   background: #222;
   position: relative;
@@ -1455,14 +1467,16 @@ Services Page Styles
   background: url("../images/belgium.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  #what-taught .content-inner {
+  #what-taught .page-section {
     display: table-cell;
-    color: #fff;
     width: 100%;
     height: 100%;
     vertical-align: middle; }
-    #what-taught .content-inner h3 {
-      text-transform: uppercase; }
+    #what-taught .page-section .content-inner {
+      color: #fff;
+      padding: 2rem 3rem 2rem 15%; }
+      #what-taught .page-section .content-inner h3 {
+        /*text-transform: uppercase;*/ }
 
 #four-pillars .row {
   overflow: auto;
@@ -1471,7 +1485,8 @@ Services Page Styles
   #four-pillars .row .pillar {
     width: 50%;
     float: left;
-    padding: 2rem; }
+    padding: 2rem;
+    text-align: left; }
     #four-pillars .row .pillar p {
       margin: 10px 0 16px; }
 
@@ -1490,10 +1505,16 @@ Services Page Styles
 .page-template-template-services .site-header {
   position: relative; }
 
+@media screen and (min-width: 760px) {
+  #mobile-slideshow {
+    display: none !important; }
+  #desktop-slideshow {
+    display: block !important; } }
+
 @media screen and (max-width: 1100px) {
   .page-header .helper h3 {
-    font-size: 2rem;
-    max-width: 390px; } }
+    max-width: 490px;
+    font-size: 1.5rem; } }
 
 @media screen and (max-width: 800px) {
   .site-header {
@@ -1514,14 +1535,27 @@ Services Page Styles
   .page-header .helper h1 {
     font-size: 2.5rem; }
   .page-header .helper h3 {
-    font-size: 1.8rem;
-    max-width: 290px; }
+    max-width: 410px;
+    font-size: 1.2rem; }
+  #about-quote {
+    margin-left: 1rem !important;
+    margin-top: 5rem; }
+  #services-quote {
+    margin-right: 5%; }
+  .page-section h2 {
+    font-size: 2.2rem; }
+  .page-section h3 {
+    font-size: 100%; }
+  .page-section p, .page-section li {
+    font-size: 14px; }
+  #main-pages .about-section .inner-content p, #main-pages .about-section .inner-content li {
+    font-size: 14px !important; }
+  #main-pages .about-section .inner-content h4 {
+    font-size: 21px !important; }
   #main-pages #about-section-4 {
     background: none !important; }
   #main-pages #about-section-5 .inner-content {
     top: 0 !important; }
-  #main-pages .main-view-pages .about-section p, #main-pages .main-view-pages .about-section li {
-    font-size: 16px; }
   #social-buttons ul li {
     margin-right: 0.2rem; }
     #social-buttons ul li a i {
@@ -1585,10 +1619,3 @@ Services Page Styles
 .page-template-template-services .site-footer .close-footer,
 .page-template-template-contact .site-footer .close-footer {
   display: none !important; }
-
-@font-face {
-  font-family: 'geomanist';
-  src: url("../../geomanist/geomanist-regular-webfont.eot");
-  src: url("../../geomanist/geomanist-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../geomanist/geomanist-regular-webfont.woff2") format("woff2"), url("../../geomanist/geomanist-regular-webfont.woff") format("woff"), url("../../geomanist/geomanist-regular-webfont.ttf") format("truetype"), url("../../geomanist/geomanist-regular-webfont.svg#geomanist_regularregular") format("svg");
-  font-weight: 400;
-  font-style: normal; }

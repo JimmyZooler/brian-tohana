@@ -3979,6 +3979,9 @@
 		// Normal navigation
 		else if( ( isOverview() || previousFragment() === false ) && availableRoutes().left ) {
 			slide( indexh - 1 );
+                        if ( Reveal.isLastSlide() === false ) {
+                            parent.document.getElementById('end-slideshow-cta').className = "hide";
+                        }
 		}
 
 	}
@@ -3996,6 +3999,9 @@
 			slide( indexh + 1 );
                         if (getIndices()["h"] === 1 ) {
                             parent.document.getElementById('masthead').className = "site-header";
+                        }
+                        if ( Reveal.isLastSlide() === true ) {
+                            parent.document.getElementById('end-slideshow-cta').className = "";
                         }
 		}
 

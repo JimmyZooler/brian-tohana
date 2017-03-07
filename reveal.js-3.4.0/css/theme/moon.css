@@ -55,7 +55,6 @@ background: transparent; }
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
@@ -63,10 +62,11 @@ background: transparent; }
   font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 1.8em;
+  text-transform: uppercase;}
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 1.2em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -216,6 +216,7 @@ background: transparent; }
  *********************************************/
 .reveal a {
   color: #268bd2;
+  font-size: 0.7em;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
