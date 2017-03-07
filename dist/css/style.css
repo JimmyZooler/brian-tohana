@@ -1367,13 +1367,13 @@ About Page Styles
 
 #main-pages #about-section-3 {
   min-height: calc(100vh - 200px);
-  background-position-x: 250px;
+  background-position-y: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-repeat: no-repeat; }
   #main-pages #about-section-3 .inner-content {
     max-width: 600px;
     padding: 4rem 4rem 6rem;
+    margin: 5rem auto 5rem;
     background: #f8f8f8; }
     #main-pages #about-section-3 .inner-content p {
       font-size: 18px;
@@ -1552,10 +1552,15 @@ Services Page Styles
     font-size: 14px !important; }
   #main-pages .about-section .inner-content h4 {
     font-size: 21px !important; }
+  #main-pages #about-section-3 .inner-content {
+    padding: 2rem 2rem 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem; }
   #main-pages #about-section-4 {
     background: none !important; }
   #main-pages #about-section-5 .inner-content {
-    top: 0 !important; }
+    top: 0 !important;
+    width: 500px; }
   #social-buttons ul li {
     margin-right: 0.2rem; }
     #social-buttons ul li a i {

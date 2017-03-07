@@ -869,13 +869,13 @@ About Page Styles
         }
         #about-section-3 {
             min-height: calc(100vh - 200px);
-            background-position-x: 250px;
+            background-position-y: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
             .inner-content {
                 max-width: 600px;
                 padding: 4rem 4rem 6rem;
+                margin: 5rem auto 5rem;
                 background: #f8f8f8;
                 p {
                     font-size: 18px;
@@ -1109,12 +1109,21 @@ Services Page Styles
                 }
             }
         }
+        #about-section-3 {
+            .inner-content {
+                padding: 2rem 2rem 3rem;
+                margin-left: 4rem;
+                margin-right: 4rem;
+            }
+            
+        }
         #about-section-4 {
             background: none!important;
         }
         #about-section-5 {
             .inner-content {
                 top: 0!important;
+                width: 500px;
             }
         }
     }
