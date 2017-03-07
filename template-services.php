@@ -12,7 +12,7 @@ Template Name: Services Page
         
     </div>
     <div class="dark-overlay"></div>
-    <a class='scroll-arrow' href="#philosophy"></a>
+    <a class='scroll-arrow' href="#coaching"></a>
 </header>
 <div id="coaching" class="page-section">
     <div class="content-wrap">
