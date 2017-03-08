@@ -16,7 +16,7 @@ Template Name: Services Page
 </header>
 <div id="coaching" class="page-section">
     <div class="content-wrap">
-        <div class="text-center" id="philosophy">
+        <div class="text-center opacity-zero" id="philosophy">
             <div class="content-inner">
                 <?php the_field('my_philosophy'); ?>
             </div>
@@ -25,14 +25,14 @@ Template Name: Services Page
 </div>
 <div id="what-taught">
     <div class="page-section" >
-        <div class="content-inner">
+        <div class="content-inner opacity-zero" id="what-taught-inner">
                 <?php the_field('section_2_heading'); ?>
                 <?php the_field('section_2_content'); ?>
         </div>
     </div>
 </div>
 <div class="page-section text-center" id="four-pillars">
-    <div class="content-wrap">
+    <div class="content-wrap opacity-zero" id="four-pillars-content">
         <?php the_field('4_pillars_heading_1'); ?>
         <?php the_field('4_pillars_heading_2'); ?>
         <div class="row">
@@ -56,12 +56,12 @@ Template Name: Services Page
     </div>
 </div>
 <div id="typical-session" class="page-section">
-    <div class="content-wrap">
+    <div class="content-wrap opacity-zero">
         <h2>Coaching Services</h2>
     <?php the_field('typical_session'); ?></div>
 </div>
-<div class="facilitation">
-    <div class="content-wrap">
+<div class="facilitation" id="facilitation">
+    <div class="content-wrap opacity-zero">
         <div class="page-section">
             <h2>Facilitation</h2>
             <?php the_field('facilitation_section'); ?>

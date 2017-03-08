@@ -181,7 +181,7 @@ jQuery(document).ready(function() {
 // Back to Top Element
 
 jQuery(document).ready(function() { 
-    var servicesWaypoint = jQuery('#what-taught').waypoint({
+    var servicesWaypoint = jQuery('#philosophy').waypoint({
         handler: function(direction) {
           if (direction === "down" ) {
               jQuery('#back-to-top').removeClass('opacity-zero');  
@@ -190,7 +190,36 @@ jQuery(document).ready(function() {
           }
         }
       });
-      
+      var servicesWaypointTwo = jQuery('#coaching').waypoint({
+        handler: function(direction) {
+              jQuery('#philosophy').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
+      var servicesWaypointThree = jQuery('#what-taught').waypoint({
+        handler: function(direction) {
+              jQuery('#what-taught-inner').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
+      var servicesWaypointFour = jQuery('#four-pillars').waypoint({
+        handler: function(direction) {
+              jQuery('#four-pillars-content').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
+      var servicesWaypointFive = jQuery('#typical-session').waypoint({
+        handler: function(direction) {
+              jQuery('#typical-session > .content-wrap').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
+      var servicesWaypointSix = jQuery('#facilitation').waypoint({
+        handler: function(direction) {
+              jQuery('#facilitation > .content-wrap ').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
       var aboutWaypoint = jQuery('#about-section-2').waypoint({
         handler: function(direction) {
           if (direction === "down" ) {
@@ -199,6 +228,18 @@ jQuery(document).ready(function() {
               jQuery('#back-to-top').addClass('opacity-zero'); 
           }
         }
+      });
+      var aboutWaypointTwo = jQuery('#about-section-3').waypoint({
+        handler: function(direction) {
+              jQuery('#about-section-3 > .inner-content ').removeClass('opacity-zero');  
+        },
+            offset: '50%'
+      });
+      var aboutWaypointTwo = jQuery('#about-section-5').waypoint({
+        handler: function(direction) {
+              jQuery('#about-section-5 > .inner-content ').removeClass('opacity-zero');  
+        },
+            offset: '50%'
       });
 });
 /*!

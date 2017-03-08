@@ -434,11 +434,10 @@ Site Footer Styles
                 min-height: 0!important;
                 vertical-align: top;
                 input {
-                    border: 3px solid $purple!important;
+                    border: 2px solid #ccc!important;
                     border-radius: 0!important;
-                    background: transparent !important;
-                    padding-left: 3px;
-                    padding-right: 3px;
+                    background: #f4f4f4 !important;
+                    padding: 10px!important;
                     font-family: "Roboto";
                 }
             }
@@ -448,11 +447,13 @@ Site Footer Styles
                 display: inline-block;
                 padding-right: 5px;
                 min-height: 0!important;
+                
                 input {
-                border: 3px solid $purple!important;
-                border-radius: 0!important;
-               background: transparent !important;
-               font-family: "Roboto";
+                    border: 2px solid #ccc!important;
+                    border-radius: 0!important;
+                   background: #f4f4f4 !important;
+                   font-family: "Roboto";
+                   padding: 10px!important;
                 }
                 .mce_inline_error {
                     margin: 0 !important;
@@ -473,22 +474,22 @@ Site Footer Styles
                 }
             }
             ::-webkit-input-placeholder {
-                color: $purple;
+                color: #444;
                 font-family: "Roboto";
              }
 
              :-moz-placeholder { /* Firefox 18- */
-                color: $purple;  
+                color: #444;  
                 font-family: "Roboto";
              }
 
              ::-moz-placeholder {  /* Firefox 19+ */
-                color: $purple;  
+                color: #444;  
                 font-family: "Roboto";
              }
 
              :-ms-input-placeholder {  
-                color: $purple;  
+                color: #444;  
                 font-family: "Roboto";
              }
         }
@@ -772,7 +773,7 @@ Page Header Styles
     z-index: 500;
 }
 .scroll-arrow:hover {
-    bottom: 40px;
+    bottom: 30px;
     opacity: 1;
 }
 
@@ -902,6 +903,7 @@ About Page Styles
                 padding: 4rem 4rem 6rem;
                 margin: 5rem auto 5rem;
                 background: #f8f8f8;
+                transition: opacity 0.3s;
                 p {
                     font-size: 18px;
                     display: inline-block;
@@ -934,6 +936,7 @@ About Page Styles
                 left:50%;
                 transform: translateX(-50%);
                 z-index: 2;
+                transition: opacity 0.3s;
                 #button-helper {
                     text-align: center;
                     a {
@@ -978,6 +981,7 @@ Services Page Styles
 .facilitation {
     background-color: $purple;
     color: #fff;
+    transition: opacity 0.3s;
 }
 .page-section {
     padding: 3rem 0 3rem;
@@ -996,6 +1000,7 @@ Services Page Styles
 #philosophy {
     position: relative;
     width: 100%;
+    transition: opacity 0.3s;
     .content-inner {
         margin-bottom: 40px; 
     }
@@ -1016,6 +1021,7 @@ Services Page Styles
         .content-inner {
             color: #fff;
             padding: 2rem 3rem 2rem 15%;
+            transition: opacity 0.3s;
             h3 {
                 /*text-transform: uppercase;*/
             }
@@ -1024,6 +1030,9 @@ Services Page Styles
 }
 
 #four-pillars {
+    #four-pillars-content {
+        transition: opacity 0.3s;
+    }
     .row {
         overflow: auto;
         max-width: 600px;
@@ -1036,11 +1045,18 @@ Services Page Styles
             p {
                 margin: 10px 0 16px;
             }
+            ul {
+                margin: 0;
+                padding-left: 20px;
+            }
         }
     }
 }
 #typical-session {
     background: #f8f8f8;
+    .content-wrap {
+        transition: opacity 0.3s;
+    }
 }
 
 

@@ -22,7 +22,7 @@ Template Name: About Page
             </div>
         </div>
         <div id="about-section-3" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/brian_bench.jpg');">
-            <div class="inner-content"> 
+            <div class="inner-content opacity-zero"> 
                 <?php the_field('about_section_3'); ?>
             </div>
         </div>
@@ -33,7 +33,7 @@ Template Name: About Page
         </div>
         <div id="about-section-5" class="about-section">
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/brian_blue.jpg" />
-            <div class="inner-content"> 
+            <div class="inner-content opacity-zero"> 
                 <?php the_field('about_section_5'); ?>
                 <div id="button-helper"><a href="../services">Check out how I can help you here</a></div>
             </div>

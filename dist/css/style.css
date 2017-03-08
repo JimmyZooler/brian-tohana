@@ -995,11 +995,10 @@ Site Footer Styles
         min-height: 0 !important;
         vertical-align: top; }
         .site-footer .subscription-bar .subscription-form .subscribe-name input {
-          border: 3px solid #392247 !important;
+          border: 2px solid #ccc !important;
           border-radius: 0 !important;
-          background: transparent !important;
-          padding-left: 3px;
-          padding-right: 3px;
+          background: #f4f4f4 !important;
+          padding: 10px !important;
           font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form .subscribe-email {
         width: 36% !important;
@@ -1008,10 +1007,11 @@ Site Footer Styles
         padding-right: 5px;
         min-height: 0 !important; }
         .site-footer .subscription-bar .subscription-form .subscribe-email input {
-          border: 3px solid #392247 !important;
+          border: 2px solid #ccc !important;
           border-radius: 0 !important;
-          background: transparent !important;
-          font-family: "Roboto"; }
+          background: #f4f4f4 !important;
+          font-family: "Roboto";
+          padding: 10px !important; }
         .site-footer .subscription-bar .subscription-form .subscribe-email .mce_inline_error {
           margin: 0 !important; }
       .site-footer .subscription-bar .subscription-form .subscribe-button {
@@ -1027,18 +1027,18 @@ Site Footer Styles
           text-shadow: none !important;
           font-family: "Oswald"; }
       .site-footer .subscription-bar .subscription-form ::-webkit-input-placeholder {
-        color: #392247;
+        color: #444;
         font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form :-moz-placeholder {
         /* Firefox 18- */
-        color: #392247;
+        color: #444;
         font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form ::-moz-placeholder {
         /* Firefox 19+ */
-        color: #392247;
+        color: #444;
         font-family: "Roboto"; }
       .site-footer .subscription-bar .subscription-form :-ms-input-placeholder {
-        color: #392247;
+        color: #444;
         font-family: "Roboto"; }
   .site-footer .site-info {
     font-size: 10px;
@@ -1288,7 +1288,7 @@ Page Header Styles
   z-index: 500; }
 
 .scroll-arrow:hover {
-  bottom: 40px;
+  bottom: 30px;
   opacity: 1; }
 
 .page-header {
@@ -1397,7 +1397,8 @@ About Page Styles
     max-width: 600px;
     padding: 4rem 4rem 6rem;
     margin: 5rem auto 5rem;
-    background: #f8f8f8; }
+    background: #f8f8f8;
+    transition: opacity 0.3s; }
     #main-pages #about-section-3 .inner-content p {
       font-size: 18px;
       display: inline-block;
@@ -1425,7 +1426,8 @@ About Page Styles
     padding: 20px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2; }
+    z-index: 2;
+    transition: opacity 0.3s; }
     #main-pages #about-section-5 .inner-content #button-helper {
       text-align: center; }
       #main-pages #about-section-5 .inner-content #button-helper a {
@@ -1463,7 +1465,8 @@ Services Page Styles
 
 .facilitation {
   background-color: #392247;
-  color: #fff; }
+  color: #fff;
+  transition: opacity 0.3s; }
 
 .page-section {
   padding: 3rem 0 3rem; }
@@ -1478,7 +1481,8 @@ Services Page Styles
 
 #philosophy {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  transition: opacity 0.3s; }
   #philosophy .content-inner {
     margin-bottom: 40px; }
 
@@ -1497,9 +1501,13 @@ Services Page Styles
     vertical-align: middle; }
     #what-taught .page-section .content-inner {
       color: #fff;
-      padding: 2rem 3rem 2rem 15%; }
+      padding: 2rem 3rem 2rem 15%;
+      transition: opacity 0.3s; }
       #what-taught .page-section .content-inner h3 {
         /*text-transform: uppercase;*/ }
+
+#four-pillars #four-pillars-content {
+  transition: opacity 0.3s; }
 
 #four-pillars .row {
   overflow: auto;
@@ -1512,9 +1520,14 @@ Services Page Styles
     text-align: left; }
     #four-pillars .row .pillar p {
       margin: 10px 0 16px; }
+    #four-pillars .row .pillar ul {
+      margin: 0;
+      padding-left: 20px; }
 
 #typical-session {
   background: #f8f8f8; }
+  #typical-session .content-wrap {
+    transition: opacity 0.3s; }
 
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
