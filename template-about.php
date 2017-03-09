@@ -35,7 +35,7 @@ Template Name: About Page
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/brian_blue.jpg" />
             <div class="inner-content opacity-zero"> 
                 <?php the_field('about_section_5'); ?>
-                <div id="button-helper"><a href="../services">Check out how I can help you here</a></div>
+                <div id="button-helper"><a href="../services"><?php the_field('button_text'); ?></a></div>
             </div>
         </div>
     </div>

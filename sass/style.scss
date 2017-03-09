@@ -864,6 +864,14 @@ About Page Styles
         position: absolute;
     }
 }
+#back-to-top:hover {
+    background: $light-purple;
+    background-image: url('../images/square_arrow_white.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(-90deg);
+}
 
 #main-pages {
         .about-section {
@@ -899,9 +907,9 @@ About Page Styles
             background-size: cover;
             background-repeat: no-repeat;
             .inner-content {
-                max-width: 600px;
-                padding: 4rem 4rem 6rem;
-                margin: 5rem auto 5rem;
+                max-width: 800px;
+                padding: 4rem 4rem 5rem;
+                margin: 30rem auto 5rem 5rem;
                 background: #f8f8f8;
                 transition: opacity 0.3s;
                 p {
@@ -916,6 +924,7 @@ About Page Styles
             background-position-y: bottom;
             background-size: 400px;
             background-repeat: no-repeat;
+            background-attachment: fixed;
             .inner-content {
                 max-width: 600px;
                 padding: 1rem;
@@ -951,13 +960,14 @@ About Page Styles
                         font-family: "Oswald";
                         display: inline-block;
                         margin: 40px auto;
+                        text-decoration: none;
                     }
                 } 
             }
             
         }
 }
-#main-pages #about-section-5 .inner-content div a:hover {
+#main-pages #about-section-5 .inner-content #button-helper a:hover {
     background: $light-purple!important;
 }
 .first-letter {
@@ -1020,7 +1030,7 @@ Services Page Styles
         vertical-align: middle;
         .content-inner {
             color: #fff;
-            padding: 2rem 3rem 2rem 15%;
+            padding: 2rem auto 2rem;
             transition: opacity 0.3s;
             h3 {
                 /*text-transform: uppercase;*/

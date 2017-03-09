@@ -29,7 +29,7 @@
                                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                         </style>
                         <div id="mc_embed_signup">
-                        <form action="//geometricwebdesign.us14.list-manage.com/subscribe/post?u=647fb5b2a53b7804687e6b819&amp;id=b8ae23cbfe" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <form action="//briantohana.us15.list-manage.com/subscribe/post?u=1377b0157de21fa2da3d73e82&amp;id=f32726217d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
                         <div class="mc-field-group subscribe-name">
                             <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">

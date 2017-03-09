@@ -25,7 +25,7 @@ Template Name: Services Page
 </div>
 <div id="what-taught">
     <div class="page-section" >
-        <div class="content-inner opacity-zero" id="what-taught-inner">
+        <div class="content-inner text-center opacity-zero" id="what-taught-inner">
                 <?php the_field('section_2_heading'); ?>
                 <?php the_field('section_2_content'); ?>
         </div>
