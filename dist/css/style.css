@@ -1296,8 +1296,7 @@ Page Header Styles
   height: calc(90vh);
   width: 100%;
   background-size: cover;
-  position: relative;
-  background-attachment: fixed; }
+  position: relative; }
   .page-header .dark-overlay {
     opacity: 0.1; }
   .page-header .helper {
@@ -1561,7 +1560,9 @@ Services Page Styles
   #mobile-slideshow {
     display: none !important; }
   #desktop-slideshow {
-    display: block !important; } }
+    display: block !important; }
+  #about-header, #services-header {
+    background-attachment: fixed; } }
 
 @media screen and (max-width: 1100px) {
   .page-header .helper h3 {

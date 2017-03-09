@@ -782,7 +782,6 @@ Page Header Styles
     width: 100%;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
     .dark-overlay {
         opacity: 0.1;
     }
@@ -1094,6 +1093,9 @@ Services Page Styles
     }
     #desktop-slideshow {
         display: block!important;
+    }
+    #about-header,#services-header {
+        background-attachment: fixed;
     }
 }
 
