@@ -6,7 +6,7 @@ Template Name: About Page
 
 <?php get_header(); ?>
 
-<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/new_about.jpg'); background-position: top; background-attachment: fixed;">
+<header class="page-header" id="about-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/new_about.jpg');">
     <div class="helper">
         <h1>About Me</h1>
         <h3 id="about-quote"><?php the_field('main_heading'); ?></h3>

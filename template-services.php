@@ -5,7 +5,7 @@ Template Name: Services Page
 ?>
 
 <?php get_header(); ?>
-<header class="page-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_parlament.jpg');">
+<header class="page-header" id="services-header" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_parlament.jpg');">
     <div class="helper">
         <h1>Services</h1>
         <h3 id="services-quote"><?php the_field('main_heading'); ?></h3>

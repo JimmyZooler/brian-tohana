@@ -948,7 +948,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #end-slideshow-cta {
   position: absolute;
-  z-index: 500;
+  z-index: 400;
   background: url("../images/square_arrow_white.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1285,7 +1285,7 @@ Page Header Styles
   position: absolute;
   opacity: 0.9;
   transition: bottom .25s;
-  z-index: 500; }
+  z-index: 400; }
 
 .scroll-arrow:hover {
   bottom: 30px;
@@ -1296,8 +1296,8 @@ Page Header Styles
   height: calc(90vh);
   width: 100%;
   background-size: cover;
-  background-position: center bottom;
-  position: relative; }
+  position: relative;
+  background-attachment: fixed; }
   .page-header .dark-overlay {
     opacity: 0.1; }
   .page-header .helper {
@@ -1339,6 +1339,12 @@ Page Header Styles
     .page-header .helper #about-quote {
       margin-left: 3rem; }
 
+#services-header {
+  background-position: center bottom; }
+
+#about-header {
+  background-position: top; }
+
 .white-bg {
   background: #fff;
   box-shadow: 10px 0 0 #fff, -10px 0 0 #fff; }
@@ -1351,7 +1357,7 @@ About Page Styles
   width: 50px;
   height: 50px;
   position: fixed;
-  z-index: 500;
+  z-index: 400;
   bottom: 10px;
   right: 10px;
   background: #392247;
@@ -1398,7 +1404,7 @@ About Page Styles
 
 #main-pages #about-section-3 {
   min-height: calc(100vh - 200px);
-  background-position-y: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   #main-pages #about-section-3 .inner-content {
