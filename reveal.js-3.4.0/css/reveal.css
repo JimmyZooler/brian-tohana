@@ -193,11 +193,10 @@ body {
   display: none;
   position: fixed;
   width: 100%;
-  height: 110px;
+  height: 1px;
   z-index: 30;
   right: 0;
   top: 50%;
-  transform: translateY(-40%);
   -webkit-user-select: none; }
 
 .reveal .controls button {
@@ -227,7 +226,7 @@ body {
   margin-top: 1px; }
 
 .reveal .controls .navigate-left {
-  top: 10px;
+  top: -20px;
   left: 20px;
   background: url('square_arrow_white.png');
   background-size: cover;
@@ -241,7 +240,7 @@ body {
   opacity: 0.3; }
 
 .reveal .controls .navigate-right {
-  top: -2px;
+  top: -32px;
   right: 20px;
   background: url('square_arrow_white.png');
   background-size: cover;

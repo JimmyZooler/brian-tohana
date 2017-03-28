@@ -389,8 +389,8 @@ h1,h2, h3, h4, h5, h6 {
     width: 90px;
     height: 90px;
     right: 30px;
-    top: calc(50% + 10px);
-    transform: translateY(-50%);
+    top: calc(50%);
+    transform: translateY(-19%);
     a {
         position: absolute;
         width: 100%;
@@ -1273,6 +1273,10 @@ Services Page Styles
                font-size: 14px;
             }
         }
+    }
+    #end-slideshow-cta {
+        width: 70px;
+        height: 70px;
     }
 }
 .page-template-template-about .site-footer .close-footer, 
