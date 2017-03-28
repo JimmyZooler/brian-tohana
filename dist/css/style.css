@@ -1673,6 +1673,7 @@ Services Page Styles
   .contact #contact-form :-ms-input-placeholder {
     font-size: 14px; }
   #end-slideshow-cta {
+    top: calc(50% - 10px);
     width: 70px;
     height: 70px; } }
 
