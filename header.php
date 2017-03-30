@@ -43,7 +43,7 @@
         </div>
         <div id="alert-to-landscape" class="hide">
             <div class="helper">
-                <h2>Please rotate. This is best viewed in landscape mode.</h2>
+                <h2>Please rotate to landscape mode.<br>Special features only available on desktop.</h2>
             </div>
         </div>
 	<div id="content" class="site-content">

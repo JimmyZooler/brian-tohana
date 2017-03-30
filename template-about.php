@@ -16,6 +16,11 @@ Template Name: About Page
 </header>
 <div id="main-pages">
     <div class="main-view-pages">
+        <div id="about-video">
+            <div id="video-wrap">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/upPXBgefMWI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
         <div id="about-section-2" class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/snow_legs_2.png');">
             <div class="inner-content">    
                 <?php the_field('about_section_2'); ?>
@@ -26,7 +31,7 @@ Template Name: About Page
                 <?php the_field('about_section_3'); ?>
             </div>
         </div>
-        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/brian_cutout_2.png');">
+        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/Brian-9.png');">
             <div class="inner-content"> 
                 <?php the_field('about_section_4'); ?>
             </div>
@@ -35,7 +40,7 @@ Template Name: About Page
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/brian_blue.jpg" />
             <div class="inner-content opacity-zero"> 
                 <?php the_field('about_section_5'); ?>
-                <div id="button-helper"><a href="../services"><?php the_field('button_text'); ?></a></div>
+                <div id="button-helper"><a href="https://trueinnerwork.typeform.com/to/ILdXY1"><?php the_field('button_text'); ?></a></div>
             </div>
         </div>
     </div>

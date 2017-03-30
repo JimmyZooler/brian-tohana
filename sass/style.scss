@@ -892,6 +892,14 @@ About Page Styles
                 }
             }
         }
+        #about-video {
+            height: 100vh;
+            #video-wrap {
+                height: 100%;
+                max-width: 1800px;
+                margin: 0 auto;
+            }
+        }
         #about-section-2 {
             .inner-content {
                 margin: 2rem 2rem 2rem auto;
