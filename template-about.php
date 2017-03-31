@@ -16,8 +16,8 @@ Template Name: About Page
 </header>
 <div id="main-pages">
     <div class="main-view-pages">
-        <div id="about-video">
-            <div id="video-wrap">
+        <div id="about-video" style="height: 100vh;">
+            <div id="video-wrap" style="height: 100%; max-width: 1800px; margin: 0 auto;">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/upPXBgefMWI" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>

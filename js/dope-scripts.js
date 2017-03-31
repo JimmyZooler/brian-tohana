@@ -199,3 +199,20 @@ jQuery(document).ready(function() {
             offset: '50%'
       });
 });
+
+// Script for typeform popup
+
+jQuery(document).ready(function(){
+  jQuery(window).mouseleave( function(){
+      if (event.toElement == null) {
+          if(sessionStorage["PopupShown"] != 'yes'){ 
+               showPopup();
+           };
+       };
+  });
+});
+
+function showPopup() {
+  jQuery(".typeform-share").trigger("click");
+  sessionStorage["PopupShown"] = 'yes';
+};
