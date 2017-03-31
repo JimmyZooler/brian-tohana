@@ -31,7 +31,7 @@ Template Name: About Page
                 <?php the_field('about_section_3'); ?>
             </div>
         </div>
-        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/Brian-9.png');">
+        <div id="about-section-4"  class="about-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/dist/images/Brian-9.jpg');">
             <div class="inner-content"> 
                 <?php the_field('about_section_4'); ?>
             </div>
