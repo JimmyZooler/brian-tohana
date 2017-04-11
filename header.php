@@ -37,7 +37,7 @@
         <div id="social-buttons">
             <ul class="social-icons">
                 <li class="social-icon"><a href="https://www.facebook.com/btohana" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <!--<li class="social-icon"><a href="https://www.instagram.com/youngprosmvmt/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+                <li class="social-icon"><a href="https://www.youtube.com/channel/UCa3mm095VDS9tOAJpwKc8ug/feed" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                 <li class="social-icon"><a href="https://soundcloud.com/briantohana" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
             </ul>
         </div>
