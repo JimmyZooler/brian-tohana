@@ -27,7 +27,7 @@
 //             $audio.addClass('mute-on');
 //         }
 //     });
-  
+	
 // })( jQuery );
 
 
@@ -41,7 +41,7 @@
         $('.main-intro').addClass('hide');
         sessionStorage["IntroShown"] = 'yes';
     });
-  
+	
 })( jQuery );
 
 // Script for Footer 
@@ -71,7 +71,7 @@
        $('.open-footer').removeClass('hide');
        $siteFooter.addClass('invisible');
     });
-  
+	
 })( jQuery );
 
 /// Landscape only message

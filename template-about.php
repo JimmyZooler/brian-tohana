@@ -40,7 +40,7 @@ Template Name: About Page
             <img src="<?php echo get_template_directory_uri(); ?>/dist/images/brian_blue.jpg" />
             <div class="inner-content opacity-zero"> 
                 <?php the_field('about_section_5'); ?>
-                <div id="button-helper"><a href="https://trueinnerwork.typeform.com/to/ILdXY1"><?php the_field('button_text'); ?></a></div>
+                <div id="button-helper"><a id="about-button" href="https://trueinnerwork.typeform.com/to/ILdXY1"><?php the_field('button_text'); ?></a></div>
             </div>
         </div>
     </div>

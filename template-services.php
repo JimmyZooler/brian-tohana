@@ -57,13 +57,13 @@ Template Name: Services Page
 </div>
 <div id="typical-session" class="page-section">
     <div class="content-wrap opacity-zero">
-        <h2>Coaching Services</h2>
+        <h2><?php the_field('coaching_heading'); ?></h2>
     <?php the_field('typical_session'); ?></div>
 </div>
 <div class="facilitation" id="facilitation">
     <div class="content-wrap opacity-zero">
         <div class="page-section">
-            <h2>Facilitation</h2>
+            <h2><?php the_field('facilitation_heading'); ?></h2>
             <?php the_field('facilitation_section'); ?>
         </div>
     </div>
