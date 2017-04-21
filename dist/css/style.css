@@ -1671,7 +1671,7 @@ Blog and Archive Page Styles
         content: "\f02c";
         margin-right: 10px;
         font-family: "FontAwesome"; }
-      .blog .site-content .widget-area .widget_tag_cloud .tagcloud a, .archive .site-content .widget-area .widget_tag_cloud .tagcloud a, .single .site-content .widget-area .widget_tag_cloud .tagcloud a {
+      .blog .site-content .widget-area .widget_tag_cloud p a, .archive .site-content .widget-area .widget_tag_cloud p a, .single .site-content .widget-area .widget_tag_cloud p a {
         display: block;
         font-size: 14px !important;
         color: #333;
@@ -1755,6 +1755,26 @@ a:hover.page-numbers {
 /*--------------------------------------------------------------
 Media Queries 
 --------------------------------------------------------------*/
+@media screen and (max-width: 950px) {
+  .single .site-content .widget-area {
+    display: none !important; }
+  .single .site-content .content-area .site-main {
+    margin: 0 auto 0 50px !important; } }
+
+@media screen and (max-width: 850px) {
+  .archive .widget-area, .blog .widget-area {
+    display: none !important; }
+  .archive .site-content, .blog .site-content {
+    padding-left: 40px !important;
+    padding-right: 40px !important; }
+    .archive .site-content .content-area, .blog .site-content .content-area {
+      padding: 0 !important;
+      max-width: 680px;
+      margin: 0 auto !important;
+      float: none !important; }
+      .archive .site-content .content-area .site-main, .blog .site-content .content-area .site-main {
+        margin: 0 auto 0; } }
+
 @media screen and (min-width: 760px) {
   #mobile-slideshow {
     display: none !important; }
@@ -1878,5 +1898,8 @@ Media Queries
 
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,
-.page-template-template-contact .site-footer .close-footer {
+.page-template-template-contact .site-footer .close-footer,
+.blog .site-footer .close-footer,
+.archive .site-footer .close-footer,
+.single .site-footer .close-footer {
   display: none !important; }

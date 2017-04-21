@@ -65,13 +65,20 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section id="tag_cloud-2" class="widget widget_tag_cloud">
+    <section class="widget widget_tag_cloud">
         <h2 class="widget-title">Tags</h2>
-        <div class="tagcloud">
-            <a href='http://localhost/briantohana/tag/business/' class='tag-link-5 tag-link-position-1' title='2 topics' style='font-size: 8pt;'>Business</a>
-            <a href='http://localhost/briantohana/tag/self-development/' class='tag-link-3 tag-link-position-2' title='2 topics' style='font-size: 8pt;'>Self Development</a>
-            <a href='http://localhost/briantohana/tag/spirituality/' class='tag-link-4 tag-link-position-3' title='2 topics' style='font-size: 8pt;'>Spirituality</a>
-        </div>
+        <?php
+            $tags = get_tags();
+            $html = '<p>';
+            foreach ( $tags as $tag ) {
+                $tag_link = get_tag_link( $tag->term_id );
+                        
+                $html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'>";
+                $html .= "{$tag->name}</a>";
+            }
+            $html .= '</p>';
+            echo $html;
+        ?>
     </section>
 </aside>
 <?php
