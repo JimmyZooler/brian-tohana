@@ -554,7 +554,6 @@ a {
 --------------------------------------------------------------*/
 .clear:before,
 .clear:after,
-.entry-content:before,
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
@@ -1261,7 +1260,10 @@ Contact Page Styles
 
 .page-template-template-about .hide-header,
 .page-template-template-contact .hide-header,
-.page-template-template-services .hide-header {
+.page-template-template-services .hide-header,
+.blog .hide-header,
+.archive .hide-header,
+.single .hide-header {
   display: block !important; }
 
 .invisible {
@@ -1556,7 +1558,10 @@ Services Page Styles
 
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
-.page-template-template-services #page .site-footer {
+.page-template-template-services #page .site-footer,
+.blog #page .site-footer,
+.single-post #page .site-footer,
+.archive #page .site-footer {
   opacity: 1 !important;
   transform: none;
   position: relative; }
@@ -1566,6 +1571,190 @@ Services Page Styles
 .page-template-template-services .site-header {
   position: relative; }
 
+/*--------------------------------------------------------------
+Blog and Archive Page Styles
+--------------------------------------------------------------*/
+.blog, .archive, .single {
+  background: #f8f8f8; }
+  .blog .site-content, .archive .site-content, .single .site-content {
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 80px 20px 80px; }
+    .blog .site-content .content-area, .archive .site-content .content-area, .single .site-content .content-area {
+      overflow: auto;
+      float: left;
+      margin: 0 -27% 0 0;
+      width: 100%;
+      padding: 0 27px 0 0; }
+    .blog .site-content .site-main, .archive .site-content .site-main, .single .site-content .site-main {
+      margin: 0 27% 0 0; }
+      .blog .site-content .site-main .page-header-archive .page-title, .archive .site-content .site-main .page-header-archive .page-title, .single .site-content .site-main .page-header-archive .page-title {
+        font-weight: 300;
+        font-size: 42px; }
+      .blog .site-content .site-main hr, .archive .site-content .site-main hr, .single .site-content .site-main hr {
+        margin-bottom: 60px; }
+      .blog .site-content .site-main article, .archive .site-content .site-main article, .single .site-content .site-main article {
+        margin-bottom: 62px; }
+        .blog .site-content .site-main article .featured-tag, .archive .site-content .site-main article .featured-tag, .single .site-content .site-main article .featured-tag {
+          display: inline-block;
+          color: #fff;
+          background: #578fae;
+          padding: 5px 10px;
+          font-size: 14px; }
+        .blog .site-content .site-main article h2, .archive .site-content .site-main article h2, .single .site-content .site-main article h2 {
+          font-size: 26px;
+          margin-bottom: 18px; }
+          .blog .site-content .site-main article h2 a, .archive .site-content .site-main article h2 a, .single .site-content .site-main article h2 a {
+            text-decoration: none;
+            color: #333; }
+        .blog .site-content .site-main article .entry-content, .archive .site-content .site-main article .entry-content, .single .site-content .site-main article .entry-content {
+          margin-top: 0; }
+          .blog .site-content .site-main article .entry-content p, .archive .site-content .site-main article .entry-content p, .single .site-content .site-main article .entry-content p {
+            font-size: 14px;
+            margin-top: 0; }
+        .blog .site-content .site-main article .entry-footer, .archive .site-content .site-main article .entry-footer, .single .site-content .site-main article .entry-footer {
+          background: #e2e2e2;
+          padding: 6px 8px 8px; }
+          .blog .site-content .site-main article .entry-footer .tags-links, .archive .site-content .site-main article .entry-footer .tags-links, .single .site-content .site-main article .entry-footer .tags-links {
+            font-size: 12px; }
+            .blog .site-content .site-main article .entry-footer .tags-links a, .archive .site-content .site-main article .entry-footer .tags-links a, .single .site-content .site-main article .entry-footer .tags-links a {
+              text-decoration: none;
+              color: #222; }
+    .blog .site-content .post-navigation .nav-links .nav-previous a, .blog .site-content .post-navigation .nav-links .nav-next a, .archive .site-content .post-navigation .nav-links .nav-previous a, .archive .site-content .post-navigation .nav-links .nav-next a, .single .site-content .post-navigation .nav-links .nav-previous a, .single .site-content .post-navigation .nav-links .nav-next a {
+      display: inline-block;
+      padding: 10px;
+      background: #fff;
+      color: #555;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 14px; }
+    .blog .site-content .widget-area, .archive .site-content .widget-area, .single .site-content .widget-area {
+      float: right;
+      overflow: hidden;
+      width: 27%;
+      padding: 0 0 0 20px;
+      border-left: 1px solid #e2e2e2; }
+      .blog .site-content .widget-area .widget_text, .archive .site-content .widget-area .widget_text, .single .site-content .widget-area .widget_text {
+        background: #fff;
+        padding: 10px;
+        text-align: center; }
+        .blog .site-content .widget-area .widget_text .widget-title, .archive .site-content .widget-area .widget_text .widget-title, .single .site-content .widget-area .widget_text .widget-title {
+          font-size: 20px; }
+        .blog .site-content .widget-area .widget_text p, .archive .site-content .widget-area .widget_text p, .single .site-content .widget-area .widget_text p {
+          font-size: 14px;
+          font-weight: 300; }
+        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email {
+          padding-bottom: 0 !important;
+          width: 100%; }
+          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input {
+            color: #666;
+            font-size: 14px;
+            font-weight: 300; }
+          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div {
+            position: absolute;
+            bottom: 100%;
+            margin-bottom: 0 !important; }
+        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input {
+          width: 100%;
+          background: #392247 !important;
+          height: 36px !important;
+          box-shadow: none !important;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-radius: 0px !important;
+          text-shadow: none !important;
+          font-family: "Oswald";
+          margin-bottom: 0 !important; }
+      .blog .site-content .widget-area .widget_tag_cloud .widget-title, .archive .site-content .widget-area .widget_tag_cloud .widget-title, .single .site-content .widget-area .widget_tag_cloud .widget-title {
+        font-size: 20px; }
+      .blog .site-content .widget-area .widget_tag_cloud .widget-title:before, .archive .site-content .widget-area .widget_tag_cloud .widget-title:before, .single .site-content .widget-area .widget_tag_cloud .widget-title:before {
+        content: "\f02c";
+        margin-right: 10px;
+        font-family: "FontAwesome"; }
+      .blog .site-content .widget-area .widget_tag_cloud .tagcloud a, .archive .site-content .widget-area .widget_tag_cloud .tagcloud a, .single .site-content .widget-area .widget_tag_cloud .tagcloud a {
+        display: block;
+        font-size: 14px !important;
+        color: #333;
+        padding-left: 20px; }
+    .blog .site-content .site-footer, .archive .site-content .site-footer, .single .site-content .site-footer {
+      clear: both;
+      width: 100%; }
+
+.blog article .tags-links:before, .archive article .tags-links:before, .single article .tags-links:before {
+  content: "\f02c";
+  margin-right: 8px;
+  font-size: 15px !important;
+  font-family: "FontAwesome"; }
+
+.blog article h2 a:hover, .archive article h2 a:hover {
+  text-decoration: underline !important; }
+
+.archive .page-header-archive .page-title:before {
+  content: "\f02c";
+  margin-right: 15px;
+  font-family: "FontAwesome"; }
+
+.single .post-navigation .nav-next a:after {
+  content: "\f178";
+  margin-left: 5px;
+  text-decoration: none !important;
+  font-family: "FontAwesome"; }
+
+.single .post-navigation .nav-previous a:before {
+  content: "\f177";
+  margin-right: 5px;
+  text-decoration: none !important;
+  font-family: "FontAwesome"; }
+
+.single .post-navigation .nav-next a:hover,
+.single .post-navigation .nav-previous a:hover {
+  color: #222 !important;
+  text-decoration: underline !important; }
+
+/* =Blog pagination
+----------------------------------------------- */
+/* The containing box with a nice white background */
+.paging-navigation {
+  font-family: sans-serif;
+  padding: 1em;
+  background: #fff;
+  background: white; }
+
+/* Remove bullets and list indentation */
+.paging-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+/* Make the list items appear horizontally */
+.paging-navigation li {
+  display: inline; }
+  .paging-navigation li a {
+    text-decoration: none; }
+
+/* Give each link and the current item some padding to make them easy to click */
+a.page-numbers,
+span.page-numbers {
+  padding: .3em .7em;
+  color: #222;
+  color: #333333; }
+
+/* Link hover state */
+a:hover.page-numbers {
+  color: #000;
+  color: black;
+  text-decoration: underline; }
+
+/* Current page bold and dark */
+.paging-navigation .current {
+  font-weight: bold;
+  color: #fff;
+  background: #392247; }
+
+/*--------------------------------------------------------------
+Media Queries 
+--------------------------------------------------------------*/
 @media screen and (min-width: 760px) {
   #mobile-slideshow {
     display: none !important; }

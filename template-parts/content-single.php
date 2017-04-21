@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts.
+ * Template part for displaying single post content.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -25,7 +25,7 @@
 
 	<div class="entry-content">
 		<?php
-			the_excerpt( sprintf(
+			the_content( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'brian_tohana' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )

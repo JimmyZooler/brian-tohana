@@ -30,10 +30,6 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-        <audio id="background_audio" loop="loop" preload="none" volume="1">
-            <source src="<?php echo get_template_directory_uri(); ?>/wanaooou.mp3" />
-        </audio> 
-        <div id="mute"><div id="audio-icon" class="mute-on"></div></div>
         <div id="social-buttons">
             <ul class="social-icons">
                 <li class="social-icon"><a href="https://www.facebook.com/btohana" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

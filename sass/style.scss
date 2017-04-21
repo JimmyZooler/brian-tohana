@@ -744,7 +744,10 @@ Contact Page Styles
 }
 .page-template-template-about .hide-header, 
 .page-template-template-contact .hide-header, 
-.page-template-template-services .hide-header  {
+.page-template-template-services .hide-header, 
+.blog .hide-header,
+.archive .hide-header,
+.single .hide-header {
     display: block!important;
 }
 
@@ -1088,7 +1091,10 @@ Services Page Styles
 
 .page-template-template-about #page .site-footer, 
 .page-template-template-contact #page .site-footer, 
-.page-template-template-services #page .site-footer  {
+.page-template-template-services #page .site-footer,
+.blog #page .site-footer,
+.single-post #page .site-footer,
+.archive #page .site-footer  {
     opacity: 1!important;
     transform: none;
     position: relative;
@@ -1098,6 +1104,250 @@ Services Page Styles
 .page-template-template-services .site-header  {
     position: relative;
 }
+
+
+/*--------------------------------------------------------------
+Blog and Archive Page Styles
+--------------------------------------------------------------*/
+.blog, .archive, .single {
+    background: #f8f8f8;
+    .site-content {
+        max-width: 870px;
+        margin: 0 auto;
+        padding: 80px 20px 80px;
+        .content-area {
+            overflow: auto;
+            float: left;
+            margin: 0 -27% 0 0;
+            width: 100%;
+            padding: 0 27px 0 0;
+        }
+        .site-main {
+            margin: 0 27% 0 0;
+            .page-header-archive {
+                .page-title {
+                    font-weight: 300;
+                    font-size: 42px;
+                }
+            }
+            hr {
+                margin-bottom: 60px;
+            }
+            article {
+                margin-bottom: 62px;
+                .featured-tag {
+                    display: inline-block;
+                    color: #fff;
+                    background: $light-blue;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                }
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 18px;
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                    }
+                }
+                .entry-content {
+                    margin-top: 0;
+                    p {
+                        font-size: 14px;
+                        margin-top: 0;
+                    }
+                }
+                .entry-footer {
+                    background: #e2e2e2;
+                    padding: 6px 8px 8px;
+                    .tags-links {
+                        font-size: 12px;
+                        a {
+                            text-decoration: none;
+                            color: #222;
+                        }
+                    }
+                }
+            }
+        }
+        .post-navigation {
+            .nav-links {
+                .nav-previous, .nav-next {
+                    a {
+                        display: inline-block;
+                        padding: 10px;
+                        background: #fff;
+                        color: #555;
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .widget-area {
+            float: right;
+            overflow: hidden;
+            width: 27%;
+            padding: 0 0 0 20px;
+            border-left: 1px solid #e2e2e2;
+            .widget_text {
+                background: #fff;
+                padding: 10px;
+                text-align: center;
+                .widget-title {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+                .subscription-form {
+                    #mc_embed_signup {
+                        form {
+                            #mc_embed_signup_scroll {
+                                .subscribe-email {
+                                    padding-bottom: 0!important;
+                                    width: 100%;
+                                    input {
+                                        color: #666;
+                                        font-size: 14px;
+                                        font-weight: 300;
+                                    }
+                                    div {
+                                        position: absolute;
+                                        bottom: 100%;
+                                        margin-bottom: 0!important; 
+                                    }
+                                }
+                                .subscribe-button {
+                                    input {
+                                        width: 100%;
+                                        background: $purple!important;
+                                        height: 36px!important;
+                                        box-shadow: none!important;
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+                                        border-radius: 0px!important;
+                                        text-shadow: none!important;
+                                        font-family: "Oswald";
+                                        margin-bottom: 0!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .widget_tag_cloud {
+                .widget-title {
+                    font-size: 20px;
+                }
+                .widget-title:before {
+                    content: "\f02c";
+                    margin-right: 10px;
+                    font-family: "FontAwesome";
+                }
+                .tagcloud {
+                    a {
+                        display: block;
+                        font-size: 14px!important;
+                        color: #333;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+        .site-footer {
+            clear: both;
+            width: 100%;
+        }
+    }
+}
+.blog article .tags-links:before, .archive article .tags-links:before, .single article .tags-links:before  {
+    content: "\f02c";
+    margin-right: 8px;
+    font-size: 15px!important;
+    font-family: "FontAwesome";
+}
+.blog article h2 a:hover, .archive article h2 a:hover {
+    text-decoration: underline!important;
+}
+.archive .page-header-archive .page-title:before {
+    content: "\f02c";
+    margin-right: 15px;
+    font-family: "FontAwesome";
+}
+.single .post-navigation .nav-next a:after {
+    content: "\f178";
+    margin-left: 5px;
+    text-decoration: none!important;
+    font-family: "FontAwesome";
+}
+.single .post-navigation .nav-previous a:before {
+    content: "\f177";
+    margin-right: 5px;
+    text-decoration: none!important;
+    font-family: "FontAwesome";
+}
+.single .post-navigation .nav-next a:hover, 
+.single .post-navigation .nav-previous a:hover {
+    color: #222!important;
+    text-decoration: underline!important;
+}
+/* =Blog pagination
+----------------------------------------------- */
+
+/* The containing box with a nice white background */
+.paging-navigation {
+	font-family: sans-serif;
+	padding: 1em;
+	background: #fff;
+	background: hsl(0, 0%, 100%);
+}
+
+/* Remove bullets and list indentation */
+.paging-navigation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+        text-align: center;
+}
+
+/* Make the list items appear horizontally */
+.paging-navigation li {
+	display: inline;
+        a {
+            text-decoration: none;
+        }
+}
+
+/* Give each link and the current item some padding to make them easy to click */
+a.page-numbers,
+span.page-numbers {
+	padding: .3em .7em;
+	color: #222;
+	color: hsl(0, 0%, 20%);
+}
+
+/* Link hover state */
+a:hover.page-numbers {
+	color: #000;
+	color: hsl(0, 0%, 0%);
+        text-decoration: underline;
+}
+
+/* Current page bold and dark */
+.paging-navigation .current {
+	font-weight: bold;
+	color: #fff;
+        background: $purple;
+}
+
+
+/*--------------------------------------------------------------
+Media Queries 
+--------------------------------------------------------------*/
 
 @media screen and (min-width: 760px) {
     #mobile-slideshow {

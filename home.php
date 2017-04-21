@@ -1,37 +1,50 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package Brian_Tohana
- */
+/*
 
-get_header(); ?>
+*/
+?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_header(); ?>
 
-		<?php
-		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/content', 'single'); ?>
+<div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
 
-			<h4>Liked this post? Share it, comment, or check out another one below!</h4>
-			<?php
-			the_post_navigation();
+        <?php
+        if ( have_posts() ) :
 
-			// // If comments are open or we have at least one comment, load up the comment template.
-			// if ( comments_open() || get_comments_number() ) :
-			// 	comments_template();
-			// endif;
+            if ( is_home() && ! is_front_page() ) : ?>
+                <header>
+                    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                </header>
 
-		endwhile; // End of the loop.
-		?>
+            <?php
+            endif;
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<aside id="secondary" class="widget-area" role="complementary">
+            /* Start the Loop */
+            while ( have_posts() ) : the_post();
+
+                /*
+                 * Include the Post-Format-specific template for the content.
+                 * If you want to override this in a child theme, then include a file
+                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                 */
+                get_template_part( 'template-parts/content', get_post_format() );
+
+            endwhile;
+
+            brian_tohana_paging_nav();
+
+        else :
+
+            get_template_part( 'template-parts/content', 'none' );
+
+        endif; ?>
+
+        </main><!-- #main -->
+    </div><!-- #primary -->
+
+<aside id="secondary" class="widget-area" role="complementary">
     <section id="text-2" class="widget widget_text">
         <h2 class="widget-title">Don't miss a post!</h2>
         <div class="textwidget">
@@ -73,6 +86,6 @@ get_header(); ?>
             <a href='http://localhost/briantohana/tag/spirituality/' class='tag-link-4 tag-link-position-3' title='2 topics' style='font-size: 8pt;'>Spirituality</a>
         </div>
     </section>
-</aside>
-<?php
-get_footer();
+</aside><!-- #secondary -->
+
+<?php get_footer(); ?>
