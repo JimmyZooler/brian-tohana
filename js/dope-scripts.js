@@ -1,36 +1,3 @@
-// // Scripts for Audio button
-
-// var audio = document.getElementById('background_audio');    
-
-// document.getElementById('mute').addEventListener('click', function (e)
-// {
-//     if ( audio.paused == true) {
-//         audio.play();
-//     } else {
-//         if (audio.muted == false) {
-//             audio.muted = true;
-//         } else {
-//             audio.muted = false;
-//         }
-//     }
-// }, false);
-
-// (function($) {
-//     var $audio = $('#audio-icon');
-//     $audio.on('click', function ()
-//     {
-//         if ($audio.hasClass('mute-on') == true) {
-//             $audio.removeClass('mute-on');
-//             $audio.addClass('mute-off');
-//         } else if ($audio.hasClass('mute-off') == true){
-//             $audio.removeClass('mute-off');
-//             $audio.addClass('mute-on');
-//         }
-//     });
-  
-// })( jQuery );
-
-
 // Script for main-intro
 (function($) {
     if (sessionStorage["IntroShown"] != 'yes') {
@@ -198,13 +165,18 @@ jQuery(document).ready(function(){
   //          };
   //      };
   // });
+  setTimeout( function(){
+        if(sessionStorage["PopupShown"] != 'yes'){ 
+                 showPopup();
+          };
+    }, 15000);
   jQuery("#about-button").click( function(){
     event.preventDefault();
       jQuery(".typeform-share").trigger("click");
   });
 });
 
-// function showPopup() {
-//   jQuery(".typeform-share").trigger("click");
-//   sessionStorage["PopupShown"] = 'yes';
-// };
+function showPopup() {
+  jQuery(".typeform-share").trigger("click");
+  sessionStorage["PopupShown"] = 'yes';
+};
