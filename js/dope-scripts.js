@@ -187,6 +187,7 @@ function showPopup() {
     
     $('#menu-button').click( function() {
         $('#masthead').toggleClass('menu-open');
+        $('#masthead .dark-overlay').toggleClass('opacity-four');
     });
 
 })( jQuery );
