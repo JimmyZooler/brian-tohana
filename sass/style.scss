@@ -151,11 +151,64 @@ h1,h2, h3, h4, h5, h6 {
     height: 52px;
 }
     
-.home #main, .home .main-intro,.home .main-view,.home .pattern-overlay,.home .site {
+#menu-button {
     position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 100%; }
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    .line {
+        background: #392247;
+        position: absolute;
+        right: 0px;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+    }
+}
+#menu-button .line:nth-child(1) {
+    top: 0px;
+    transition-property: transform, top;
+    transition-duration: .3s, .15s;
+    transition-delay: 0s, 0s;
+}
+
+#menu-button .line:nth-child(2) {
+    top: 9px;
+    transition-property: transform, opacity;
+    transition-duration: .3s, .2s;
+    transition-delay: 0s, 0s;
+}
+#menu-button .line:nth-child(3) {
+     top: 18px;
+    transition-property: transform, top;
+    transition-duration: .3s, .15s;
+    transition-delay: 0s, 0s;
+}
+
+.menu-open {
+    #main-menu-wrap {
+        transform: translate3d(-300px, 0, 0);
+    }
+    #menu-button {
+        .line:nth-child(1) {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        .line:nth-child(2) {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        .line:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 9px;
+        }
+    }
+}
+
 .site-header {
     position: absolute;
     width: 100%;
@@ -213,40 +266,13 @@ h1,h2, h3, h4, h5, h6 {
 #primary-menu li a:hover {
     color: #c2c2c2!important;
 }
-// Audio button
-#mute {
-    display: none;
-    position:absolute;
-    left: 8px;
-    top: 8px;
-    color:#fff;
-    z-index: 270;
-    width: 45px;
-    height: 45px;
-    /*background: #F2F2F2;*/
-    cursor: pointer;
-    border-radius: 6px;
-    transition: all 0.2s;}
-#mute:hover {
-    /*background: #d2d2d2;*/
-}
-#mute #audio-icon {
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-}
-#mute .mute-on {
-    background: url('../images/volume_down_grey.png');
-}
-#mute .mute-off {
-    background: url('../images/volume_up_grey.png');
-}
+
 #social-buttons {
     position: absolute;
     right: 10px;
     top: 5px;
     z-index: 270;
-    display: inline-block;
+    display: none;
     ul {
         display: inline-block;
         list-style: none;
@@ -356,6 +382,15 @@ h1,h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
   Home Page Styles
 --------------------------------------------------------------*/
+.page-template-template-home #main, 
+.page-template-template-home .main-intro, 
+.page-template-template-home .main-view, 
+.page-template-template-home .pattern-overlay, 
+.page-template-template-home .site {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
 
 .main-view {
     z-index: 1;
@@ -536,7 +571,7 @@ Site Footer Styles
         }
     }
 }
-.home .site-footer {
+.page-template-template-home .site-footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1382,6 +1417,40 @@ Media Queries
     }
 }
 
+@media screen and ( max-width: 760px ) {
+    #main-menu-wrap {
+        position: fixed;
+        background: #f5f5f5;
+        padding-top: 42px;
+        top: 0;
+        right: -300px;
+        height: 100%;
+        width: 300px;
+        transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        transition: transform, left, right;
+        transition-timing-function: ease-in-out;
+        transition-duration: 150ms;
+        #primary-menu {
+            overflow: auto;
+            display: block;
+            margin-left: 0;
+            background: #fff;
+            border-top: 1px solid #c2c2c2;
+            li {
+                display: block;
+                width: 100%;
+                padding-left: 20px;
+                border-bottom: 1px solid #c2c2c2;
+                a {
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 760px) {
     #mobile-slideshow {
         display: none!important;
@@ -1391,6 +1460,12 @@ Media Queries
     }
     #about-header,#services-header {
         background-attachment: fixed;
+    }
+    #menu-button {
+        display: none;
+    }
+    #social-buttons {
+        display: inline-block!important;
     }
 }
 

@@ -25,9 +25,13 @@
 
 	<header id="masthead" class="site-header hide-header" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">  
-                    <a id="site-title" href="<?php $url = home_url( '/', 'http' ); echo esc_url( $url ); ?>" >Brian Tohana</a>
-			<button class="menu-toggle hide" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'brian_tohana' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                    <a id="site-title" href="<?php $url = home_url( '/', 'http' ); echo esc_url( $url ); ?>" >True Inner Work</a>
+			<div id="menu-button" aria-expanded="false">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_id' => 'main-menu-wrap' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
         <div id="social-buttons">
@@ -36,10 +40,5 @@
                 <li class="social-icon"><a href="https://www.youtube.com/channel/UCa3mm095VDS9tOAJpwKc8ug/feed" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                 <li class="social-icon"><a href="https://soundcloud.com/briantohana" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a></li>
             </ul>
-        </div>
-        <div id="alert-to-landscape" class="hide">
-            <div class="helper">
-                <h2>Please rotate to landscape mode.<br>Special features only available on desktop.</h2>
-            </div>
         </div>
 	<div id="content" class="site-content">

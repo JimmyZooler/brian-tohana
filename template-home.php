@@ -20,13 +20,10 @@ Template Name: Home Page
             <a href="http://briantohana.flywheelsites.com/about"></a>
         </div>
     </div>
-    <div class="main-intro hide">
-        <div class="intro-content">
-            <div class="title-box">
-                <a class="btn enter">I Believe<span class="arrow"></span></a>
-            </div>
+    <div id="alert-to-landscape" class="hide">
+        <div class="helper">
+            <h2>Please rotate to landscape mode.<br>Special features only available on desktop.</h2>
         </div>
-        <div class="dark-overlay"></div>
     </div>
     <div class='open-footer'><span class='arrow'></span><span>CONNECT</span></div>
 </div>
