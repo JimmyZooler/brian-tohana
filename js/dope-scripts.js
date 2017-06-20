@@ -195,13 +195,11 @@ function showPopup() {
             $masthead.toggleClass('menu-open');
             $overlay.removeClass('hide'); 
             $overlay.toggleClass('opacity-four');
-            console.log('aria-expanded does equal false!');
         } else {
             $menuButton.attr('aria-expanded', false);
             $masthead.toggleClass('menu-open');
             $overlay.toggleClass('opacity-four');
             $overlay.addClass('hide'); 
-            console.log('esling it up!');
         }
     });
 
