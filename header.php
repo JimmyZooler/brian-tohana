@@ -24,7 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'brian_tohana' ); ?></a>
     
 	<header id="masthead" class="site-header hide-header" role="banner">
-        <div class="dark-overlay"></div>
+        <div class="dark-overlay hide"></div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">  
             <a id="site-title" href="<?php $url = home_url( '/', 'http' ); echo esc_url( $url ); ?>" >True Inner Work</a>
 			<div id="menu-button" aria-expanded="false">

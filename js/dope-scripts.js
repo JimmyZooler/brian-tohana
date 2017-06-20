@@ -163,7 +163,7 @@ jQuery(document).ready(function(){
     jQuery(document).on('pageleave', function() {
         if(sessionStorage["PopupShown"] != 'yes'){ 
                 showPopup();
-        };
+        }
     });
         
 //        jQuery.fn.pageleave();
@@ -177,7 +177,7 @@ jQuery(document).ready(function(){
 function showPopup() {
   jQuery(".typeform-share").trigger("click");
   sessionStorage["PopupShown"] = 'yes';
-};
+}
 
 //
 //  Mobile Navigation Scripts
@@ -185,9 +185,24 @@ function showPopup() {
 
 (function($) {
     
-    $('#menu-button').click( function() {
-        $('#masthead').toggleClass('menu-open');
-        $('#masthead .dark-overlay').toggleClass('opacity-four');
+    var $menuButton = $("#menu-button");
+    var $overlay = $("#masthead .dark-overlay");
+    var $masthead = $("#masthead");
+    
+        $menuButton.click( function() {
+        if ( $menuButton.attr('aria-expanded') === "false" ) {
+            $menuButton.attr('aria-expanded', true);
+            $masthead.toggleClass('menu-open');
+            $overlay.removeClass('hide'); 
+            $overlay.toggleClass('opacity-four');
+            console.log('aria-expanded does equal false!');
+        } else {
+            $menuButton.attr('aria-expanded', false);
+            $masthead.toggleClass('menu-open');
+            $overlay.toggleClass('opacity-four');
+            $overlay.addClass('hide'); 
+            console.log('esling it up!');
+        }
     });
 
 })( jQuery );
