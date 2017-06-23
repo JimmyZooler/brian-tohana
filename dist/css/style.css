@@ -773,6 +773,9 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: .3s, .15s;
   transition-delay: 0s, 0s; }
 
+#mobile-menu-wrap {
+  display: inline-block; }
+
 .menu-open #mobile-menu-wrap {
   transform: translate3d(-300px, 0, 0); }
 
@@ -793,8 +796,15 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: opacity 0.2s; }
 
+#brian-name {
+  height: inherit;
+  padding: 5px; }
+
 .opacity-four {
   opacity: 0.4 !important; }
+
+#rotate-phone {
+  padding: 20px; }
 
 .site-header {
   position: absolute;
@@ -808,7 +818,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #392247;
     font-size: 24px;
     transition: all 0.2s;
-    letter-spacing: 1px;
     line-height: 33px;
     float: left;
     padding: 8px;
@@ -1471,7 +1480,7 @@ About Page Styles
   #main-pages #about-section-2 .inner-content {
     margin: 2rem 2rem 2rem auto;
     max-width: 600px;
-    padding: 1rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.8); }
 
 #main-pages #about-section-3 {
@@ -1503,17 +1512,15 @@ About Page Styles
     background: rgba(255, 255, 255, 0.4); }
 
 #main-pages #about-section-5 {
-  position: relative; }
-  #main-pages #about-section-5 img {
-    width: 100%; }
+  position: relative;
+  position: relative;
+  min-height: calc(100vh + 700px);
+  background-size: cover;
+  background-position: center; }
   #main-pages #about-section-5 .inner-content {
-    position: absolute;
-    top: 1%;
-    width: 600px;
+    max-width: 600px;
+    margin: 1rem auto 2rem;
     padding: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
     transition: opacity 0.3s; }
     #main-pages #about-section-5 .inner-content #button-helper {
       text-align: center; }
@@ -1922,15 +1929,19 @@ Media Queries
     font-size: 14px !important; }
   #main-pages .about-section .inner-content h4 {
     font-size: 21px !important; }
+  #main-pages #about-section-2 .inner-content {
+    margin-right: 0; }
   #main-pages #about-section-3 .inner-content {
     padding: 2rem 2rem 3rem;
     margin-left: 4rem;
     margin-right: 4rem; }
   #main-pages #about-section-4 {
     background: none !important; }
+    #main-pages #about-section-4 .inner-content {
+      padding: 2rem;
+      margin-right: 0; }
   #main-pages #about-section-5 .inner-content {
-    top: 0 !important;
-    width: 500px; }
+    margin-top: 0; }
   #social-buttons ul li {
     margin-right: 0.2rem; }
     #social-buttons ul li a i {
@@ -1993,6 +2004,13 @@ Media Queries
     top: calc(50% - 10px);
     width: 70px;
     height: 70px; } }
+
+@media screen and (max-width: 560px) {
+  #main-pages #about-section-3 .inner-content {
+    padding: 2rem 2rem 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 50rem; } }
 
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,

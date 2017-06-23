@@ -22,7 +22,8 @@ Template Name: Home Page
     </div>
     <div id="alert-to-landscape" class="hide">
         <div class="helper">
-            <h2>Please rotate to landscape mode.<br>Special features only available on desktop.</h2>
+            <img id="rotate-phone" src="<?php echo get_template_directory_uri(); ?>/images/rotate_phone.png" />
+            <h2>Please rotate to landscape mode.<br>Videos only available on desktop.</h2>
         </div>
     </div>
     <div class='open-footer'><span class='arrow'></span><span>CONNECT</span></div>
