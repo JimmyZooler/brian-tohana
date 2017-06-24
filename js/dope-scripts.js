@@ -133,14 +133,15 @@ jQuery(document).ready(function() {
         },
             offset: '50%'
       });
-      var aboutWaypoint = jQuery('#about-section-2').waypoint({
+      var aboutWaypoint = jQuery('#about-video').waypoint({
         handler: function(direction) {
           if (direction === "down" ) {
               jQuery('#back-to-top').removeClass('opacity-zero');  
           } else {
               jQuery('#back-to-top').addClass('opacity-zero'); 
           }
-        }
+        },
+              offset: '50%'
       });
       var aboutWaypointTwo = jQuery('#about-section-3').waypoint({
         handler: function(direction) {
@@ -153,7 +154,7 @@ jQuery(document).ready(function() {
               jQuery('#about-section-5 > .inner-content ').removeClass('opacity-zero');  
         },
             offset: '50%'
-      });
+      }); 
 });
 
 // Script for typeform popup

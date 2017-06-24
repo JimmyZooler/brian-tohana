@@ -813,15 +813,18 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 260;
   font-family: "Oswald", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-bottom: 1px solid #d2d2d2; }
   .site-header nav #site-title {
     color: #392247;
     font-size: 24px;
     transition: all 0.2s;
     line-height: 33px;
+    letter-spacing: 0.6px;
     float: left;
     padding: 8px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    text-transform: none; }
   .site-header nav div {
     text-align: left; }
     .site-header nav div #primary-menu {
@@ -1413,9 +1416,6 @@ Page Header Styles
     .page-header .helper #about-quote {
       margin-left: 3rem; }
 
-#services-header {
-  background-position: center bottom; }
-
 #about-header {
   background-position: top; }
 
@@ -1624,6 +1624,9 @@ Services Page Styles
   #typical-session .content-wrap {
     transition: opacity 0.3s; }
 
+#facilitation ul {
+  margin-left: 0 !important; }
+
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
 .page-template-template-services #page .site-footer,
@@ -1827,7 +1830,7 @@ Media Queries
   .single .site-content .widget-area {
     display: none !important; }
   .single .site-content .content-area .site-main {
-    margin: 0 auto 0 50px !important; } }
+    margin: 0 auto 0 20px !important; } }
 
 @media screen and (max-width: 850px) {
   .archive .widget-area, .blog .widget-area {
@@ -1844,6 +1847,10 @@ Media Queries
         margin: 0 auto 0; } }
 
 @media screen and (max-width: 760px) {
+  .site-header {
+    position: fixed !important; }
+  body {
+    padding-top: 41px; }
   #mobile-menu-wrap {
     position: fixed;
     background: #f5f5f5;
@@ -1869,9 +1876,24 @@ Media Queries
         padding-left: 20px;
         border-bottom: 1px solid #c2c2c2; }
         #mobile-menu-wrap #primary-menu li a {
-          font-size: 16px; } }
+          font-size: 16px; }
+  .single .site-content .content-area .site-main header h1 {
+    font-size: 1.5em; }
+  .page-header .helper #services-quote {
+    margin-right: 1rem;
+    margin-left: 1rem; }
+  #four-pillars .row .pillar {
+    padding: 1rem; }
+  .contact #contact-heading {
+    text-align: center; }
+    .contact #contact-heading img {
+      display: none; }
+    .contact #contact-heading p {
+      margin-left: 0; } }
 
 @media screen and (min-width: 760px) {
+  #services-header {
+    background-position: bottom; }
   #mobile-slideshow {
     display: none !important; }
   #desktop-slideshow {

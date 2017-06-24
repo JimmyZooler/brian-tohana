@@ -243,16 +243,18 @@ h1,h2, h3, h4, h5, h6 {
     z-index: 260;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    border-bottom: 1px solid #d2d2d2;
     nav {
         #site-title {
             color: #392247;
             font-size: 24px;
             transition: all 0.2s;
-//            letter-spacing: 1px;
             line-height: 33px;
+            letter-spacing: 0.6px;
             float:left;
             padding: 8px;
             margin-left: 10px;
+            text-transform: none;
         }
         div {
             text-align: left;
@@ -931,9 +933,6 @@ Page Header Styles
         }
     }
 }
-#services-header {
-    background-position: center bottom;
-}
 #about-header {
     background-position: top;
 }
@@ -1175,6 +1174,9 @@ Services Page Styles
     .content-wrap {
         transition: opacity 0.3s;
     }
+}
+#facilitation ul {
+    margin-left: 0!important;
 }
 
 
@@ -1445,8 +1447,7 @@ Media Queries
                 display: none!important;
             }
             .content-area .site-main {
-                margin: 0 auto 0 50px!important;
-            }
+                margin: 0 auto 0 20px!important; }
         }
     }
 }
@@ -1472,6 +1473,12 @@ Media Queries
 }
 
 @media screen and ( max-width: 760px ) {
+    .site-header {
+        position: fixed!important;
+    }
+    body {
+        padding-top: 41px;
+    }
     #mobile-menu-wrap {
         position: fixed;
         background: #f5f5f5;
@@ -1503,9 +1510,32 @@ Media Queries
             }
         }
     }
+    .single .site-content .content-area .site-main header h1 {
+            font-size: 1.5em;
+    }
+    .page-header .helper #services-quote {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    #four-pillars .row .pillar {
+        padding: 1rem;
+    }
+    .contact #contact-heading {
+        text-align: center;
+        img {
+            display: none;
+        }
+        p {
+            margin-left: 0;
+        }
+        
+    }
 }
 
 @media screen and (min-width: 760px) {
+    #services-header {
+        background-position: bottom;
+    }
     #mobile-slideshow {
         display: none!important;
     }
@@ -1611,7 +1641,6 @@ Media Queries
                 margin-left: 4rem;
                 margin-right: 4rem;
             }
-            
         }
         #about-section-4 {
             background: none!important;
@@ -1740,5 +1769,5 @@ Media Queries
 .blog .site-footer .close-footer, 
 .archive .site-footer .close-footer, 
 .single .site-footer .close-footer {
-            display: none!important;
-        }
+    display: none!important;
+}
