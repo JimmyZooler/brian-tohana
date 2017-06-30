@@ -27,7 +27,7 @@
         <div class="dark-overlay hide"></div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">  
             <a id="site-title" href="<?php $url = home_url( '/', 'http' ); echo esc_url( $url ); ?>" >True Inner Work</a>
-            <img id="brian-name" src="<?php echo get_template_directory_uri(); ?>/images/brian_alegraya_i_blue.png" />
+            <p id="brian-name-font">Brian<br>Tohana</p>
 			<div id="menu-button" aria-expanded="false">
                 <span class="line"></span>
                 <span class="line"></span>

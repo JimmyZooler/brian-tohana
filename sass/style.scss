@@ -226,7 +226,17 @@ h1,h2, h3, h4, h5, h6 {
     height: inherit;
     padding: 5px;
 }
-
+#brian-name-font {
+    display: inline-block;
+    margin:0;
+    font-family: 'Alegreya', serif;
+    color: $light-blue;
+    text-transform: none;
+    line-height: 1;
+    padding: 10px;
+    float: left;
+    font-weight: bold;
+}
 .opacity-four {
     opacity: 0.4!important;
 }
@@ -284,7 +294,7 @@ h1,h2, h3, h4, h5, h6 {
     float: left;
     display: inline-block;
     height: 30px;
-    background: url('../images/logo.png');
+    background: url('../images/new_logo.png');
     background-size: cover;
 }
 #primary-menu .current_page_item a {
@@ -1093,7 +1103,7 @@ Services Page Styles
 --------------------------------------------------------------*/
 
 .coaching, .about-section {
-    color: #373737;
+    color: #000;
 }
 .facilitation {
     background-color: $purple;
@@ -1238,7 +1248,7 @@ Blog and Archive Page Styles
                     margin-bottom: 18px;
                     a {
                         text-decoration: none;
-                        color: #333;
+                        color: #000;
                     }
                 }
                 .entry-content {
@@ -1530,6 +1540,10 @@ Media Queries
         }
         
     }
+    #brian-name-font {
+        float: right;
+        margin-right: 48px;
+    }
 }
 
 @media screen and (min-width: 760px) {
@@ -1749,14 +1763,17 @@ Media Queries
         width: 70px;
         height: 70px;
     }
+    #brian-name-font {
+        padding: 6px;
+    }
 }
 @media screen and (max-width: 560px) { 
     #main-pages {
         #about-section-3 {
             .inner-content {
-                padding: 2rem 2rem 3rem;
-                margin-left: 1.5rem;
-                margin-right: 1.5rem;
+                padding: 1.5rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 margin-top: 50rem;
             }
             
