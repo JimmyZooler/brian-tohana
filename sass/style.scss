@@ -1150,12 +1150,12 @@ Services Page Styles
             box-shadow: none!important;
         }
         .slick-next {
-            right: 15px;
+            right: 25px;
             background: url('../images/square_arrow_white.png') no-repeat top center;
             background-size: cover;
         }
         .slick-prev {
-            left: 15px;
+            left: 25px;
             background: url('../images/square_arrow_white_prev.png') no-repeat top center;
             background-size: cover;
         }
@@ -1171,7 +1171,7 @@ Services Page Styles
                         font-size: 2rem;
                         align-self: center;
                         text-align: center;
-                        padding: 0 40px;
+                        padding: 0 60px; 
                     }
                 }
             }
@@ -1503,6 +1503,9 @@ Media Queries
                 margin: 0 auto 0 20px!important; }
         }
     }
+    .slider h3 {
+        font-size: 2rem!important;
+    }
 }
 @media screen and (max-width: 850px) {
     .archive, .blog {
@@ -1586,6 +1589,18 @@ Media Queries
     #brian-name-font {
         float: right;
         margin-right: 48px;
+    }
+    .slider {
+        .slick-prev {
+            left: 15px!important;
+        }
+        .slick-next {
+            right: 15px!important;
+        }
+        h3 {
+            font-size: 1.5rem!important;
+            padding: 0 44px!important;
+        }
     }
 }
 
@@ -1821,6 +1836,9 @@ Media Queries
             }
             
         }
+    }
+    .slider h3 {
+        font-size: 1.2rem!important;
     }
 }
 .page-template-template-about .site-footer .close-footer, 

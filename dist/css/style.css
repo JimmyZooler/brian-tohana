@@ -1630,7 +1630,9 @@ Services Page Styles
             font-size: 2rem;
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
-                align-self: center; }
+                align-self: center;
+            text-align: center;
+            padding: 0 60px; }
 
 .slider .slick-track:focus .slider:focus, .slider .slick-slide:focus, .slider .slick-list:focus, .slider .slick-arrow:focus {
   outline: none; }
@@ -1880,7 +1882,9 @@ Media Queries
   .single .site-content .widget-area {
     display: none !important; }
   .single .site-content .content-area .site-main {
-    margin: 0 auto 0 20px !important; } }
+    margin: 0 auto 0 20px !important; }
+  .slider h3 {
+    font-size: 2rem !important; } }
 
 @media screen and (max-width: 850px) {
   .archive .widget-area, .blog .widget-area {
@@ -1942,7 +1946,14 @@ Media Queries
       margin-left: 0; }
   #brian-name-font {
     float: right;
-    margin-right: 48px; } }
+    margin-right: 48px; }
+  .slider .slick-prev {
+    left: 15px !important; }
+  .slider .slick-next {
+    right: 15px !important; }
+  .slider h3 {
+    font-size: 1.5rem !important;
+    padding: 0 44px !important; } }
 
 @media screen and (min-width: 760px) {
   #services-header {
@@ -2087,7 +2098,9 @@ Media Queries
     padding: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 50rem; } }
+    margin-top: 50rem; }
+  .slider h3 {
+    font-size: 1.2rem !important; } }
 
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,
