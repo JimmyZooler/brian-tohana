@@ -205,3 +205,16 @@ function showPopup() {
     });
 
 })( jQuery );
+
+// Services Slider Script
+
+(function($) {
+    
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+        fade: true
+      });
+    });
+
+})( jQuery );

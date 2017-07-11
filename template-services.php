@@ -24,12 +24,27 @@ Template Name: Services Page
     </div>
 </div>
 <div id="what-taught">
-    <div class="page-section" >
-        <div class="content-inner text-center opacity-zero" id="what-taught-inner">
-                <?php the_field('section_2_heading'); ?>
-                <?php the_field('section_2_content'); ?>
-        </div>
-    </div>
+        <?php if( have_rows('slider_content') ): ?>
+
+            <div class="slider">
+
+            <?php while( have_rows('slider_content') ): the_row(); 
+
+                // vars
+                $content = get_sub_field('slide_text');
+
+                ?>
+
+                <div>
+                    <h3><?php echo $content; ?></h3>
+                </div>
+
+
+            <?php endwhile; ?>
+
+            </div>
+
+        <?php endif; ?>
 </div>
 <div class="page-section text-center" id="four-pillars">
     <div class="content-wrap opacity-zero" id="four-pillars-content">

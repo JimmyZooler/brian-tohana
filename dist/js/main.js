@@ -459,6 +459,19 @@ function showPopup() {
 
 })( jQuery );
 
+// Services Slider Script
+
+(function($) {
+    
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,
+        fade: true
+      });
+    });
+
+})( jQuery );
+
 /*!
 Waypoints - 4.0.1
 Copyright © 2011-2016 Caleb Troughton

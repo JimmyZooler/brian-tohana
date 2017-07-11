@@ -9,13 +9,10 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: brian_tohana
 Tags:
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 Brian Tohana is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
@@ -1133,27 +1130,56 @@ Services Page Styles
     }
 }
 #what-taught {
-    display: table;
+    height: 80vh;
     background: #222;
     position: relative;
     width: 100%;
     background: url('../images/belgium.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    .page-section {
-        display: table-cell;
-        width: 100%;
+    .slider {
         height: 100%;
-        vertical-align: middle;
-        .content-inner {
-            color: #fff;
-            padding: 2rem auto 2rem;
-            transition: opacity 0.3s;
-            h3 {
-                /*text-transform: uppercase;*/
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            text-indent: -9999px;
+            background-color: transparent;
+            border: none!important;
+            box-shadow: none!important;
+        }
+        .slick-next {
+            right: 15px;
+            background: url('../images/square_arrow_white.png') no-repeat top center;
+            background-size: cover;
+        }
+        .slick-prev {
+            left: 15px;
+            background: url('../images/square_arrow_white_prev.png') no-repeat top center;
+            background-size: cover;
+        }
+        .slick-list {
+            height: 100%;
+            .slick-track {
+                height: 100%;
+                .slick-slide {
+                    display: flex;
+                    justify-content: center;
+                    h3 {
+                        color: #fff;
+                        font-size: 2rem;
+                        align-self: center;
+                        text-align: center;
+                        padding: 0 40px;
+                    }
+                }
             }
         }
     }
+}
+.slider .slick-track:focus .slider:focus, .slider .slick-slide:focus, .slider .slick-list:focus, .slider .slick-arrow:focus{
+    outline: none;
 }
 
 #four-pillars {
@@ -1366,6 +1392,23 @@ Blog and Archive Page Styles
         }
     }
 }
+.blog article .entry-content p:last-child {
+    margin-bottom: 10px!important;
+}
+.blog article .entry-content .moretag {
+    margin-bottom: 20px;
+    display: block;
+    padding: 0 10px;
+    text-align: right;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -15px;
+}
+.blog article .entry-content .moretag:hover {
+    text-decoration: underline;
+}
+
 .blog article .tags-links:before, .archive article .tags-links:before, .single article .tags-links:before  {
     content: "\f02c";
     margin-right: 8px;

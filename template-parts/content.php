@@ -36,6 +36,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+        <a class="moretag" href="<?php echo get_permalink($post->ID); ?>"> Read more &raquo;</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

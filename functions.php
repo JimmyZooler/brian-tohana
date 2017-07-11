@@ -124,6 +124,12 @@ function brian_tohana_paging_nav() {
 }
 endif;
 
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full review &raquo;</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -160,16 +166,21 @@ add_action( 'widgets_init', 'brian_tohana_widgets_init' );
  */
 function brian_tohana_scripts() {
 	wp_enqueue_style( 'brian_tohana-style', get_stylesheet_uri() );
-        
+
+	    wp_enqueue_script( 'brian_tohana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
+	    wp_enqueue_script( 'brian_tohana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+    
+        wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/slick/slick.min.js', array(), '20151215', true );
+    
         wp_enqueue_script( 'dope-scripts', get_template_directory_uri() . '/js/dope-scripts.js', array( 'jquery' ), '1.0.0', true );
-
-	wp_enqueue_script( 'brian_tohana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'brian_tohana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+        
         wp_enqueue_script( 'brian_tohana-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20151215', true );
 
-        
+        wp_enqueue_style('slick-styles', get_template_directory_uri() .'/slick/slick.css');
+    
+//        wp_enqueue_style('slick-theme-styles', get_template_directory_uri() .'/slick/slick-theme.css');
+    
         wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,700|Alegreya:400,700');
         
         wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/9e4c5fbff6.js', array(), '20161201', true );
