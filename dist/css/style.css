@@ -1590,7 +1590,7 @@ Services Page Styles
     margin-bottom: 40px; }
 
 #what-taught {
-  height: 80vh;
+  height: 60vh;
   background: #222;
   position: relative;
   width: 100%;
@@ -1628,7 +1628,7 @@ Services Page Styles
               justify-content: center; }
           #what-taught .slider .slick-list .slick-track .slick-slide h3 {
             color: #fff;
-            font-size: 2rem;
+            font-size: 2.5rem;
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
                 align-self: center;
@@ -1661,8 +1661,10 @@ Services Page Styles
   #typical-session .content-wrap {
     transition: opacity 0.3s; }
 
-#facilitation ul {
-  margin-left: 0 !important; }
+#facilitation {
+  display: none; }
+  #facilitation ul {
+    margin-left: 0 !important; }
 
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
@@ -1978,7 +1980,9 @@ Media Queries
 @media screen and (max-width: 1100px) {
   .page-header .helper h3 {
     max-width: 490px;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .slider h3 {
+    font-size: 2rem !important; } }
 
 @media screen and (max-width: 800px) {
   .site-header {
