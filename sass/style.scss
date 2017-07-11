@@ -1137,6 +1137,7 @@ Services Page Styles
     background: url('../images/belgium.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     .slider {
         height: 100%;
         .slick-arrow {
@@ -1171,7 +1172,7 @@ Services Page Styles
                         font-size: 2rem;
                         align-self: center;
                         text-align: center;
-                        padding: 0 60px; 
+                        padding: 0 60px;
                     }
                 }
             }
