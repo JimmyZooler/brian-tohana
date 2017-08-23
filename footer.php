@@ -18,7 +18,7 @@
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">
-                        <p>The unknown awaits.</p>
+                        <p><?php the_field('footer_subscribe_heading', 'option'); ?></p>
                     </div>
                     <div class="subscription-form">
                         <!-- Begin MailChimp Signup Form -->
@@ -37,7 +37,7 @@
                         <div class="mc-field-group subscribe-email">
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email *">
                         </div>
-                        <div class="subscribe-button"><input type="submit" value="Join Us" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="subscribe-button"><input type="submit" value="<?php the_field('subscribe_button_text', 'option'); ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                 <div id="mce-responses" class="clear">
                                         <div class="response" id="mce-error-response" style="display:none"></div>
                                         <div class="response" id="mce-success-response" style="display:none"></div>

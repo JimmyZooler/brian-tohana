@@ -1522,7 +1522,7 @@ About Page Styles
 #main-pages #about-section-5 {
   position: relative;
   position: relative;
-  min-height: calc(100vh + 700px);
+  min-height: calc(100vh + 1400px);
   background-size: cover;
   background-position: center; }
   #main-pages #about-section-5 .inner-content {
@@ -1543,7 +1543,7 @@ About Page Styles
         text-shadow: none !important;
         font-family: "Oswald";
         display: inline-block;
-        margin: 40px auto;
+        margin: 10px auto 40px;
         text-decoration: none; }
 
 #main-pages #about-section-5 .inner-content #button-helper a:hover {
@@ -1881,6 +1881,10 @@ a:hover.page-numbers {
 /*--------------------------------------------------------------
 Media Queries 
 --------------------------------------------------------------*/
+@media screen and (min-width: 350px) {
+  #main-pages #about-section-5 {
+    min-height: calc(100vh + 1000px); } }
+
 @media screen and (max-width: 950px) {
   .single .site-content .widget-area {
     display: none !important; }
@@ -2106,6 +2110,10 @@ Media Queries
     margin-top: 50rem; }
   .slider h3 {
     font-size: 1.2rem !important; } }
+
+@media screen and (min-width: 1200px) {
+  #main-pages #about-section-5 {
+    min-height: calc(100vh + 1100px); } }
 
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,

@@ -64,6 +64,13 @@ function brian_tohana_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+    
+    if( function_exists('acf_add_options_page') ) {
+	
+        acf_add_options_page();
+
+    }
+    
 }
 endif;
 add_action( 'after_setup_theme', 'brian_tohana_setup' );
