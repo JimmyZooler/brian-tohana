@@ -508,91 +508,103 @@ Site Footer Styles
         background: #fff;
         padding: 20px 0;
         .subscription-heading {
-            display: inline-block;
-            float: left;
             font-size: 24px;
-            width: 38%;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
             padding: 10px;
             text-align: center;
             color: $purple;
+            h2 {
+                margin: 1rem 0;
+            }
             p {
                 margin-top: 14px;
+                max-width: 700px;
+                margin: 10px auto 20px;
             }
         }
         .subscription-form {
-            display: inline-block;
-            width: 62%;
-            padding: 10px;
-            color: #fff;
-            #mc_embed_signup form {
-                padding-bottom: 0;
-            }
-            .subscribe-name { 
-                width: 26%!important;
-                padding-bottom: 0!important;
-                display: inline-block;
-                padding-right: 5px;
-                min-height: 0!important;
-                vertical-align: top;
-                input {
-                    border: 2px solid #ccc!important;
-                    border-radius: 0!important;
-                    background: #f4f4f4 !important;
-                    padding: 10px!important;
+//                display: inline-block;
+                width: 100%;
+                padding: 10px;
+                color: #fff;
+                max-width: 720px;
+                margin: 0 auto;
+            #mc_embed_signup_scroll {
+                text-align: center;
+                #mc_embed_signup form {
+                    padding-bottom: 0;
+                }
+                .subscribe-name { 
+                    width: 34%!important;
+                    padding-bottom: 0!important;
+                    display: inline-block;
+                    padding-right: 5px;
+                    min-height: 0!important;
+                    vertical-align: top;
+                    input {
+                        border: 2px solid #ccc!important;
+                        border-radius: 0!important;
+                        background: #f4f4f4 !important;
+                        padding: 10px!important;
+                        font-family: "Roboto";
+                    }
+                }
+                .subscribe-email {
+                    width: 46%!important;
+                    padding-bottom: 0!important;
+                    display: inline-block;
+                    padding-right: 5px;
+                    min-height: 0!important;
+
+                    input {
+                        border: 2px solid #ccc!important;
+                        border-radius: 0!important;
+                       background: #f4f4f4 !important;
+                       font-family: "Roboto";
+                       padding: 10px!important;
+                    }
+                    .mce_inline_error {
+                        margin: 0 !important;
+                    }
+                }
+                .subscribe-button {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-top: 10px;
+                    input {
+                        background: $purple!important;
+                        height: 46px!important;
+                        box-shadow: none!important;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        border-radius: 0px!important;
+                        text-shadow: none!important;
+                        font-family: "Oswald";
+                    }
+                }
+                ::-webkit-input-placeholder {
+                    color: #444;
                     font-family: "Roboto";
-                }
-            }
-            .subscribe-email {
-                width: 36%!important;
-                padding-bottom: 0!important;
-                display: inline-block;
-                padding-right: 5px;
-                min-height: 0!important;
-                
-                input {
-                    border: 2px solid #ccc!important;
-                    border-radius: 0!important;
-                   background: #f4f4f4 !important;
-                   font-family: "Roboto";
-                   padding: 10px!important;
-                }
-                .mce_inline_error {
-                    margin: 0 !important;
-                }
-            }
-            .subscribe-button {
-                display: inline-block;
-                vertical-align: top;
-                input {
-                    background: $purple!important;
-                    height: 46px!important;
-                    box-shadow: none!important;
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    border-radius: 0px!important;
-                    text-shadow: none!important;
-                    font-family: "Oswald";
-                }
-            }
-            ::-webkit-input-placeholder {
-                color: #444;
-                font-family: "Roboto";
-             }
+                 }
 
-             :-moz-placeholder { /* Firefox 18- */
-                color: #444;  
-                font-family: "Roboto";
-             }
+                 :-moz-placeholder { /* Firefox 18- */
+                    color: #444;  
+                    font-family: "Roboto";
+                 }
 
-             ::-moz-placeholder {  /* Firefox 19+ */
-                color: #444;  
-                font-family: "Roboto";
-             }
+                 ::-moz-placeholder {  /* Firefox 19+ */
+                    color: #444;  
+                    font-family: "Roboto";
+                 }
 
-             :-ms-input-placeholder {  
-                color: #444;  
-                font-family: "Roboto";
-             }
+                 :-ms-input-placeholder {  
+                    color: #444;  
+                    font-family: "Roboto";
+                 }
+            }
         }
     }
     .site-info {
@@ -1776,17 +1788,8 @@ Media Queries
             display: inline-block;
         }
         .subscription-bar {
-            .subscription-heading {
-                width:100%;
-                p {
-                    margin: 0;
-                }
-            }
             .subscription-form {
                 width: 100%;
-                #mc_embed_signup_scroll {
-                    text-align: center;
-                }
             }
         }
     }
@@ -1859,6 +1862,22 @@ Media Queries
     #main-pages {
         #about-section-5 {
             min-height: calc(100vh + 1100px);
+        }
+    }
+}
+@media screen and (min-width: 710px) {
+    .site-footer {
+        .subscription-bar {
+            .subscription-form {
+                #mc_embed_signup_scroll {
+                    .subscribe-button {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .subscription-heading {
+                max-width: 100%;
+            }
         }
     }
 }

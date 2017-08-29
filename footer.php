@@ -18,7 +18,8 @@
             <div class="subscription-bar">
                 <div class="row">
                     <div class="subscription-heading">
-                        <p><?php the_field('footer_subscribe_heading', 'option'); ?></p>
+                        <h2><?php the_field('footer_subscribe_heading', 'option'); ?></h2>
+                        <p id="subscribe-subheading"><?php the_field('footer_subscribe_subheading', 'option'); ?></p>
                     </div>
                     <div class="subscription-form">
                         <!-- Begin MailChimp Signup Form -->
