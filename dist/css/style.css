@@ -1239,6 +1239,94 @@ Site Footer Styles
 :-ms-input-placeholder {
   color: #392247; }
 
+#subscription-popup {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 40px;
+  position: relative; }
+  #subscription-popup .subscription-heading {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    color: #392247; }
+    #subscription-popup .subscription-heading h2 {
+      margin: 1rem 0; }
+    #subscription-popup .subscription-heading p {
+      font-size: 16px;
+      margin-top: 14px;
+      max-width: 700px;
+      margin: 10px auto 20px; }
+  #subscription-popup .subscription-form {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    max-width: 720px;
+    margin: 0 auto; }
+    #subscription-popup .subscription-form #mc_embed_signup_scroll {
+      text-align: center; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll #mc_embed_signup form {
+        padding-bottom: 0; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-name {
+        width: 100% !important;
+        padding-bottom: 0 !important;
+        display: inline-block;
+        padding-right: 5px;
+        min-height: 0 !important;
+        vertical-align: top; }
+        #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-name input {
+          border: 2px solid #ccc !important;
+          border-radius: 0 !important;
+          background: #f4f4f4 !important;
+          padding: 10px !important;
+          font-family: "Roboto"; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-email {
+        width: 100% !important;
+        padding-bottom: 0 !important;
+        display: inline-block;
+        padding-right: 5px;
+        min-height: 0 !important;
+        margin-top: 10px; }
+        #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-email input {
+          border: 2px solid #ccc !important;
+          border-radius: 0 !important;
+          background: #f4f4f4 !important;
+          font-family: "Roboto";
+          padding: 10px !important; }
+        #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-email .mce_inline_error {
+          margin: 0 !important; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-button {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px; }
+        #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-button input {
+          background: #392247 !important;
+          height: 47.5px !important;
+          box-shadow: none !important;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-radius: 0px !important;
+          text-shadow: none !important;
+          font-family: "Oswald";
+          font-size: 18px; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll ::-webkit-input-placeholder {
+        color: #444;
+        font-family: "Roboto"; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll :-moz-placeholder {
+        /* Firefox 18- */
+        color: #444;
+        font-family: "Roboto"; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #444;
+        font-family: "Roboto"; }
+      #subscription-popup .subscription-form #mc_embed_signup_scroll :-ms-input-placeholder {
+        color: #444;
+        font-family: "Roboto"; }
+
 /*--------------------------------------------------------------
 Contact Page Styles
 --------------------------------------------------------------*/
@@ -2119,7 +2207,14 @@ Media Queries
   .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-name {
     width: 48% !important; }
   .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-email {
-    width: 48% !important; } }
+    width: 48% !important; }
+  #subscription-popup {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #subscription-popup .subscribe-button {
+      width: 100%; }
+      #subscription-popup .subscribe-button input {
+        width: 99% !important; } }
 
 @media screen and (min-width: 1200px) {
   #main-pages #about-section-5 {
@@ -2133,6 +2228,17 @@ Media Queries
     .site-footer .subscription-bar .subscription-heading p {
       font-size: 24px; }
     .site-footer .subscription-bar .subscription-heading h2 {
+      font-size: 36px; }
+  #subscription-popup {
+    max-width: 710px; }
+    #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-email {
+      width: 39% !important;
+      margin-top: 0; }
+    #subscription-popup .subscription-form #mc_embed_signup_scroll .subscribe-name {
+      width: 39% !important; }
+    #subscription-popup .subscription-heading p {
+      font-size: 24px; }
+    #subscription-popup .subscription-heading h2 {
       font-size: 36px; } }
 
 @media screen and (max-width: 710px) {

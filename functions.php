@@ -180,11 +180,15 @@ function brian_tohana_scripts() {
     
         wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/slick/slick.min.js', array(), '20151215', true );
     
+        wp_enqueue_script( 'magnific-scripts', get_template_directory_uri() . '/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.0.0', true );
+    
         wp_enqueue_script( 'dope-scripts', get_template_directory_uri() . '/js/dope-scripts.js', array( 'jquery' ), '1.0.0', true );
         
         wp_enqueue_script( 'brian_tohana-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20151215', true );
 
         wp_enqueue_style('slick-styles', get_template_directory_uri() .'/slick/slick.css');
+    
+        wp_enqueue_style('magnific-styles', get_template_directory_uri() .'/dist/css/magnific-popup.css');
     
 //        wp_enqueue_style('slick-theme-styles', get_template_directory_uri() .'/slick/slick-theme.css');
     
