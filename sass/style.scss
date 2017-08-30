@@ -508,7 +508,6 @@ Site Footer Styles
         background: #fff;
         padding: 20px 0;
         .subscription-heading {
-            font-size: 24px;
             width: 100%;
             max-width: 500px;
             margin-left: auto;
@@ -520,6 +519,7 @@ Site Footer Styles
                 margin: 1rem 0;
             }
             p {
+                font-size: 16px;
                 margin-top: 14px;
                 max-width: 700px;
                 margin: 10px auto 20px;
@@ -538,7 +538,7 @@ Site Footer Styles
                     padding-bottom: 0;
                 }
                 .subscribe-name { 
-                    width: 34%!important;
+                    width: 39%!important;
                     padding-bottom: 0!important;
                     display: inline-block;
                     padding-right: 5px;
@@ -553,7 +553,7 @@ Site Footer Styles
                     }
                 }
                 .subscribe-email {
-                    width: 46%!important;
+                    width: 39%!important;
                     padding-bottom: 0!important;
                     display: inline-block;
                     padding-right: 5px;
@@ -576,13 +576,14 @@ Site Footer Styles
                     margin-top: 10px;
                     input {
                         background: $purple!important;
-                        height: 46px!important;
+                        height: 47.5px!important;
                         box-shadow: none!important;
                         text-transform: uppercase;
                         letter-spacing: 1px;
                         border-radius: 0px!important;
                         text-shadow: none!important;
                         font-family: "Oswald";
+                        font-size: 18px;
                     }
                 }
                 ::-webkit-input-placeholder {
@@ -625,7 +626,7 @@ Site Footer Styles
     }
     .close-footer {
         position: absolute;
-        top: 0;
+        top: 40px;
         display: none;
         right: 0;
         cursor: pointer;
@@ -1857,6 +1858,23 @@ Media Queries
     .slider h3 {
         font-size: 1.2rem!important;
     }
+    .site-footer {
+        .subscription-bar {
+            .subscription-form {
+                #mc_embed_signup_scroll {
+                    .subscribe-button {
+                        width: 94%!important;
+                    }
+                    .subscribe-name {
+                        width: 48%!important;
+                    }
+                    .subscribe-email {
+                        width: 48%!important;
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 1200px) {
     #main-pages {
@@ -1877,8 +1895,36 @@ Media Queries
             }
             .subscription-heading {
                 max-width: 100%;
+                p {
+                    font-size: 24px;
+                }
+                h2 {
+                    font-size: 36px;
+                }
             }
         }
+    }
+}
+@media screen and (max-width: 710px) {
+    .site-footer {
+        .subscription-bar {
+            .subscription-form {
+                #mc_embed_signup_scroll {
+                    .subscribe-button {
+                        width: 77.5%;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    .subscribe-name {
+                        margin-left: 2px;
+                        input {
+                            margin-left: 2px;
+                        }
+                    }
+                }
+            }
+        } 
     }
 }
 .page-template-template-about .site-footer .close-footer, 

@@ -1051,7 +1051,6 @@ Site Footer Styles
     background: #fff;
     padding: 20px 0; }
     .site-footer .subscription-bar .subscription-heading {
-      font-size: 24px;
       width: 100%;
       max-width: 500px;
       margin-left: auto;
@@ -1062,6 +1061,7 @@ Site Footer Styles
       .site-footer .subscription-bar .subscription-heading h2 {
         margin: 1rem 0; }
       .site-footer .subscription-bar .subscription-heading p {
+        font-size: 16px;
         margin-top: 14px;
         max-width: 700px;
         margin: 10px auto 20px; }
@@ -1076,7 +1076,7 @@ Site Footer Styles
         .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll #mc_embed_signup form {
           padding-bottom: 0; }
         .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-name {
-          width: 34% !important;
+          width: 39% !important;
           padding-bottom: 0 !important;
           display: inline-block;
           padding-right: 5px;
@@ -1089,7 +1089,7 @@ Site Footer Styles
             padding: 10px !important;
             font-family: "Roboto"; }
         .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-email {
-          width: 46% !important;
+          width: 39% !important;
           padding-bottom: 0 !important;
           display: inline-block;
           padding-right: 5px;
@@ -1108,13 +1108,14 @@ Site Footer Styles
           margin-top: 10px; }
           .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-button input {
             background: #392247 !important;
-            height: 46px !important;
+            height: 47.5px !important;
             box-shadow: none !important;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 0px !important;
             text-shadow: none !important;
-            font-family: "Oswald"; }
+            font-family: "Oswald";
+            font-size: 18px; }
         .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll ::-webkit-input-placeholder {
           color: #444;
           font-family: "Roboto"; }
@@ -1143,7 +1144,7 @@ Site Footer Styles
       color: #fff; }
   .site-footer .close-footer {
     position: absolute;
-    top: 0;
+    top: 40px;
     display: none;
     right: 0;
     cursor: pointer;
@@ -2112,7 +2113,13 @@ Media Queries
     margin-right: 1rem;
     margin-top: 50rem; }
   .slider h3 {
-    font-size: 1.2rem !important; } }
+    font-size: 1.2rem !important; }
+  .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-button {
+    width: 94% !important; }
+  .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-name {
+    width: 48% !important; }
+  .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-email {
+    width: 48% !important; } }
 
 @media screen and (min-width: 1200px) {
   #main-pages #about-section-5 {
@@ -2122,7 +2129,21 @@ Media Queries
   .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-button {
     margin-top: 0; }
   .site-footer .subscription-bar .subscription-heading {
-    max-width: 100%; } }
+    max-width: 100%; }
+    .site-footer .subscription-bar .subscription-heading p {
+      font-size: 24px; }
+    .site-footer .subscription-bar .subscription-heading h2 {
+      font-size: 36px; } }
+
+@media screen and (max-width: 710px) {
+  .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-button {
+    width: 77.5%; }
+    .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-button input {
+      width: 100%; }
+  .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-name {
+    margin-left: 2px; }
+    .site-footer .subscription-bar .subscription-form #mc_embed_signup_scroll .subscribe-name input {
+      margin-left: 2px; } }
 
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,
