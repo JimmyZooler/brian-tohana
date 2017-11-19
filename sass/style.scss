@@ -967,6 +967,7 @@ Contact Page Styles
 .page-template-template-about .hide-header, 
 .page-template-template-contact .hide-header, 
 .page-template-template-services .hide-header, 
+.page-template-template-testimonials .hide-header,
 .blog .hide-header,
 .archive .hide-header,
 .single .hide-header {
@@ -1346,6 +1347,7 @@ Services Page Styles
 .page-template-template-about #page .site-footer, 
 .page-template-template-contact #page .site-footer, 
 .page-template-template-services #page .site-footer,
+.page-template-template-testimonials #page .site-footer,
 .blog #page .site-footer,
 .single-post #page .site-footer,
 .archive #page .site-footer  {
@@ -1363,7 +1365,7 @@ Services Page Styles
 /*--------------------------------------------------------------
 Blog and Archive Page Styles
 --------------------------------------------------------------*/
-.blog, .archive, .single {
+.blog, .archive, .single, .page-template-template-testimonials {
     background: #f8f8f8;
     .site-content {
         max-width: 870px;
@@ -1445,6 +1447,38 @@ Blog and Archive Page Styles
             width: 27%;
             padding: 0 0 0 20px;
             border-left: 1px solid #e2e2e2;
+            .focuswp-inner {
+                background: transparent;
+                border: none;
+                .focuswp-content {
+                    header {
+                        padding: 10px 4px 0!important;
+                        h3.focuswp-title {
+                            font-size: 1rem;
+                            a {
+                                color: #000;
+                                font-size: 1rem!important;
+                            }
+                        }
+                    }
+                    .focuswp-entry {
+                        padding: 0 4px!important;
+                    }
+                    .focuswp-entry {
+                        font-size: 13px;
+                    }
+                }
+                .focuswp-headright {
+//                    display: block;
+                    button {
+                        height: 48px;
+                    }
+                }
+                .focuswp-headleft {
+                    display: block;
+                }
+            }
+            
             .widget_text {
                 background: #fff;
                 padding: 10px;
@@ -1519,10 +1553,48 @@ Blog and Archive Page Styles
         }
     }
 }
-.blog article .entry-content p:last-child {
+.blog, .archive, .single {
+    .entry-title {
+        margin-bottom: 5px!important;
+        color: #000;
+    }
+    .entry-meta {
+        margin-bottom: 20px;
+        padding-right: 30px;
+        .posted-on {
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                color: #333;
+                text-decoration: none;
+            }
+        }
+        .byline {
+            display: none;
+        }
+    }
+}
+.page-template-template-testimonials, .single-testimonial {
+    .site-content {
+        max-width: 870px;
+        margin: 0 auto;
+        padding: 80px 20px 80px;
+        .content-area {
+            margin-right: 0!important;
+            padding-right: 0!important;
+        }
+        .site-main {
+            margin-right: 0!important;
+        }
+        #secondary {
+            display: none;
+        }
+    }
+}
+.blog article .entry-content p:last-child, .page-template-template-testimonials .entry-content p:last-child {
     margin-bottom: 10px!important;
 }
-.blog article .entry-content .moretag {
+.blog article .entry-content .moretag, .page-template-template-testimonials article .entry-content .moretag {
     margin-bottom: 20px;
     display: block;
     padding: 0 10px;
@@ -1532,7 +1604,7 @@ Blog and Archive Page Styles
     text-decoration: none;
     margin-top: -15px;
 }
-.blog article .entry-content .moretag:hover {
+.blog article .entry-content .moretag:hover, .page-template-template-testimonials .entry-content .moretag:hover {
     text-decoration: underline;
 }
 
@@ -1542,7 +1614,7 @@ Blog and Archive Page Styles
     font-size: 15px!important;
     font-family: "FontAwesome";
 }
-.blog article h2 a:hover, .archive article h2 a:hover {
+.blog article h2 a:hover, .archive article h2 a:hover, .page-template-template-testimonials article h2 a:hover {
     text-decoration: underline!important;
 }
 .archive .page-header-archive .page-title:before {
@@ -1642,7 +1714,7 @@ Media Queries
     }
 }
 @media screen and (max-width: 850px) {
-    .archive, .blog {
+    .archive, .blog, .page-template-template-testimonials {
         .widget-area {
             display: none!important;
         }
@@ -1757,7 +1829,7 @@ Media Queries
     #social-buttons {
         right: 10px!important;
         display: inline-block;
-    }
+    } 
     #mobile-social-buttons {
         display: none;
     }
@@ -2075,6 +2147,7 @@ Media Queries
 .page-template-template-about .site-footer .close-footer, 
 .page-template-template-services .site-footer .close-footer, 
 .page-template-template-contact .site-footer .close-footer, 
+.page-template-template-testimonials .site-footer .close-footer, 
 .blog .site-footer .close-footer, 
 .archive .site-footer .close-footer, 
 .single .site-footer .close-footer {

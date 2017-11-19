@@ -43,14 +43,14 @@
 
         </main><!-- #main -->
     </div><!-- #primary -->
-
+<?php get_sidebar(); ?>
+<!--
 <aside id="secondary" class="widget-area" role="complementary">
     <section id="text-2" class="widget widget_text">
         <h2 class="widget-title">Don't miss a post!</h2>
         <div class="textwidget">
             <p>Recieve free email updates</p>
             <div class="subscription-form">
-                <!-- Begin MailChimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
                         #mc_embed_signup{background:#fff; clear:left; font:14px; }
@@ -67,14 +67,14 @@
                         <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
                                 <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        </div>
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_647fb5b2a53b7804687e6b819_b8ae23cbfe" tabindex="-1" value=""></div>
                     
                     </div>
                 </form>
                 </div>
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                <!--End mc_embed_signup-->
+                
             </div>
         </div>
     </section>
@@ -93,6 +93,6 @@
             echo $html;
         ?>
     </section>
-</aside><!-- #secondary -->
+</aside>-->
 
 <?php get_footer(); ?>

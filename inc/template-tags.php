@@ -25,7 +25,7 @@ function brian_tohana_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'brian_tohana' ),
+		esc_html_x( '%s', 'post date', 'brian_tohana' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 

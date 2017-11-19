@@ -223,25 +223,25 @@ function showPopup() {
 //
 //************************************
     
-    $(document).ready(function(){
-        
-        $('.open-popup-link').magnificPopup({
-          type:'inline',
-          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        });
-        
-        function launchPopup(){
-            $('.open-popup-link').trigger("click");
-            sessionStorage["PopupShown"] = 'yes';
-        };
-        
-        setTimeout(function(){
-            if (sessionStorage["IntroShown"] != 'yes') {
-                launchPopup();
-            };
-        }, 6000);
-        
-    });
+//    $(document).ready(function(){
+//        
+//        $('.open-popup-link').magnificPopup({
+//          type:'inline',
+//          midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+//        });
+//        
+//        function launchPopup(){
+//            $('.open-popup-link').trigger("click");
+//            sessionStorage["PopupShown"] = 'yes';
+//        };
+//        
+//        setTimeout(function(){
+//            if (sessionStorage["IntroShown"] != 'yes') {
+//                launchPopup();
+//            };
+//        }, 6000);
+//        
+//    });
     
     
 

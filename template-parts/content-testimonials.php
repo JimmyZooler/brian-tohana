@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single post content.
+ * Template part for testimonial posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -21,16 +21,11 @@
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif; ?>
-        
-        <div class="entry-meta">
-            <?php brian_tohana_posted_on(); ?>
-        </div><!-- .entry-meta -->
-        
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
+			the_excerpt( sprintf(
 				/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'brian_tohana' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -41,6 +36,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+        <a class="moretag" href="<?php echo get_permalink($post->ID); ?>"> Read more &raquo;</a>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

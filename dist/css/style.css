@@ -1440,6 +1440,7 @@ Contact Page Styles
 .page-template-template-about .hide-header,
 .page-template-template-contact .hide-header,
 .page-template-template-services .hide-header,
+.page-template-template-testimonials .hide-header,
 .blog .hide-header,
 .archive .hide-header,
 .single .hide-header {
@@ -1767,6 +1768,7 @@ Services Page Styles
 .page-template-template-about #page .site-footer,
 .page-template-template-contact #page .site-footer,
 .page-template-template-services #page .site-footer,
+.page-template-template-testimonials #page .site-footer,
 .blog #page .site-footer,
 .single-post #page .site-footer,
 .archive #page .site-footer {
@@ -1782,53 +1784,53 @@ Services Page Styles
 /*--------------------------------------------------------------
 Blog and Archive Page Styles
 --------------------------------------------------------------*/
-.blog, .archive, .single {
+.blog, .archive, .single, .page-template-template-testimonials {
   background: #f8f8f8; }
-  .blog .site-content, .archive .site-content, .single .site-content {
+  .blog .site-content, .archive .site-content, .single .site-content, .page-template-template-testimonials .site-content {
     max-width: 870px;
     margin: 0 auto;
     padding: 80px 20px 80px; }
-    .blog .site-content .content-area, .archive .site-content .content-area, .single .site-content .content-area {
+    .blog .site-content .content-area, .archive .site-content .content-area, .single .site-content .content-area, .page-template-template-testimonials .site-content .content-area {
       overflow: auto;
       float: left;
       margin: 0 -27% 0 0;
       width: 100%;
       padding: 0 27px 0 0; }
-    .blog .site-content .site-main, .archive .site-content .site-main, .single .site-content .site-main {
+    .blog .site-content .site-main, .archive .site-content .site-main, .single .site-content .site-main, .page-template-template-testimonials .site-content .site-main {
       margin: 0 27% 0 0; }
-      .blog .site-content .site-main .page-header-archive .page-title, .archive .site-content .site-main .page-header-archive .page-title, .single .site-content .site-main .page-header-archive .page-title {
+      .blog .site-content .site-main .page-header-archive .page-title, .archive .site-content .site-main .page-header-archive .page-title, .single .site-content .site-main .page-header-archive .page-title, .page-template-template-testimonials .site-content .site-main .page-header-archive .page-title {
         font-weight: 300;
         font-size: 42px; }
-      .blog .site-content .site-main hr, .archive .site-content .site-main hr, .single .site-content .site-main hr {
+      .blog .site-content .site-main hr, .archive .site-content .site-main hr, .single .site-content .site-main hr, .page-template-template-testimonials .site-content .site-main hr {
         margin-bottom: 60px; }
-      .blog .site-content .site-main article, .archive .site-content .site-main article, .single .site-content .site-main article {
+      .blog .site-content .site-main article, .archive .site-content .site-main article, .single .site-content .site-main article, .page-template-template-testimonials .site-content .site-main article {
         margin-bottom: 62px; }
-        .blog .site-content .site-main article .featured-tag, .archive .site-content .site-main article .featured-tag, .single .site-content .site-main article .featured-tag {
+        .blog .site-content .site-main article .featured-tag, .archive .site-content .site-main article .featured-tag, .single .site-content .site-main article .featured-tag, .page-template-template-testimonials .site-content .site-main article .featured-tag {
           display: inline-block;
           color: #fff;
           background: #578fae;
           padding: 5px 10px;
           font-size: 14px; }
-        .blog .site-content .site-main article h2, .archive .site-content .site-main article h2, .single .site-content .site-main article h2 {
+        .blog .site-content .site-main article h2, .archive .site-content .site-main article h2, .single .site-content .site-main article h2, .page-template-template-testimonials .site-content .site-main article h2 {
           font-size: 26px;
           margin-bottom: 18px; }
-          .blog .site-content .site-main article h2 a, .archive .site-content .site-main article h2 a, .single .site-content .site-main article h2 a {
+          .blog .site-content .site-main article h2 a, .archive .site-content .site-main article h2 a, .single .site-content .site-main article h2 a, .page-template-template-testimonials .site-content .site-main article h2 a {
             text-decoration: none;
             color: #000; }
-        .blog .site-content .site-main article .entry-content, .archive .site-content .site-main article .entry-content, .single .site-content .site-main article .entry-content {
+        .blog .site-content .site-main article .entry-content, .archive .site-content .site-main article .entry-content, .single .site-content .site-main article .entry-content, .page-template-template-testimonials .site-content .site-main article .entry-content {
           margin-top: 0; }
-          .blog .site-content .site-main article .entry-content p, .archive .site-content .site-main article .entry-content p, .single .site-content .site-main article .entry-content p {
+          .blog .site-content .site-main article .entry-content p, .archive .site-content .site-main article .entry-content p, .single .site-content .site-main article .entry-content p, .page-template-template-testimonials .site-content .site-main article .entry-content p {
             font-size: 14px;
             margin-top: 0; }
-        .blog .site-content .site-main article .entry-footer, .archive .site-content .site-main article .entry-footer, .single .site-content .site-main article .entry-footer {
+        .blog .site-content .site-main article .entry-footer, .archive .site-content .site-main article .entry-footer, .single .site-content .site-main article .entry-footer, .page-template-template-testimonials .site-content .site-main article .entry-footer {
           background: #e2e2e2;
           padding: 6px 8px 8px; }
-          .blog .site-content .site-main article .entry-footer .tags-links, .archive .site-content .site-main article .entry-footer .tags-links, .single .site-content .site-main article .entry-footer .tags-links {
+          .blog .site-content .site-main article .entry-footer .tags-links, .archive .site-content .site-main article .entry-footer .tags-links, .single .site-content .site-main article .entry-footer .tags-links, .page-template-template-testimonials .site-content .site-main article .entry-footer .tags-links {
             font-size: 12px; }
-            .blog .site-content .site-main article .entry-footer .tags-links a, .archive .site-content .site-main article .entry-footer .tags-links a, .single .site-content .site-main article .entry-footer .tags-links a {
+            .blog .site-content .site-main article .entry-footer .tags-links a, .archive .site-content .site-main article .entry-footer .tags-links a, .single .site-content .site-main article .entry-footer .tags-links a, .page-template-template-testimonials .site-content .site-main article .entry-footer .tags-links a {
               text-decoration: none;
               color: #222; }
-    .blog .site-content .post-navigation .nav-links .nav-previous a, .blog .site-content .post-navigation .nav-links .nav-next a, .archive .site-content .post-navigation .nav-links .nav-previous a, .archive .site-content .post-navigation .nav-links .nav-next a, .single .site-content .post-navigation .nav-links .nav-previous a, .single .site-content .post-navigation .nav-links .nav-next a {
+    .blog .site-content .post-navigation .nav-links .nav-previous a, .blog .site-content .post-navigation .nav-links .nav-next a, .archive .site-content .post-navigation .nav-links .nav-previous a, .archive .site-content .post-navigation .nav-links .nav-next a, .single .site-content .post-navigation .nav-links .nav-previous a, .single .site-content .post-navigation .nav-links .nav-next a, .page-template-template-testimonials .site-content .post-navigation .nav-links .nav-previous a, .page-template-template-testimonials .site-content .post-navigation .nav-links .nav-next a {
       display: inline-block;
       padding: 10px;
       background: #fff;
@@ -1836,33 +1838,51 @@ Blog and Archive Page Styles
       text-decoration: none;
       font-weight: 300;
       font-size: 14px; }
-    .blog .site-content .widget-area, .archive .site-content .widget-area, .single .site-content .widget-area {
+    .blog .site-content .widget-area, .archive .site-content .widget-area, .single .site-content .widget-area, .page-template-template-testimonials .site-content .widget-area {
       float: right;
       overflow: hidden;
       width: 27%;
       padding: 0 0 0 20px;
       border-left: 1px solid #e2e2e2; }
-      .blog .site-content .widget-area .widget_text, .archive .site-content .widget-area .widget_text, .single .site-content .widget-area .widget_text {
+      .blog .site-content .widget-area .focuswp-inner, .archive .site-content .widget-area .focuswp-inner, .single .site-content .widget-area .focuswp-inner, .page-template-template-testimonials .site-content .widget-area .focuswp-inner {
+        background: transparent;
+        border: none; }
+        .blog .site-content .widget-area .focuswp-inner .focuswp-content header, .archive .site-content .widget-area .focuswp-inner .focuswp-content header, .single .site-content .widget-area .focuswp-inner .focuswp-content header, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-content header {
+          padding: 10px 4px 0 !important; }
+          .blog .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title, .archive .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title, .single .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title {
+            font-size: 1rem; }
+            .blog .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title a, .archive .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title a, .single .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title a, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-content header h3.focuswp-title a {
+              color: #000;
+              font-size: 1rem !important; }
+        .blog .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .archive .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .single .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry {
+          padding: 0 4px !important; }
+        .blog .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .archive .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .single .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-content .focuswp-entry {
+          font-size: 13px; }
+        .blog .site-content .widget-area .focuswp-inner .focuswp-headright button, .archive .site-content .widget-area .focuswp-inner .focuswp-headright button, .single .site-content .widget-area .focuswp-inner .focuswp-headright button, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-headright button {
+          height: 48px; }
+        .blog .site-content .widget-area .focuswp-inner .focuswp-headleft, .archive .site-content .widget-area .focuswp-inner .focuswp-headleft, .single .site-content .widget-area .focuswp-inner .focuswp-headleft, .page-template-template-testimonials .site-content .widget-area .focuswp-inner .focuswp-headleft {
+          display: block; }
+      .blog .site-content .widget-area .widget_text, .archive .site-content .widget-area .widget_text, .single .site-content .widget-area .widget_text, .page-template-template-testimonials .site-content .widget-area .widget_text {
         background: #fff;
         padding: 10px;
         text-align: center; }
-        .blog .site-content .widget-area .widget_text .widget-title, .archive .site-content .widget-area .widget_text .widget-title, .single .site-content .widget-area .widget_text .widget-title {
+        .blog .site-content .widget-area .widget_text .widget-title, .archive .site-content .widget-area .widget_text .widget-title, .single .site-content .widget-area .widget_text .widget-title, .page-template-template-testimonials .site-content .widget-area .widget_text .widget-title {
           font-size: 20px; }
-        .blog .site-content .widget-area .widget_text p, .archive .site-content .widget-area .widget_text p, .single .site-content .widget-area .widget_text p {
+        .blog .site-content .widget-area .widget_text p, .archive .site-content .widget-area .widget_text p, .single .site-content .widget-area .widget_text p, .page-template-template-testimonials .site-content .widget-area .widget_text p {
           font-size: 14px;
           font-weight: 300; }
-        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email {
+        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email, .page-template-template-testimonials .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email {
           padding-bottom: 0 !important;
           width: 100%; }
-          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input {
+          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input, .page-template-template-testimonials .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email input {
             color: #666;
             font-size: 14px;
             font-weight: 300; }
-          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div {
+          .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div, .page-template-template-testimonials .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-email div {
             position: absolute;
             bottom: 100%;
             margin-bottom: 0 !important; }
-        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input {
+        .blog .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .archive .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .single .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input, .page-template-template-testimonials .site-content .widget-area .widget_text .subscription-form #mc_embed_signup form #mc_embed_signup_scroll .subscribe-button input {
           width: 100%;
           background: #392247 !important;
           height: 36px !important;
@@ -1873,25 +1893,52 @@ Blog and Archive Page Styles
           text-shadow: none !important;
           font-family: "Oswald";
           margin-bottom: 0 !important; }
-      .blog .site-content .widget-area .widget_tag_cloud .widget-title, .archive .site-content .widget-area .widget_tag_cloud .widget-title, .single .site-content .widget-area .widget_tag_cloud .widget-title {
+      .blog .site-content .widget-area .widget_tag_cloud .widget-title, .archive .site-content .widget-area .widget_tag_cloud .widget-title, .single .site-content .widget-area .widget_tag_cloud .widget-title, .page-template-template-testimonials .site-content .widget-area .widget_tag_cloud .widget-title {
         font-size: 20px; }
-      .blog .site-content .widget-area .widget_tag_cloud .widget-title:before, .archive .site-content .widget-area .widget_tag_cloud .widget-title:before, .single .site-content .widget-area .widget_tag_cloud .widget-title:before {
+      .blog .site-content .widget-area .widget_tag_cloud .widget-title:before, .archive .site-content .widget-area .widget_tag_cloud .widget-title:before, .single .site-content .widget-area .widget_tag_cloud .widget-title:before, .page-template-template-testimonials .site-content .widget-area .widget_tag_cloud .widget-title:before {
         content: "\f02c";
         margin-right: 10px;
         font-family: "FontAwesome"; }
-      .blog .site-content .widget-area .widget_tag_cloud p a, .archive .site-content .widget-area .widget_tag_cloud p a, .single .site-content .widget-area .widget_tag_cloud p a {
+      .blog .site-content .widget-area .widget_tag_cloud p a, .archive .site-content .widget-area .widget_tag_cloud p a, .single .site-content .widget-area .widget_tag_cloud p a, .page-template-template-testimonials .site-content .widget-area .widget_tag_cloud p a {
         display: block;
         font-size: 14px !important;
         color: #333;
         padding-left: 20px; }
-    .blog .site-content .site-footer, .archive .site-content .site-footer, .single .site-content .site-footer {
+    .blog .site-content .site-footer, .archive .site-content .site-footer, .single .site-content .site-footer, .page-template-template-testimonials .site-content .site-footer {
       clear: both;
       width: 100%; }
 
-.blog article .entry-content p:last-child {
+.blog .entry-title, .archive .entry-title, .single .entry-title {
+  margin-bottom: 5px !important;
+  color: #000; }
+
+.blog .entry-meta, .archive .entry-meta, .single .entry-meta {
+  margin-bottom: 20px;
+  padding-right: 30px; }
+  .blog .entry-meta .posted-on a, .archive .entry-meta .posted-on a, .single .entry-meta .posted-on a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none; }
+  .blog .entry-meta .byline, .archive .entry-meta .byline, .single .entry-meta .byline {
+    display: none; }
+
+.page-template-template-testimonials .site-content, .single-testimonial .site-content {
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 80px 20px 80px; }
+  .page-template-template-testimonials .site-content .content-area, .single-testimonial .site-content .content-area {
+    margin-right: 0 !important;
+    padding-right: 0 !important; }
+  .page-template-template-testimonials .site-content .site-main, .single-testimonial .site-content .site-main {
+    margin-right: 0 !important; }
+  .page-template-template-testimonials .site-content #secondary, .single-testimonial .site-content #secondary {
+    display: none; }
+
+.blog article .entry-content p:last-child, .page-template-template-testimonials .entry-content p:last-child {
   margin-bottom: 10px !important; }
 
-.blog article .entry-content .moretag {
+.blog article .entry-content .moretag, .page-template-template-testimonials article .entry-content .moretag {
   margin-bottom: 20px;
   display: block;
   padding: 0 10px;
@@ -1901,7 +1948,7 @@ Blog and Archive Page Styles
   text-decoration: none;
   margin-top: -15px; }
 
-.blog article .entry-content .moretag:hover {
+.blog article .entry-content .moretag:hover, .page-template-template-testimonials .entry-content .moretag:hover {
   text-decoration: underline; }
 
 .blog article .tags-links:before, .archive article .tags-links:before, .single article .tags-links:before {
@@ -1910,7 +1957,7 @@ Blog and Archive Page Styles
   font-size: 15px !important;
   font-family: "FontAwesome"; }
 
-.blog article h2 a:hover, .archive article h2 a:hover {
+.blog article h2 a:hover, .archive article h2 a:hover, .page-template-template-testimonials article h2 a:hover {
   text-decoration: underline !important; }
 
 .archive .page-header-archive .page-title:before {
@@ -1992,17 +2039,17 @@ Media Queries
     font-size: 2rem !important; } }
 
 @media screen and (max-width: 850px) {
-  .archive .widget-area, .blog .widget-area {
+  .archive .widget-area, .blog .widget-area, .page-template-template-testimonials .widget-area {
     display: none !important; }
-  .archive .site-content, .blog .site-content {
+  .archive .site-content, .blog .site-content, .page-template-template-testimonials .site-content {
     padding-left: 40px !important;
     padding-right: 40px !important; }
-    .archive .site-content .content-area, .blog .site-content .content-area {
+    .archive .site-content .content-area, .blog .site-content .content-area, .page-template-template-testimonials .site-content .content-area {
       padding: 0 !important;
       max-width: 680px;
       margin: 0 auto !important;
       float: none !important; }
-      .archive .site-content .content-area .site-main, .blog .site-content .content-area .site-main {
+      .archive .site-content .content-area .site-main, .blog .site-content .content-area .site-main, .page-template-template-testimonials .site-content .content-area .site-main {
         margin: 0 auto 0; } }
 
 @media screen and (max-width: 760px) {
@@ -2254,6 +2301,7 @@ Media Queries
 .page-template-template-about .site-footer .close-footer,
 .page-template-template-services .site-footer .close-footer,
 .page-template-template-contact .site-footer .close-footer,
+.page-template-template-testimonials .site-footer .close-footer,
 .blog .site-footer .close-footer,
 .archive .site-footer .close-footer,
 .single .site-footer .close-footer {
